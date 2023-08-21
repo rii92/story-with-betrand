@@ -17,7 +17,7 @@ const Hero = () => {
         <Typography
           variant="h1"
           sx={{
-            fontSize: { xs: "24px" },
+            fontSize: { xs: "24px", sm: "32px", md: "40px", lg: "48px" },
             textAlign: { xs: "center" },
             color: color.white,
           }}
@@ -29,10 +29,10 @@ const Hero = () => {
         <Typography
           variant="body1"
           sx={{
-            width: { xs: "250px" },
+            width: { xs: "250px", sm: "350px" },
             marginTop: { xs: "16px" },
             marginX: { xs: "auto" },
-            fontSize: { xs: "12px" },
+            fontSize: { xs: "12px", sm: "16px" },
             color: color.white,
             textAlign: { xs: "center" },
           }}
@@ -53,30 +53,21 @@ const Hero = () => {
           zIndex: -1,
         }}
       ></Box>
-      <Box
-        sx={{
-          width: "100%",
-          height: { xs: "500px" },
-          overflow: "hidden",
+      <video
+        style={{
+          height: "100%",
           position: "fixed",
+          left: "50%",
+          transform: "translateX(-50%)",
           zIndex: -2,
           top: 0,
         }}
+        autoPlay
+        loop
+        muted
       >
-        <video
-          style={{
-            height: "100%",
-            position: "fixed",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-          autoPlay
-          loop
-          muted
-        >
-          <source src="assets/video/hero.mp4" type="video/mp4" />
-        </video>
-      </Box>
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
     </Box>
   );
 };
