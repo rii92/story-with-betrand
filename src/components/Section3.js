@@ -78,7 +78,7 @@ const Section3 = () => {
         data-aos="fade-right"
       >
         <span style={{ backgroundColor: color.white, padding: "2px 3px" }}>
-          Pada tahun 2045, jumlah penduduk Indonesia diproyeksikan akan mencapai
+          Pada tahun 2045, jumlah penduduk Indonesia diproyeksikan akan mencapai{" "}
           <span style={{ fontWeight: "bold" }}>318,9 juta jiwa</span>, dengan{" "}
           <span style={{ fontWeight: "bold" }}>73 persen</span> populasi
           penduduk akan tinggal{" "}
