@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+.image-city {
+  height: 500px;
+}
+
+@media only screen and (max-width: 900px) {
+  .image-city {
+    height: 300px;
+  }
+}
