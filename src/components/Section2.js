@@ -15,7 +15,6 @@ const Section2 = () => {
       sx={{
         paddingX: { xs: "16px", md: "40px", xl: "0px" },
         paddingY: { xs: "56px" },
-
         backgroundColor: color.blue,
       }}
     >

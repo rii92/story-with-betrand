@@ -1,8 +1,10 @@
+import { Box } from "@mui/material";
 import Hero from "./components/Hero";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
 import Section5 from "./components/Section5";
+import Section5a from "./components/Section5a";
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
       <Section3 />
       <Section4 />
       <Section5 />
-      {Array.from({ length: 20 }).map(() => (
+      <Section5a />
+      {Array.from({ length: 50 }).map(() => (
         <br />
       ))}
     </div>
