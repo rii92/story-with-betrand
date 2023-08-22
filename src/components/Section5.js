@@ -1,28 +1,31 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { Box } from "@mui/material";
+import PetaContext from "../context/PetaContext";
 
 const SetViewOnClick = ({ coords, zoom }) => {
   const map = useMap();
-  map.flyTo([-1.694867, 118.0597507], 5, {
+  map.flyTo(coords, zoom, {
     animate: true,
     duration: 1.5,
   });
-
-  setTimeout(
-    () =>
-      map.flyTo(coords, zoom, {
-        animate: true,
-        duration: 1.5,
-      }),
-    2000
-  );
   return null;
 };
 
 const Section5 = () => {
-  const [index, setIndex] = useState(0);
+  const {
+    posisiAtasElementPengenalan,
+    posisiAtasElementMetropolitanPertama,
+    posisiAtasElementMetropolitanKedua,
+    posisiAtasElementMetropolitanKetiga,
+    posisiAtasElementMetropolitanKeempat,
+    posisiAtasElementMetropolitanKelima,
+    posisiAtasElementMetropolitanKeenam,
+    posisiAtasElementMetropolitanKetujuh,
+    posisiAtasElementMetropolitanKedelapan,
+    posisiAtasElementMetropolitanKesembilan,
+    posisiAtasElementMetropolitanKesepuluh,
+  } = useContext(PetaContext);
   const [coords, setCoords] = useState([-1.694867, 118.0597507]);
   const [zoom, setZoom] = useState(5);
   const metropolitan = [
@@ -36,26 +39,83 @@ const Section5 = () => {
     [-8.5291797, 115.0064513, 9], // Sarbagita
     [-5.2408108, 119.359302, 9], // Mamminasata
     [1.562365, 124.7486837, 9], // Bimindo
+    [-1.694867, 118.0597507, 5], // Indonesia
   ];
 
-  useEffect(() => {
-    window.addEventListener("scroll", isSticky);
-
-    return () => {
-      window.removeEventListener("scroll", isSticky);
-    };
-  }, []);
-
-  const isSticky = (e) => {
-    const scrollTop = window.scrollY;
+  const pindahKoordinatPeta = (urutan) => {
+    const lat = parseFloat(metropolitan[urutan][0]);
+    const lon = parseFloat(metropolitan[urutan][1]);
+    setCoords([lat, lon]);
+    setZoom(metropolitan[urutan][2]);
   };
 
-  const handleScroll = (e) => {
-    const lat = parseFloat(metropolitan[index][0]);
-    const lon = parseFloat(metropolitan[index][1]);
-    setCoords([lat, lon]);
-    if (index === 9) setIndex(0);
-    else setIndex((prev) => prev + 1);
+  const cekKoordinatSekarang = (scrollTop) => {
+    if (
+      Math.floor(scrollTop) >= posisiAtasElementPengenalan + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanPertama + 100
+    ) {
+      pindahKoordinatPeta(0);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanPertama + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKedua + 100
+    ) {
+      pindahKoordinatPeta(1);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKedua + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKetiga + 100
+    ) {
+      pindahKoordinatPeta(2);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKetiga + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKeempat + 100
+    ) {
+      pindahKoordinatPeta(3);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKeempat + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKelima + 100
+    ) {
+      pindahKoordinatPeta(4);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKelima + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKeenam + 100
+    ) {
+      pindahKoordinatPeta(5);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKeenam + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKetujuh + 100
+    ) {
+      pindahKoordinatPeta(6);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKetujuh + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKedelapan + 100
+    ) {
+      pindahKoordinatPeta(7);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKedelapan + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKesembilan + 100
+    ) {
+      pindahKoordinatPeta(8);
+    } else if (
+      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKesembilan + 100 &&
+      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKesepuluh + 100
+    ) {
+      pindahKoordinatPeta(9);
+    } else {
+      pindahKoordinatPeta(10);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", isPindahKoordinat);
+
+    return () => {
+      window.removeEventListener("scroll", isPindahKoordinat);
+    };
+  }, [posisiAtasElementPengenalan]);
+
+  const isPindahKoordinat = (e) => {
+    const scrollTop = window.scrollY;
+    cekKoordinatSekarang(scrollTop);
   };
 
   return (

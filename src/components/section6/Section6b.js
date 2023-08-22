@@ -1,12 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import { useContext, useEffect, useRef } from "react";
-import PetaContext from "../context/PetaContext";
-import color from "../themes/Color";
+import PetaContext from "../../context/PetaContext";
+import color from "../../themes/Color";
 
-const Section5a = () => {
-  const { posisiAtasElementPengenalan, setPosisiAtasElementPengenalan } =
-    useContext(PetaContext);
-  const slideAwalPeta = useRef();
+const Section6b = () => {
+  const {
+    posisiAtasElementMetropolitanKedua,
+    setPosisiAtasElementMetropolitanKedua,
+  } = useContext(PetaContext);
+  const metropolitanKedua = useRef();
 
   const getCoords = (elem) => {
     // crossbrowser version
@@ -28,9 +30,9 @@ const Section5a = () => {
   };
 
   useEffect(() => {
-    const posisiPengenalan = getCoords(slideAwalPeta);
-    setPosisiAtasElementPengenalan(posisiPengenalan.top);
-  }, [posisiAtasElementPengenalan]);
+    const posisiMetropolitanKedua = getCoords(metropolitanKedua);
+    setPosisiAtasElementMetropolitanKedua(posisiMetropolitanKedua.top);
+  }, [posisiAtasElementMetropolitanKedua]);
 
   return (
     <Box
@@ -40,7 +42,7 @@ const Section5a = () => {
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
-      ref={slideAwalPeta}
+      ref={metropolitanKedua}
     >
       <Typography
         variant="body1"
@@ -53,13 +55,12 @@ const Section5a = () => {
         }}
       >
         <span style={{ backgroundColor: color.black, padding: "2px 3px" }}>
-          Oleh karenanya, strategi pembangunan perkotaan Indonesia ke depan akan
-          menitikberatkan pada aglomerasi perkotaan atau wilayah metropolitan
-          sebagai alat pertumbuhan ekonomi.
+          Patungraya Agung (Kota Palembang, Kabupaten Banyuasin, Kabupaten Ogan
+          Ilir, Kabupaten Ogan Komering Ilir).
         </span>
       </Typography>
     </Box>
   );
 };
 
-export default Section5a;
+export default Section6b;
