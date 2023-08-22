@@ -125,6 +125,7 @@ const Section5 = () => {
       scrollWheelZoom={false}
       zoomAnimation={true}
       zoomControl={false}
+      dragging={false}
       style={{
         position: "sticky",
         top: 0,
