@@ -7,6 +7,13 @@
   height: 500px;
 }
 
+.leaflet-container {
+  /* position: -webkit-sticky;
+  position: sticky; */
+  height: 100vh;
+  width: 100%;
+}
+
 @media only screen and (max-width: 900px) {
   .image-city {
     height: 300px;

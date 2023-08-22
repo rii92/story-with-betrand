@@ -62,6 +62,7 @@ const Section2 = () => {
           >
             {Array.from({ length: 10 }).map((_, index) => (
               <Box
+                key={index}
                 sx={{
                   position: "relative",
                   zIndex: 10 - index,
