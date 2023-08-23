@@ -11,6 +11,7 @@ const Section11 = () => {
         zIndex: { xs: 15 },
         display: { xs: "grid" },
         placeItems: { xs: "center" },
+        backgroundColor: { xs: color.white },
       }}
     >
       <Typography
