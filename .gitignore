@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .vscode
+/src/data-map
 
 # testing
 /coverage
