@@ -3,6 +3,7 @@ import { MapContainer, Polygon, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import PetaContext from "../context/PetaContext";
 import { vectorProvinsi, vectorKabKota } from "../data";
+import color from "../themes/Color";
 
 const SetViewOnClick = ({ coords, zoom }) => {
   const map = useMap();
@@ -129,11 +130,12 @@ const Section5 = () => {
       dragging={false}
       style={{
         position: "sticky",
-        top: 0,
+        top: "70px",
         width: "100%",
         height: "100vh",
+        backgroundColor: color.lightBlue,
+        transform: "translateY(-70px)",
       }}
-      geo
     >
       {/* <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
