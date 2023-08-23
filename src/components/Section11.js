@@ -7,6 +7,7 @@ const Section11 = () => {
       sx={{
         width: { xs: "100%" },
         height: { xs: "100vh" },
+        padding: { xs: "16px", sm: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 15 },
         display: { xs: "grid" },

@@ -24,10 +24,10 @@ const Section9 = () => {
         <Typography
           sx={{
             width: { xs: "fit-content" },
-            padding: { xs: "10px 20px" },
+            padding: { xs: "8px 16px" },
             color: { xs: color.black },
             backgroundColor: { xs: color.white },
-            borderRadius: { xs: "10px" },
+            borderRadius: { xs: "8px" },
           }}
         >
           Di Jakarta

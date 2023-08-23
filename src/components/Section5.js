@@ -137,10 +137,10 @@ const Section5 = () => {
         transform: "translateY(-70px)",
       }}
     >
-      {/* <TileLayer
+      <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      /> */}
+      />
       {vectorProvinsi.map((provinsi) => (
         <Polygon
           pathOptions={{ color: "blue" }}

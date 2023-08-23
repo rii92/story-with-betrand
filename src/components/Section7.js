@@ -14,6 +14,7 @@ const Section7 = () => {
         sx={{
           width: { xs: "100%" },
           height: { xs: "100vh" },
+          padding: { xs: "16px", sm: "0px" },
           position: { xs: "relative" },
           zIndex: { xs: 15 },
           display: { xs: "grid" },
@@ -23,8 +24,7 @@ const Section7 = () => {
         <Typography
           sx={{
             width: { xs: "100%", sm: "400px", md: "500px" },
-            padding: { xs: "20px 30px" },
-            marginX: { xs: "auto" },
+            padding: { xs: "8px 16px", sm: "24px 32px" },
             color: { xs: color.black },
             backgroundColor: { xs: color.white },
             borderRadius: { xs: "10px" },
