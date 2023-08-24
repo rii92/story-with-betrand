@@ -6,7 +6,7 @@ const Hero = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "500px" },
+        height: { xs: "100vh" },
         position: { xs: "relative" },
         display: { xs: "flex" },
         justifyContent: { xs: "center" },
