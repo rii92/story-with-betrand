@@ -8,12 +8,12 @@ const Section4 = () => {
       <Box
         sx={{
           paddingX: "16px",
-          paddingTop: "80px",
+          paddingY: "80px",
           display: { xs: "block", md: "flex" },
           flexDirection: { md: "row-reverse" },
           justifyContent: { md: "center" },
           gap: { md: "40px" },
-          backgroundColor: color.darkYellow,
+          backgroundColor: color.orange,
         }}
       >
         <Box
@@ -22,7 +22,7 @@ const Section4 = () => {
             height: { xs: "180px", md: "200px" },
             marginX: { xs: "auto", md: "0px" },
             marginBottom: { xs: "32px", md: "0px" },
-            backgroundColor: { xs: color.semiDarkYellow },
+            backgroundColor: { xs: color.yellow },
             borderRadius: { xs: "100%" },
             overflow: { xs: "hidden" },
           }}
@@ -62,21 +62,6 @@ const Section4 = () => {
           </Typography>
         </Box>
       </Box>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          backgroundColor: color.lightBlue,
-          position: "relative",
-          zIndex: 15,
-        }}
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#A68B03"
-          fill-opacity="1"
-          d="M0,96L30,90.7C60,85,120,75,180,106.7C240,139,300,213,360,224C420,235,480,181,540,138.7C600,96,660,64,720,85.3C780,107,840,181,900,186.7C960,192,1020,128,1080,112C1140,96,1200,128,1260,122.7C1320,117,1380,75,1410,53.3L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
-        ></path>
-      </svg>
     </>
   );
 };

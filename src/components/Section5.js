@@ -130,11 +130,10 @@ const Section5 = () => {
       dragging={false}
       style={{
         position: "sticky",
-        top: "70px",
+        top: "0px",
         width: "100%",
         height: "100vh",
         backgroundColor: color.lightBlue,
-        transform: "translateY(-70px)",
       }}
     >
       <TileLayer

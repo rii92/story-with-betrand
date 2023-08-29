@@ -15,7 +15,7 @@ const Section2 = () => {
       sx={{
         paddingX: { xs: "16px", md: "40px", xl: "0px" },
         paddingY: { xs: "56px" },
-        backgroundColor: color.blue,
+        backgroundColor: color.lightBlue,
       }}
     >
       <Box
@@ -35,7 +35,7 @@ const Section2 = () => {
               width: { xs: "100%", md: "470px" },
               fontSize: { xs: "12px", sm: "16px" },
               textAlign: { xs: "center", md: "left" },
-              color: { xs: color.white },
+              color: { xs: color.darkBlue },
             }}
           >
             Sekitar <span style={{ fontWeight: "bold" }}>3,5 miliar orang</span>{" "}
@@ -65,7 +65,7 @@ const Section2 = () => {
                 sx={{
                   position: "relative",
                   zIndex: 10 - index,
-                  backgroundColor: color.blue,
+                  backgroundColor: color.lightBlue,
                 }}
                 data-aos="fade-right"
                 data-aos-duration="100"
@@ -76,7 +76,7 @@ const Section2 = () => {
                     index > 4
                       ? {
                           fontSize: { xs: "40px", sm: "60px", lg: "80px" },
-                          color: color.black,
+                          color: color.darkBlue,
                         }
                       : {
                           fontSize: { xs: "40px", sm: "60px", lg: "80px" },

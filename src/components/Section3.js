@@ -22,7 +22,7 @@ const Section3 = () => {
       sx={{
         paddingX: { xs: "16px", md: "40px", xl: "0px" },
         overflowX: { xs: "hidden" },
-        backgroundColor: color.blue,
+        backgroundColor: color.lightBlue,
       }}
     >
       <Box
