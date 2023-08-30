@@ -1,6 +1,7 @@
 export const vectorKabKota = [
   {
     nama: "Kota Medan",
+    warna: "red",
     koordinat: [
       [
         [
@@ -1125,6 +1126,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Binjai",
+    warna: "red",
     koordinat: [
       [
         [3.6744899749757, 98.488830566406],
@@ -1773,6 +1775,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Deli Serdang",
+    warna: "red",
     koordinat: [
       [
         [
@@ -4383,6 +4386,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Karo",
+    warna: "red",
     koordinat: [
       [
         [3.1026959419251, 98.618743896484],
@@ -4882,6 +4886,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Palembang",
+    warna: "red",
     koordinat: [
       [
         [-3.0677909851074, 104.77346038818],
@@ -5014,6 +5019,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Banyu Asin",
+    warna: "red",
     koordinat: [
       [
         [
@@ -15843,6 +15849,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Ogan Ilir",
+    warna: "red",
     koordinat: [
       [
         [
@@ -16204,6 +16211,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Komering Ilir",
+    warna: "red",
     koordinat: [
       [
         [
@@ -21848,6 +21856,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Jakarta Selatan",
+    warna: "red",
     koordinat: [
       [
         [-6.2541890144348, 106.75158691406],
@@ -22254,6 +22263,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Jakarta Timur",
+    warna: "red",
     koordinat: [
       [
         [-6.3483600616455, 106.84255218506],
@@ -22711,6 +22721,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Jakarta Pusat",
+    warna: "red",
     koordinat: [
       [
         [-6.1683201789856, 106.87927246094],
@@ -23010,6 +23021,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Jakarta Barat",
+    warna: "red",
     koordinat: [
       [
         [-6.2089290618896, 106.79332733154],
@@ -23372,6 +23384,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Jakarta Utara",
+    warna: "red",
     koordinat: [
       [
         [-6.1477098464965, 106.97252655029],
@@ -24333,6 +24346,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Bogor",
+    warna: "red",
     koordinat: [
       [
         [-6.5999789237976, 107.22392272949],
@@ -25771,6 +25785,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Bogor",
+    warna: "red",
     koordinat: [
       [
         [-6.5189008712769, 106.77774810791],
@@ -26054,6 +26069,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Depok",
+    warna: "red",
     koordinat: [
       [
         [-6.4043741226196, 106.91011810303],
@@ -26307,6 +26323,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Tangerang",
+    warna: "red",
     koordinat: [
       [
         [-6.025438785553, 106.41738128662],
@@ -27526,6 +27543,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Tangerang",
+    warna: "red",
     koordinat: [
       [
         [-6.0977988243103, 106.70015716553],
@@ -27751,6 +27769,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Bekasi",
+    warna: "red",
     koordinat: [
       [
         [
@@ -29450,6 +29469,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Bekasi",
+    warna: "red",
     koordinat: [
       [
         [-6.3768701553344, 106.98464202881],
@@ -29892,6 +29912,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Cianjur",
+    warna: "red",
     koordinat: [
       [
         [
@@ -32338,6 +32359,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Bandung",
+    warna: "blue",
     koordinat: [
       [
         [-6.9321608543396, 107.5576171875],
@@ -32585,6 +32607,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Bandung",
+    warna: "blue",
     koordinat: [
       [
         [-6.7290601730347, 107.33544158936],
@@ -33963,6 +33986,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Cimahi",
+    warna: "blue",
     koordinat: [
       [
         [-6.8834691047668, 107.57697296143],
@@ -34081,6 +34105,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Kendal",
+    warna: "red",
     koordinat: [
       [
         [-7.1891899108886, 110.25196838379],
@@ -35321,6 +35346,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Demak",
+    warna: "red",
     koordinat: [
       [
         [-7.0889611244202, 110.48111724854],
@@ -36832,6 +36858,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Semarang",
+    warna: "red",
     koordinat: [
       [
         [
@@ -37659,6 +37686,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Semarang",
+    warna: "red",
     koordinat: [
       [
         [-7.322850227356, 110.33792877197],
@@ -38714,6 +38742,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Salatiga",
+    warna: "red",
     koordinat: [
       [
         [-7.2920088768005, 110.52368927002],
@@ -38931,6 +38960,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Grobogan",
+    warna: "red",
     koordinat: [
       [
         [-7.260410785675, 110.83960723877],
@@ -39916,6 +39946,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Gresik",
+    warna: "red",
     koordinat: [
       [
         [
@@ -43304,6 +43335,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Surabaya",
+    warna: "red",
     koordinat: [
       [
         [
@@ -44384,6 +44416,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Sidoarjo",
+    warna: "red",
     koordinat: [
       [
         [
@@ -45213,6 +45246,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Mojokerto",
+    warna: "red",
     koordinat: [
       [
         [-7.7329812049866, 112.57390594482],
@@ -45822,6 +45856,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Mojokerto",
+    warna: "red",
     koordinat: [
       [
         [-7.4600911140442, 112.45896911621],
@@ -45915,6 +45950,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Lamongan",
+    warna: "red",
     koordinat: [
       [
         [-7.322259902954, 112.38799285889],
@@ -47106,6 +47142,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Bangkalan",
+    warna: "red",
     koordinat: [
       [
         [
@@ -49479,6 +49516,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Banjarmasin",
+    warna: "red",
     koordinat: [
       [
         [-3.3866600990295, 114.51194763184],
@@ -49619,6 +49657,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Banjar Baru",
+    warna: "red",
     koordinat: [
       [
         [-3.5382089614868, 114.91275787354],
@@ -49762,6 +49801,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Banjar",
+    warna: "red",
     koordinat: [
       [
         [-3.542249917984, 114.51277923584],
@@ -50810,6 +50850,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Barito Kuala",
+    warna: "red",
     koordinat: [
       [
         [-2.5215389728546, 114.86470794678],
@@ -51830,6 +51871,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Tanah Laut",
+    warna: "red",
     koordinat: [
       [
         [
@@ -55186,6 +55228,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Denpasar",
+    warna: "red",
     koordinat: [
       [
         [
@@ -55839,6 +55882,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Badung",
+    warna: "red",
     koordinat: [
       [
         [-8.5992088317871, 115.24224090576],
@@ -57247,6 +57291,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Gianyar",
+    warna: "red",
     koordinat: [
       [
         [-8.5757637023926, 115.37004852295],
@@ -57662,6 +57707,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Tabanan",
+    warna: "red",
     koordinat: [
       [
         [-8.6364374160767, 115.09854125977],
@@ -58312,6 +58358,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Makassar",
+    warna: "red",
     koordinat: [
       [
         [
@@ -59664,6 +59711,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Maros",
+    warna: "red",
     koordinat: [
       [
         [
@@ -60918,6 +60966,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Gowa",
+    warna: "red",
     koordinat: [
       [
         [-5.3578200340271, 119.93408966064],
@@ -61432,6 +61481,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Takalar",
+    warna: "red",
     koordinat: [
       [
         [
@@ -66504,6 +66554,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Manado",
+    warna: "red",
     koordinat: [
       [
         [
@@ -67622,6 +67673,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kota Bitung",
+    warna: "red",
     koordinat: [
       [
         [
@@ -69534,6 +69586,7 @@ export const vectorKabKota = [
   },
   {
     nama: "Kabupaten Minahasa Utara",
+    warna: "red",
     koordinat: [
       [
         [
