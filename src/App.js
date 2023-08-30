@@ -22,6 +22,13 @@ import Section8 from "./components/Section8";
 import Section9 from "./components/Section9";
 import Section10 from "./components/Section10";
 import Section11 from "./components/Section11";
+import Section12 from "./components/Section12";
+import Section13 from "./components/Section13";
+import Section14 from "./components/Section14";
+import Section15 from "./components/Section15";
+import Section16 from "./components/Section16";
+import Section17 from "./components/Section17";
+import Section18 from "./components/Section18";
 
 function App() {
   return (
@@ -53,6 +60,13 @@ function App() {
       {/* {Array.from({ length: 100 }).map(() => (
         <br />
       ))} */}
+      <Section12 />
+      <Section13 />
+      <Section14 />
+      <Section15 />
+      <Section16 />
+      <Section17 />
+      <Section18 />
     </div>
   );
 }
