@@ -1,0 +1,22 @@
+@keyframes gulir {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    height: 25px;
+    transform: translateY(21px);
+  }
+  66% {
+    height: 10px;
+    transform: translateY(36px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.icon-gulir {
+  animation-name: gulir;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

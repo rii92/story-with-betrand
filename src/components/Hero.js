@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import color from "../themes/Color";
+import "../css/Hero.css";
 
 const Hero = () => {
   return (
@@ -39,6 +40,39 @@ const Hero = () => {
         >
           Sesuaikan gaya membaca yang kamu suka, tombol kiri untuk membaca
           dengan musik dan tombol kanan untuk membaca tanpa musik.
+        </Typography>
+        <Box
+          sx={{
+            width: { xs: "fit-content" },
+            height: { xs: "60px" },
+            marginTop: { xs: "16px" },
+            marginX: { xs: "auto" },
+            padding: { xs: "4px" },
+            border: { xs: `3px solid ${color.white}` },
+            borderRadius: "100px",
+          }}
+        >
+          <Box
+            className="icon-gulir"
+            sx={{
+              width: { xs: "10px" },
+              height: { xs: "10px" },
+              marginX: { xs: "auto" },
+              backgroundColor: { xs: color.blue },
+              borderRadius: { xs: "50px" },
+            }}
+          ></Box>
+        </Box>
+        <Typography
+          sx={{
+            marginTop: { xs: "8px" },
+            marginX: { xs: "auto" },
+            fontSize: { xs: "12px" },
+            color: color.white,
+            textAlign: { xs: "center" },
+          }}
+        >
+          Gulir
         </Typography>
       </Box>
       <Box

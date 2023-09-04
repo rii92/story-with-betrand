@@ -23,7 +23,7 @@ const Section8 = () => {
           color: { xs: color.black },
         }}
       >
-        Dia Didin
+        Dia Satria
       </Typography>
       <Box sx={{ width: { xs: "300px", sm: "350px", md: "400px" } }}>
         <img
