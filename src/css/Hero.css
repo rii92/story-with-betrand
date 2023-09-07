@@ -20,3 +20,282 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+
+.vector-miniature {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animationYellowCarWhileLarge {
+  0% {
+    transform: translate(1240px, 170px);
+  }
+  100% {
+    transform: translate(500px, 592px);
+  }
+}
+
+@keyframes animationRedCarWhileLarge {
+  0% {
+    transform: translate(500px, -37px);
+  }
+  100% {
+    transform: translate(1250px, 390px);
+  }
+}
+
+@keyframes animationBusWhileLarge {
+  0% {
+    transform: translate(1250px, 368px);
+  }
+  100% {
+    transform: translate(500px, -63px);
+  }
+}
+
+@keyframes animationTruckCarWhileLarge {
+  0% {
+    transform: translate(500px, 605px);
+  }
+  100% {
+    transform: translate(1300px, 145px);
+  }
+}
+
+@keyframes animationPlaneWhileLarge {
+  0% {
+    transform: translate(1100px, -200px);
+  }
+  100% {
+    transform: translate(-200px, 590px);
+  }
+}
+
+@keyframes animationBlueCarFirstWhileLarge {
+  0% {
+    opacity: 0;
+    transform: translate(930px, 575px);
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(400px, 270px);
+  }
+}
+
+@keyframes animationBlueCarSecondWhileLarge {
+  0% {
+    opacity: 0;
+    transform: translate(400px, 254px);
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(710px, 75px);
+  }
+}
+
+@keyframes animationBlueCarThirdWhileLarge {
+  0% {
+    opacity: 0;
+    transform: translate(710px, 65px);
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(500px, -63px);
+  }
+}
+
+.yellow-car {
+  animation-name: animationYellowCarWhileLarge;
+  animation-duration: 9s;
+}
+
+.red-car {
+  animation-name: animationRedCarWhileLarge;
+  animation-duration: 8s;
+}
+
+.bus-car {
+  animation-name: animationBusWhileLarge;
+  animation-duration: 12s;
+}
+
+.truck-car {
+  animation-name: animationTruckCarWhileLarge;
+  animation-duration: 7s;
+}
+
+.blue-car-first {
+  animation-name: animationBlueCarFirstWhileLarge;
+  animation-duration: 9s;
+}
+
+.blue-car-second {
+  animation-name: animationBlueCarSecondWhileLarge;
+  animation-duration: 7s;
+}
+
+.blue-car-third {
+  animation-name: animationBlueCarThirdWhileLarge;
+  animation-duration: 5s;
+}
+
+.plane {
+  animation-name: animationPlaneWhileLarge;
+  animation-duration: 15s;
+}
+
+@media screen and (max-width: 1200px) {
+  @keyframes animationYellowCarWhileExtraSmall {
+    0% {
+      transform: translate(630px, 160px);
+    }
+    100% {
+      transform: translate(-120px, 590px);
+    }
+  }
+
+  @keyframes animationRedCarWhileExtraSmall {
+    0% {
+      transform: translate(-97px, -15px);
+    }
+    100% {
+      transform: translate(550px, 358px);
+    }
+  }
+
+  @keyframes animationBusWhileExtraSmall {
+    0% {
+      transform: translate(550px, 325px);
+    }
+    100% {
+      transform: translate(-75px, -30px);
+    }
+  }
+
+  @keyframes animationTruckCarWhileExtraSmall {
+    0% {
+      transform: translate(-100px, 592px);
+    }
+    100% {
+      transform: translate(630px, 174px);
+    }
+  }
+
+  @keyframes animationPlaneWhileExtraSmall {
+    0% {
+      transform: translate(500px, -100px);
+    }
+    100% {
+      transform: translate(-600px, 500px);
+    }
+  }
+
+  @keyframes animationBlueCarFirstWhileExtraSmall {
+    0% {
+      opacity: 0;
+      transform: translate(300px, 580px);
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-240px, 270px);
+    }
+  }
+
+  @keyframes animationBlueCarSecondWhileExtraSmall {
+    0% {
+      opacity: 0;
+      transform: translate(-240px, 263px);
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(80px, 80px);
+    }
+  }
+
+  @keyframes animationBlueCarThirdWhileExtraSmall {
+    0% {
+      opacity: 0;
+      transform: translate(80px, 70px);
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-75px, -30px);
+    }
+  }
+
+  .yellow-car {
+    animation-name: animationYellowCarWhileExtraSmall;
+    animation-duration: 9s;
+  }
+
+  .red-car {
+    animation-name: animationRedCarWhileExtraSmall;
+    animation-duration: 8s;
+  }
+
+  .bus-car {
+    animation-name: animationBusWhileExtraSmall;
+    animation-duration: 12s;
+  }
+
+  .truck-car {
+    animation-name: animationTruckCarWhileExtraSmall;
+    animation-duration: 7s;
+  }
+
+  .plane {
+    animation-name: animationPlaneWhileExtraSmall;
+    animation-duration: 15s;
+  }
+
+  .blue-car-first {
+    animation-name: animationBlueCarFirstWhileExtraSmall;
+    animation-duration: 9s;
+  }
+
+  .blue-car-second {
+    animation-name: animationBlueCarSecondWhileExtraSmall;
+    animation-duration: 7s;
+  }
+
+  .blue-car-third {
+    animation-name: animationBlueCarThirdWhileExtraSmall;
+    animation-duration: 5s;
+  }
+}
