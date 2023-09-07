@@ -56,12 +56,16 @@ const Hero = () => {
         overflow: { xs: "hidden" },
       }}
     >
-      {/* <Box
+      <Box
         sx={{
-          width: { xs: "100%", xl: "1200px" },
+          width: { xs: "fit-content", xl: "1200px" },
           marginTop: { xs: "40px" },
+          padding: { xs: "16px", lg: "0px" },
           position: { xs: "relative" },
-          zIndex: { xs: 1 },
+          backgroundColor: { xs: "rgb(235,235,235,0.4)", lg: "transparent" },
+          borderRadius: { xs: "16px", lg: "0px" },
+          backdropFilter: { xs: "blur(5px)" },
+          zIndex: { xs: 102 },
         }}
       >
         <Typography
@@ -98,7 +102,7 @@ const Hero = () => {
           bottom: { xs: "16px" },
           left: { xs: "50%" },
           transform: { xs: "translateX(-50%)" },
-          zIndex: { xs: 2 },
+          zIndex: { xs: 103 },
         }}
       >
         <Box
@@ -135,7 +139,7 @@ const Hero = () => {
         >
           Gulir
         </Typography>
-      </Box> */}
+      </Box>
 
       <Box
         sx={{
@@ -151,6 +155,7 @@ const Hero = () => {
           width: { xs: "120px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(70px,38px)" },
+          zIndex: { xs: 84 },
         }}
       >
         <img
@@ -165,6 +170,7 @@ const Hero = () => {
           width: { xs: "120px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(-20px,90px)" },
+          zIndex: { xs: 85 },
         }}
       >
         <img
@@ -179,6 +185,7 @@ const Hero = () => {
           width: { xs: "170px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(-148px,66px)" },
+          zIndex: { xs: 86 },
         }}
       >
         <img
@@ -193,6 +200,7 @@ const Hero = () => {
           width: { xs: "196px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(34px,133px)" },
+          zIndex: { xs: 87 },
         }}
       >
         <img
@@ -204,9 +212,25 @@ const Hero = () => {
 
       <Box
         sx={{
+          width: { xs: "90px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(-25px,305px)" },
+          zIndex: { xs: 87 },
+        }}
+      >
+        <img
+          src="assets/image/building/field.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
           width: { xs: "105px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(185px,248px)" },
+          zIndex: { xs: 91 },
         }}
       >
         <img
@@ -221,6 +245,7 @@ const Hero = () => {
           width: { xs: "105px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(125px,283px)" },
+          zIndex: { xs: 92 },
         }}
       >
         <img
@@ -235,6 +260,7 @@ const Hero = () => {
           width: { xs: "105px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(65px,318px)" },
+          zIndex: { xs: 93 },
         }}
       >
         <img
@@ -249,6 +275,7 @@ const Hero = () => {
           width: { xs: "115px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(160px,65px)" },
+          zIndex: { xs: 88 },
         }}
       >
         <img
@@ -263,6 +290,7 @@ const Hero = () => {
           width: { xs: "115px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(235px, 107px)" },
+          zIndex: { xs: 89 },
         }}
       >
         <img
@@ -277,6 +305,7 @@ const Hero = () => {
           width: { xs: "115px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(310px, 149px)" },
+          zIndex: { xs: 90 },
         }}
       >
         <img
@@ -309,6 +338,111 @@ const Hero = () => {
       >
         <img
           src="assets/image/building/building-6.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "150px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(435px, 70px)" },
+          zIndex: { xs: 94 },
+        }}
+      >
+        <img
+          src="assets/image/building/building-1.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "170px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(435px, 210px)" },
+          zIndex: { xs: 95 },
+        }}
+      >
+        <img
+          src="assets/image/building/building-7.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "170px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(520px, 260px)" },
+          zIndex: { xs: 96 },
+        }}
+      >
+        <img
+          src="assets/image/building/building-7.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "215px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(232px, 371px)" },
+          zIndex: { xs: 97 },
+        }}
+      >
+        <img
+          src="assets/image/building/building-8.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "252px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(393px, 420px)" },
+          zIndex: { xs: 98 },
+        }}
+      >
+        <img
+          src="assets/image/building/building-9.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "200px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(-30px, 325px)" },
+          zIndex: { xs: 99 },
+        }}
+      >
+        <img
+          src="assets/image/building/building-10.png"
+          style={{ width: "100%" }}
+          alt="Car"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "220px" },
+          position: { xs: "absolute" },
+          transform: { xs: "translate(63px, 465px)" },
+          zIndex: { xs: 100 },
+        }}
+      >
+        <img
+          src="assets/image/building/building-11.png"
           style={{ width: "100%" }}
           alt="Car"
         />
@@ -371,6 +505,7 @@ const Hero = () => {
             xs: "translate(300px, 580px)",
             lg: "translate(930px, 575px)",
           },
+          zIndex: { xs: 98 },
         }}
       >
         <img
@@ -426,7 +561,7 @@ const Hero = () => {
           width: { xs: "180px", lg: "200px" },
           position: { xs: "absolute" },
           transform: { lg: "translate(1300px,135px)" },
-          zIndex: { xs: 2 },
+          zIndex: { xs: 101 },
         }}
       >
         <img
