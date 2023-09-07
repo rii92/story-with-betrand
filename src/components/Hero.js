@@ -67,7 +67,7 @@ const Hero = () => {
           backgroundColor: { xs: "rgb(235,235,235,0.4)", lg: "transparent" },
           borderRadius: { xs: "16px", lg: "32px" },
           backdropFilter: { xs: "blur(5px)" },
-          zIndex: { xs: 102 },
+          zIndex: { xs: 110 },
         }}
       >
         <Typography
@@ -628,45 +628,75 @@ const Hero = () => {
           width: { xs: "180px", lg: "200px" },
           position: { xs: "absolute" },
           transform: { lg: "translate(1300px,135px)" },
+          zIndex: { xs: 104 },
+        }}
+      >
+        <img
+          src="assets/image/plane.png"
+          style={{ width: "100%" }}
+          alt="Plane"
+        />
+      </Box>
+
+      <Box
+        className="vector-miniature cloud-1"
+        sx={{
+          width: { xs: "100px" },
+          position: { xs: "absolute" },
+          transform: { lg: "translate(600px,100px)" },
           zIndex: { xs: 101 },
         }}
       >
         <img
-          src="assets/image/plane.png"
+          src="assets/image/cloud/cloud-isometric-1.png"
           style={{ width: "100%" }}
           alt="Plane"
         />
       </Box>
 
       <Box
+        className="vector-miniature cloud-2"
         sx={{
-          width: { xs: "180px", lg: "200px" },
+          width: { xs: "70px" },
           position: { xs: "absolute" },
-          transform: {
-            xs: "translate(500px, -100px)",
-            lg: "translate(1100px, -200px)",
-          },
+          transform: { lg: "translate(600px,100px)" },
+          zIndex: { xs: 101 },
         }}
       >
         <img
-          src="assets/image/plane.png"
+          src="assets/image/cloud/cloud-isometric-1.png"
           style={{ width: "100%" }}
           alt="Plane"
         />
       </Box>
 
       <Box
+        className="vector-miniature cloud-3"
         sx={{
-          width: { xs: "180px", lg: "200px" },
+          width: { xs: "100px" },
           position: { xs: "absolute" },
-          transform: {
-            xs: "translate(-600px,500px)",
-            lg: "translate(-200px, 590px)",
-          },
+          transform: { lg: "translate(600px,100px)" },
+          zIndex: { xs: 101 },
         }}
       >
         <img
-          src="assets/image/plane.png"
+          src="assets/image/cloud/cloud-isometric-2.png"
+          style={{ width: "100%" }}
+          alt="Plane"
+        />
+      </Box>
+
+      <Box
+        className="vector-miniature cloud-4"
+        sx={{
+          width: { xs: "60px" },
+          position: { xs: "absolute" },
+          transform: { lg: "translate(600px,100px)" },
+          zIndex: { xs: 101 },
+        }}
+      >
+        <img
+          src="assets/image/cloud/cloud-isometric-2.png"
           style={{ width: "100%" }}
           alt="Plane"
         />

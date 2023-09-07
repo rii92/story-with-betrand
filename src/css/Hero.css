@@ -122,6 +122,54 @@
   }
 }
 
+@keyframes animationCloud1 {
+  0% {
+    transform: translate(600px, 100px);
+  }
+  50% {
+    transform: translate(400px, 10px);
+  }
+  100% {
+    transform: translate(600px, 100px);
+  }
+}
+
+@keyframes animationCloud2 {
+  0% {
+    transform: translate(700px, 200px);
+  }
+  50% {
+    transform: translate(500px, 110px);
+  }
+  100% {
+    transform: translate(700px, 200px);
+  }
+}
+
+@keyframes animationCloud3 {
+  0% {
+    transform: translate(600px, 500px);
+  }
+  50% {
+    transform: translate(1100px, 200px);
+  }
+  100% {
+    transform: translate(600px, 500px);
+  }
+}
+
+@keyframes animationCloud4 {
+  0% {
+    transform: translate(650px, 550px);
+  }
+  50% {
+    transform: translate(1150px, 250px);
+  }
+  100% {
+    transform: translate(650px, 550px);
+  }
+}
+
 .yellow-car {
   animation-name: animationYellowCarWhileLarge;
   animation-duration: 9s;
@@ -160,6 +208,26 @@
 .plane {
   animation-name: animationPlaneWhileLarge;
   animation-duration: 15s;
+}
+
+.cloud-1 {
+  animation-name: animationCloud1;
+  animation-duration: 20s;
+}
+
+.cloud-2 {
+  animation-name: animationCloud2;
+  animation-duration: 17s;
+}
+
+.cloud-3 {
+  animation-name: animationCloud3;
+  animation-duration: 30s;
+}
+
+.cloud-4 {
+  animation-name: animationCloud4;
+  animation-duration: 25s;
 }
 
 @media screen and (max-width: 1200px) {
