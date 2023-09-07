@@ -59,11 +59,13 @@ const Hero = () => {
       <Box
         sx={{
           width: { xs: "fit-content", xl: "1200px" },
-          marginTop: { xs: "40px" },
           padding: { xs: "16px", lg: "0px" },
-          position: { xs: "relative" },
+          position: { xs: "absolute" },
+          top: { xs: "50%", lg: "auto" },
+          bottom: { xs: "none", lg: "40px" },
+          transform: { xs: "translateY(-50%)", lg: "none" },
           backgroundColor: { xs: "rgb(235,235,235,0.4)", lg: "transparent" },
-          borderRadius: { xs: "16px", lg: "0px" },
+          borderRadius: { xs: "16px", lg: "32px" },
           backdropFilter: { xs: "blur(5px)" },
           zIndex: { xs: 102 },
         }}
@@ -157,7 +159,10 @@ const Hero = () => {
         sx={{
           width: { xs: "120px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(70px,38px)" },
+          transform: {
+            xs: "translate(70px,38px)",
+            lg: "translate(660px,38px)",
+          },
           zIndex: { xs: 84 },
         }}
       >
@@ -172,7 +177,10 @@ const Hero = () => {
         sx={{
           width: { xs: "120px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(-20px,90px)" },
+          transform: {
+            xs: "translate(-20px,90px)",
+            lg: "translate(570px,90px)",
+          },
           zIndex: { xs: 85 },
         }}
       >
@@ -187,7 +195,10 @@ const Hero = () => {
         sx={{
           width: { xs: "170px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(-148px,66px)" },
+          transform: {
+            xs: "translate(-148px,66px)",
+            lg: "translate(418px,66px)",
+          },
           zIndex: { xs: 86 },
         }}
       >
@@ -202,7 +213,10 @@ const Hero = () => {
         sx={{
           width: { xs: "196px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(34px,133px)" },
+          transform: {
+            xs: "translate(34px,133px)",
+            lg: "translate(583px,133px)",
+          },
           zIndex: { xs: 87 },
         }}
       >
@@ -217,7 +231,10 @@ const Hero = () => {
         sx={{
           width: { xs: "90px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(-25px,305px)" },
+          transform: {
+            xs: "translate(-25px,305px)",
+            lg: "translate(580px,305px)",
+          },
           zIndex: { xs: 87 },
         }}
       >
@@ -232,7 +249,10 @@ const Hero = () => {
         sx={{
           width: { xs: "105px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(185px,248px)" },
+          transform: {
+            xs: "translate(185px,248px)",
+            lg: "translate(780px,248px)",
+          },
           zIndex: { xs: 91 },
         }}
       >
@@ -247,7 +267,10 @@ const Hero = () => {
         sx={{
           width: { xs: "105px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(125px,283px)" },
+          transform: {
+            xs: "translate(125px,283px)",
+            lg: "translate(720px,283px)",
+          },
           zIndex: { xs: 92 },
         }}
       >
@@ -262,7 +285,10 @@ const Hero = () => {
         sx={{
           width: { xs: "105px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(65px,318px)" },
+          transform: {
+            xs: "translate(65px,318px)",
+            lg: "translate(660px,318px)",
+          },
           zIndex: { xs: 93 },
         }}
       >
@@ -277,7 +303,10 @@ const Hero = () => {
         sx={{
           width: { xs: "115px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(160px,65px)" },
+          transform: {
+            xs: "translate(160px,65px)",
+            lg: "translate(750px,65px)",
+          },
           zIndex: { xs: 88 },
         }}
       >
@@ -292,7 +321,10 @@ const Hero = () => {
         sx={{
           width: { xs: "115px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(235px, 107px)" },
+          transform: {
+            xs: "translate(235px, 107px)",
+            lg: "translate(825px, 107px)",
+          },
           zIndex: { xs: 89 },
         }}
       >
@@ -307,7 +339,10 @@ const Hero = () => {
         sx={{
           width: { xs: "115px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(310px, 149px)" },
+          transform: {
+            xs: "translate(310px, 149px)",
+            lg: "translate(900px, 149px)",
+          },
           zIndex: { xs: 90 },
         }}
       >
@@ -322,7 +357,10 @@ const Hero = () => {
         sx={{
           width: { xs: "80px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(323px, 7px)" },
+          transform: {
+            xs: "translate(323px, 7px)",
+            lg: "translate(934px, 7px)",
+          },
           zIndex: { xs: 87 },
         }}
       >
@@ -337,7 +375,10 @@ const Hero = () => {
         sx={{
           width: { xs: "80px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(373px, -22px)" },
+          transform: {
+            xs: "translate(373px, -22px)",
+            lg: "translate(984px, -22px)",
+          },
           zIndex: { xs: 86 },
         }}
       >
@@ -352,7 +393,10 @@ const Hero = () => {
         sx={{
           width: { xs: "150px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(435px, 70px)" },
+          transform: {
+            xs: "translate(435px, 70px)",
+            lg: "translate(1020px, 70px)",
+          },
           zIndex: { xs: 94 },
         }}
       >
@@ -367,7 +411,10 @@ const Hero = () => {
         sx={{
           width: { xs: "170px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(435px, 210px)" },
+          transform: {
+            xs: "translate(435px, 210px)",
+            lg: "translate(1000px,210px)",
+          },
           zIndex: { xs: 95 },
         }}
       >
@@ -382,7 +429,10 @@ const Hero = () => {
         sx={{
           width: { xs: "170px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(520px, 260px)" },
+          transform: {
+            xs: "translate(520px, 260px)",
+            lg: "translate(1085px,260px)",
+          },
           zIndex: { xs: 96 },
         }}
       >
@@ -397,7 +447,10 @@ const Hero = () => {
         sx={{
           width: { xs: "215px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(232px, 371px)" },
+          transform: {
+            xs: "translate(232px, 371px)",
+            lg: "translate(775px,371px)",
+          },
           zIndex: { xs: 97 },
         }}
       >
@@ -412,7 +465,10 @@ const Hero = () => {
         sx={{
           width: { xs: "252px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(393px, 420px)" },
+          transform: {
+            xs: "translate(393px, 420px)",
+            lg: "translate(917px,420px)",
+          },
           zIndex: { xs: 98 },
         }}
       >
@@ -427,7 +483,10 @@ const Hero = () => {
         sx={{
           width: { xs: "200px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(-30px, 325px)" },
+          transform: {
+            xs: "translate(-30px, 325px)",
+            lg: "translate(517px, 325px)",
+          },
           zIndex: { xs: 99 },
         }}
       >
@@ -442,7 +501,10 @@ const Hero = () => {
         sx={{
           width: { xs: "220px" },
           position: { xs: "absolute" },
-          transform: { xs: "translate(63px, 465px)" },
+          transform: {
+            xs: "translate(63px, 465px)",
+            lg: "translate(600px, 465px)",
+          },
           zIndex: { xs: 100 },
         }}
       >
