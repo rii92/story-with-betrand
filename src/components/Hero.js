@@ -112,7 +112,7 @@ const Hero = () => {
             marginTop: { xs: "16px" },
             marginX: { xs: "auto" },
             padding: { xs: "4px" },
-            border: { xs: `3px solid ${color.black}` },
+            border: { xs: `3px solid ${color.white}` },
             borderRadius: "100px",
           }}
         >
@@ -122,7 +122,7 @@ const Hero = () => {
               width: { xs: "10px" },
               height: { xs: "10px" },
               marginX: { xs: "auto" },
-              backgroundColor: { xs: color.blue },
+              backgroundColor: { xs: color.yellow },
               borderRadius: { xs: "50px" },
             }}
           ></Box>
@@ -134,6 +134,9 @@ const Hero = () => {
             fontSize: { xs: "12px" },
             fontWeight: { xs: "bolder" },
             color: color.black,
+            textShadow: {
+              xs: `1px 0px 0px ${color.white},-1px 0px 0px ${color.white}, 0px 1px 0px ${color.white},0px -1px 0px ${color.white}`,
+            },
             textAlign: { xs: "center" },
           }}
         >
