@@ -323,6 +323,7 @@ const Hero = () => {
           width: { xs: "80px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(323px, 7px)" },
+          zIndex: { xs: 87 },
         }}
       >
         <img
@@ -337,6 +338,7 @@ const Hero = () => {
           width: { xs: "80px" },
           position: { xs: "absolute" },
           transform: { xs: "translate(373px, -22px)" },
+          zIndex: { xs: 86 },
         }}
       >
         <img
