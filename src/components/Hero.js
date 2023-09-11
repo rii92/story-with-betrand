@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Box, Typography } from "@mui/material";
 import color from "../themes/Color";
 import "../css/Hero.css";
-import { blue } from "@mui/material/colors";
 
 const Hero = () => {
   const blueCarFirst = useRef();
@@ -47,7 +46,7 @@ const Hero = () => {
       <Box
         sx={{
           width: { xs: "100%" },
-          height: { xs: "100vh" },
+          height: { xs: "585px" },
           paddingX: { xs: "16px", md: "40px", xl: "0px" },
           position: { xs: "fixed" },
           display: { xs: "flex" },
@@ -68,7 +67,7 @@ const Hero = () => {
             top: { xs: "50%", lg: "auto" },
             bottom: { xs: "none", lg: "40px" },
             transform: { xs: "translateY(-50%)", lg: "none" },
-            backgroundColor: { xs: "rgb(235,235,235,0.4)", lg: "transparent" },
+            backgroundColor: { xs: "rgb(0,0,0,0.2)", lg: "transparent" },
             borderRadius: { xs: "16px", lg: "32px" },
             backdropFilter: { xs: "blur(5px)" },
             zIndex: { xs: 110 },
@@ -79,7 +78,7 @@ const Hero = () => {
             sx={{
               fontSize: { xs: "24px", sm: "32px", md: "40px" },
               textAlign: { xs: "center", lg: "left" },
-              color: color.black,
+              color: color.white,
             }}
           >
             Transformasi{" "}
@@ -94,7 +93,7 @@ const Hero = () => {
               marginTop: { xs: "16px" },
               marginX: { xs: "auto", lg: "0px" },
               fontSize: { xs: "12px", sm: "16px" },
-              color: color.black,
+              color: color.white,
               textAlign: { xs: "center", lg: "left" },
             }}
           >
@@ -202,6 +201,57 @@ const Hero = () => {
 
         <Box
           sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(-100px,190px)",
+              lg: "translate(520px,180px)",
+            },
+            zIndex: { xs: 86 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-1.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(-45px,210px)",
+              lg: "translate(585px,200px)",
+            },
+            zIndex: { xs: 86 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-2.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(-65px,245px)",
+              lg: "translate(565px,240px)",
+            },
+            zIndex: { xs: 86 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-3.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
             width: { xs: "170px" },
             position: { xs: "absolute" },
             transform: {
@@ -215,6 +265,57 @@ const Hero = () => {
             src="assets/image/building/building-2.png"
             style={{ width: "100%" }}
             alt="Building"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(-70px,280px)",
+              lg: "translate(565px,280px)",
+            },
+            zIndex: { xs: 88 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-4.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(-110px,300px)",
+              lg: "translate(520px,300px)",
+            },
+            zIndex: { xs: 88 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-5.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(-65px,350px)",
+              lg: "translate(575px,345px)",
+            },
+            zIndex: { xs: 88 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-6.png"
+            style={{ width: "100%" }}
+            alt="Tree"
           />
         </Box>
 
@@ -454,6 +555,109 @@ const Hero = () => {
 
         <Box
           sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(225px, 395px)",
+              lg: "translate(850px,400px)",
+            },
+            zIndex: { xs: 90 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-1.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(295px, 360px)",
+              lg: "translate(920px,360px)",
+            },
+            zIndex: { xs: 90 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-4.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(340px, 400px)",
+              lg: "translate(965px,395px)",
+            },
+            zIndex: { xs: 90 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-2.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(370px, 410px)",
+              lg: "translate(990px,410px)",
+            },
+            zIndex: { xs: 90 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-5.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(290px, 400px)",
+              lg: "translate(910px,400px)",
+            },
+            zIndex: { xs: 90 },
+          }}
+        >
+          <img
+            src="assets/image/tree/pool-2.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            width: { xs: "70px" },
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(315px, 430px)",
+              lg: "translate(930px,430px)",
+            },
+            zIndex: { xs: 90 },
+          }}
+        >
+          <img
+            src="assets/image/tree/pool-1.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
             width: { xs: "215px" },
             position: { xs: "absolute" },
             transform: {
@@ -521,6 +725,40 @@ const Hero = () => {
             src="assets/image/building/building-11.png"
             style={{ width: "100%" }}
             alt="Building"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(170px, 530px)",
+              lg: "translate(800px, 530px)",
+            },
+            zIndex: { xs: 101 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-3.png"
+            style={{ width: "100%" }}
+            alt="Tree"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            position: { xs: "absolute" },
+            transform: {
+              xs: "translate(145px, 530px)",
+              lg: "translate(760px, 540px)",
+            },
+            zIndex: { xs: 101 },
+          }}
+        >
+          <img
+            src="assets/image/tree/tree-5.png"
+            style={{ width: "100%" }}
+            alt="Tree"
           />
         </Box>
 
@@ -729,7 +967,7 @@ const Hero = () => {
         sx={{
           position: { xs: "relative" },
           width: { xs: "100%" },
-          height: { xs: "100vh" },
+          height: { xs: "585px" },
           zIndex: { xs: -10 },
         }}
       ></Box>
