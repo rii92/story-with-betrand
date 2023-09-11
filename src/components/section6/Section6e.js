@@ -40,8 +40,10 @@ const Section6e = () => {
   return (
     <Box
       sx={{
+        width: { xs: "100%", xl: "1200px" },
         height: { xs: "100vh" },
-        padding: { xs: "16px", md: "24px" },
+        marginX: { xs: "auto" },
+        padding: { xs: "16px", md: "40px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
