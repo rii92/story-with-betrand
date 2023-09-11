@@ -1,5 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useContext, useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import PetaContext from "../../context/PetaContext";
 import color from "../../themes/Color";
 
@@ -30,6 +32,7 @@ const Section6b = () => {
   };
 
   useEffect(() => {
+    AOS.init();
     const posisiMetropolitanKedua = getCoords(metropolitanKedua);
     setPosisiAtasElementMetropolitanKedua(posisiMetropolitanKedua.top);
   }, [posisiAtasElementMetropolitanKedua]);
@@ -38,26 +41,81 @@ const Section6b = () => {
     <Box
       sx={{
         height: { xs: "100vh" },
-        paddingX: { xs: "16px", md: "40px", xl: "0px" },
+        padding: { xs: "16px", md: "24px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
       ref={metropolitanKedua}
     >
       <Typography
-        variant="body1"
+        variant="h4"
         sx={{
-          width: { xs: "100%", md: "450px" },
-          marginLeft: { xs: "auto" },
-          textAlign: { xs: "left", md: "right" },
-          fontSize: { xs: "12px", sm: "16px" },
-          color: color.white,
+          width: { xs: "fit-content" },
+          paddingX: { xs: "16px" },
+          paddingY: { xs: "8px" },
+          backgroundColor: { xs: color.white },
+          fontWeight: { xs: "bold" },
         }}
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
       >
-        <span style={{ backgroundColor: color.black, padding: "2px 3px" }}>
-          Patungraya Agung (Kota Palembang, Kabupaten Banyuasin, Kabupaten Ogan
-          Ilir, Kabupaten Ogan Komering Ilir).
-        </span>
+        Patungraya Agung
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kota Palembang
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kabupaten Banyuasin
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kabupaten Ogan Ilir
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kabupaten Ogan Komering Ilir
       </Typography>
     </Box>
   );

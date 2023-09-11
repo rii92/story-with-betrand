@@ -1,5 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useContext, useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import PetaContext from "../../context/PetaContext";
 import color from "../../themes/Color";
 
@@ -30,6 +32,7 @@ const Section6g = () => {
   };
 
   useEffect(() => {
+    AOS.init();
     const posisiMetropolitanKetujuh = getCoords(metropolitanKetujuh);
     setPosisiAtasElementMetropolitanKetujuh(posisiMetropolitanKetujuh.top);
   }, [posisiAtasElementMetropolitanKetujuh]);
@@ -38,26 +41,95 @@ const Section6g = () => {
     <Box
       sx={{
         height: { xs: "100vh" },
-        paddingX: { xs: "16px", md: "40px", xl: "0px" },
+        paddingX: { xs: "16px", md: "24px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
       ref={metropolitanKetujuh}
     >
       <Typography
-        variant="body1"
+        variant="h4"
         sx={{
-          width: { xs: "100%", md: "450px" },
-          marginLeft: { xs: "auto" },
-          textAlign: { xs: "left", md: "right" },
-          fontSize: { xs: "12px", sm: "16px" },
-          color: color.white,
+          width: { xs: "fit-content" },
+          paddingX: { xs: "16px" },
+          paddingY: { xs: "8px" },
+          backgroundColor: { xs: color.white },
+          fontWeight: { xs: "bold" },
         }}
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
       >
-        <span style={{ backgroundColor: color.black, padding: "2px 3px" }}>
-          Banjar Bakula (Kota Banjarmasin, Kota Banjarbaru, Kabupaten Banjar,
-          Kabupaten Barito Kuala, Kabupaten Tanah Laut).
-        </span>
+        Banjar Bakula
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kota Banjarmasin
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kota Banjarbaru
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kabupaten Banjar
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kabupaten Barito Kuala
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{
+          width: { xs: "fit-content" },
+          marginTop: { xs: "8px" },
+          paddingX: { xs: "8px" },
+          paddingY: { xs: "4px" },
+          backgroundColor: { xs: color.white },
+        }}
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        Kabupaten Tanah Laut
       </Typography>
     </Box>
   );
