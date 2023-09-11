@@ -11,6 +11,18 @@ const Section6c = () => {
     setPosisiAtasElementMetropolitanKetiga,
   } = useContext(PetaContext);
   const metropolitanKetiga = useRef();
+  const regions = [
+    "DKI Jakarta",
+    "Kabupaten Bogor",
+    "Kota Bogor",
+    "Kota Depok",
+    "Kabupaten Tangerang",
+    "Kota Tangerang",
+    "Kota Tangerang Selatan",
+    "Kabupaten Bekasi",
+    "Kota Bekasi",
+    "Kabupaten Ciajur",
+  ];
 
   const getCoords = (elem) => {
     // crossbrowser version
@@ -43,7 +55,8 @@ const Section6c = () => {
         width: { xs: "100%", xl: "1200px" },
         height: { xs: "100vh" },
         marginX: { xs: "auto" },
-        padding: { xs: "16px", md: "40px", xl: "0px" },
+        marginBottom: { xs: "100px" },
+        paddingX: { xs: "16px", md: "40px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
@@ -63,146 +76,23 @@ const Section6c = () => {
       >
         Jabodetabekpunjur
       </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        DKI Jakarta
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Bogor
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Bogor
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Depok
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Tangerang
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Tangerang
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Tangerang Selatan
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Bekasi
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Bekasi
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Cianjur
-      </Typography>
+      {regions.map((region, index) => (
+        <Typography
+          variant="h6"
+          sx={{
+            width: { xs: "fit-content" },
+            marginTop: { xs: "8px" },
+            paddingX: { xs: "8px" },
+            paddingY: { xs: "4px" },
+            backgroundColor: { xs: color.white },
+          }}
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay={index * 300}
+        >
+          {region}
+        </Typography>
+      ))}
     </Box>
   );
 };

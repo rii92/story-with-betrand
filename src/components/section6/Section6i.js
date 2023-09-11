@@ -11,6 +11,12 @@ const Section6i = () => {
     setPosisiAtasElementMetropolitanKesembilan,
   } = useContext(PetaContext);
   const metropolitanKesembilan = useRef();
+  const regions = [
+    "Kota Makassar",
+    "Kabupaten Maros",
+    "Kabupaten Gowa",
+    "Kabupaten Takalar",
+  ];
 
   const getCoords = (elem) => {
     // crossbrowser version
@@ -45,7 +51,8 @@ const Section6i = () => {
         width: { xs: "100%", xl: "1200px" },
         height: { xs: "100vh" },
         marginX: { xs: "auto" },
-        padding: { xs: "16px", md: "40px", xl: "0px" },
+        marginBottom: { xs: "100px" },
+        paddingX: { xs: "16px", md: "40px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
@@ -65,62 +72,23 @@ const Section6i = () => {
       >
         Mamminasata
       </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Makassar
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Maros
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Gowa
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Takalar
-      </Typography>
+      {regions.map((region, index) => (
+        <Typography
+          variant="h6"
+          sx={{
+            width: { xs: "fit-content" },
+            marginTop: { xs: "8px" },
+            paddingX: { xs: "8px" },
+            paddingY: { xs: "4px" },
+            backgroundColor: { xs: color.white },
+          }}
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay={index * 300}
+        >
+          {region}
+        </Typography>
+      ))}
     </Box>
   );
 };

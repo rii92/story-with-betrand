@@ -11,6 +11,12 @@ const Section6h = () => {
     setPosisiAtasElementMetropolitanKedelapan,
   } = useContext(PetaContext);
   const metropolitanKedelapan = useRef();
+  const regions = [
+    "Kota Denpasar",
+    "Kabupaten Badung",
+    "Kabupaten Kabupaten Gianyar",
+    "Kabupaten Tabanan",
+  ];
 
   const getCoords = (elem) => {
     // crossbrowser version
@@ -43,7 +49,8 @@ const Section6h = () => {
         width: { xs: "100%", xl: "1200px" },
         height: { xs: "100vh" },
         marginX: { xs: "auto" },
-        padding: { xs: "16px", md: "40px", xl: "0px" },
+        marginBottom: { xs: "100px" },
+        paddingX: { xs: "16px", md: "40px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
@@ -63,62 +70,23 @@ const Section6h = () => {
       >
         Sarbagita
       </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Denpasar
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Badung
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Gianyar
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Tabanan
-      </Typography>
+      {regions.map((region, index) => (
+        <Typography
+          variant="h6"
+          sx={{
+            width: { xs: "fit-content" },
+            marginTop: { xs: "8px" },
+            paddingX: { xs: "8px" },
+            paddingY: { xs: "4px" },
+            backgroundColor: { xs: color.white },
+          }}
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay={index * 300}
+        >
+          {region}
+        </Typography>
+      ))}
     </Box>
   );
 };

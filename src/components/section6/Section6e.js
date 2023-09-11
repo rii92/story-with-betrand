@@ -11,6 +11,14 @@ const Section6e = () => {
     setPosisiAtasElementMetropolitanKelima,
   } = useContext(PetaContext);
   const metropolitanKelima = useRef();
+  const regions = [
+    "Kabupaten Kendal",
+    "Kabupaten Demak",
+    "Kota Semarang",
+    "Kabupaten Semarang",
+    "Kota Salatiga",
+    "Kabupaten Grobogan",
+  ];
 
   const getCoords = (elem) => {
     // crossbrowser version
@@ -43,7 +51,8 @@ const Section6e = () => {
         width: { xs: "100%", xl: "1200px" },
         height: { xs: "100vh" },
         marginX: { xs: "auto" },
-        padding: { xs: "16px", md: "40px", xl: "0px" },
+        marginBottom: { xs: "100px" },
+        paddingX: { xs: "16px", md: "40px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
@@ -63,90 +72,23 @@ const Section6e = () => {
       >
         Kedungsepur
       </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Kendal
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Demak
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Semarang
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Semarang
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Salatiga
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Grobogan
-      </Typography>
+      {regions.map((region, index) => (
+        <Typography
+          variant="h6"
+          sx={{
+            width: { xs: "fit-content" },
+            marginTop: { xs: "8px" },
+            paddingX: { xs: "8px" },
+            paddingY: { xs: "4px" },
+            backgroundColor: { xs: color.white },
+          }}
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay={index * 300}
+        >
+          {region}
+        </Typography>
+      ))}
     </Box>
   );
 };

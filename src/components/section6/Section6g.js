@@ -11,6 +11,13 @@ const Section6g = () => {
     setPosisiAtasElementMetropolitanKetujuh,
   } = useContext(PetaContext);
   const metropolitanKetujuh = useRef();
+  const regions = [
+    "Kota Banjarmasin",
+    "Kota Banjarbaru",
+    "Kabupaten Banjar",
+    "Kabupaten Barito Kuala",
+    "Kabupaten Tanah Laut",
+  ];
 
   const getCoords = (elem) => {
     // crossbrowser version
@@ -43,7 +50,8 @@ const Section6g = () => {
         width: { xs: "100%", xl: "1200px" },
         height: { xs: "100vh" },
         marginX: { xs: "auto" },
-        padding: { xs: "16px", md: "40px", xl: "0px" },
+        marginBottom: { xs: "100px" },
+        paddingX: { xs: "16px", md: "40px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 10 },
       }}
@@ -63,76 +71,23 @@ const Section6g = () => {
       >
         Banjar Bakula
       </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Banjarmasin
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kota Banjarbaru
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Banjar
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Barito Kuala
-      </Typography>
-      <Typography
-        variant="h6"
-        sx={{
-          width: { xs: "fit-content" },
-          marginTop: { xs: "8px" },
-          paddingX: { xs: "8px" },
-          paddingY: { xs: "4px" },
-          backgroundColor: { xs: color.white },
-        }}
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        Kabupaten Tanah Laut
-      </Typography>
+      {regions.map((region, index) => (
+        <Typography
+          variant="h6"
+          sx={{
+            width: { xs: "fit-content" },
+            marginTop: { xs: "8px" },
+            paddingX: { xs: "8px" },
+            paddingY: { xs: "4px" },
+            backgroundColor: { xs: color.white },
+          }}
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay={index * 300}
+        >
+          {region}
+        </Typography>
+      ))}
     </Box>
   );
 };
