@@ -13,7 +13,7 @@ const Section9a = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "600px", sm: "400px" },
+        height: { xs: "600px", sm: "400px", lg: "300px" },
         paddingX: { xs: "16px", sm: "0px" },
         position: { xs: "relative" },
         display: { xs: "flex" },
@@ -24,18 +24,18 @@ const Section9a = () => {
     >
       <Parallax
         translateX={[]}
-        speed={sm ? 70 : 40}
+        speed={sm ? 70 : 50}
         style={
           lg
             ? {
                 position: "absolute",
-                right: "15%",
+                left: "15%",
                 zIndex: 16,
               }
             : sm
             ? {
                 position: "absolute",
-                right: "5%",
+                left: "5%",
                 zIndex: 16,
               }
             : {
@@ -44,9 +44,14 @@ const Section9a = () => {
               }
         }
       >
-        <Box sx={{ width: { xs: "320px", sm: "350px", lg: "400px" } }}>
+        <Box
+          sx={{
+            width: { xs: "320px", sm: "350px", lg: "400px" },
+            boxShadow: { xs: "", sm: "0px 2px 6px rgb(0,0,0, 0.3)" },
+          }}
+        >
           <img
-            src="assets/image/polusi-jakarta.jpg"
+            src="assets/image/gas-emisi.jpg"
             alt="Polusi Jakarta"
             style={{ width: "100%" }}
           />
@@ -54,12 +59,12 @@ const Section9a = () => {
       </Parallax>
       <Parallax
         translateX={[]}
-        speed={sm ? 50 : 80}
+        speed={sm ? 50 : 70}
         style={
           lg
-            ? { position: "absolute", left: "10%", zIndex: 17 }
+            ? { position: "absolute", right: "10%", zIndex: 17 }
             : sm
-            ? { position: "absolute", left: "5%", zIndex: 17 }
+            ? { position: "absolute", right: "5%", zIndex: 17 }
             : { position: "absolute", top: "100px", zIndex: 17 }
         }
       >

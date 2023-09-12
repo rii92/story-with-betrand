@@ -1,8 +1,9 @@
 import { Box, Typography } from "@mui/material";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../css/Section8.css";
 import color from "../themes/Color";
-import { useEffect } from "react";
 
 const Section8 = () => {
   useEffect(() => {
@@ -59,13 +60,22 @@ const Section8 = () => {
           </Typography>
         </Box>
         <Box
-          sx={{ height: { xs: "300px", sm: "400px", md: "500px" } }}
+          sx={{
+            position: { xs: "relative" },
+            height: { xs: "300px", sm: "400px", md: "500px" },
+            transform: "translate(0,0)",
+          }}
           data-aos="fade-left"
           data-aos-duration="1000"
         >
           <img
+            className="tangan-satria"
+            src="assets/image/tangan-satria.png"
+            alt="Tangan"
+          />
+          <img
             src="assets/image/satria.png"
-            alt="Didin"
+            alt="Satria"
             style={{ height: "100%" }}
           />
         </Box>
