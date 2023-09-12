@@ -61,7 +61,6 @@ function App() {
         <br />
       ))} */}
       <Section12 />
-      <Section13 />
       <Section14 />
       <Section15 />
       <Section16 />
