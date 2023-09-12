@@ -560,7 +560,7 @@ const Hero = () => {
               xs: "translate(225px, 395px)",
               lg: "translate(850px,400px)",
             },
-            zIndex: { xs: 90 },
+            zIndex: { xs: 95 },
           }}
         >
           <img
@@ -574,10 +574,10 @@ const Hero = () => {
           sx={{
             position: { xs: "absolute" },
             transform: {
-              xs: "translate(295px, 360px)",
-              lg: "translate(920px,360px)",
+              xs: "translate(305px, 360px)",
+              lg: "translate(933px,360px)",
             },
-            zIndex: { xs: 90 },
+            zIndex: { xs: 95 },
           }}
         >
           <img
