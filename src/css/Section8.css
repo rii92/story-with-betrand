@@ -25,16 +25,16 @@
 
 @media screen and (max-width: 900px) {
   .tangan-satria {
-    top: 55px;
-    left: -13px;
-    width: 70px;
+    top: 65px;
+    left: -16px;
+    width: 78px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .tangan-satria {
-    top: 45px;
-    left: -8px;
-    width: 50px;
+    top: 55px;
+    left: -15px;
+    width: 70px;
   }
 }

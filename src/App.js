@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import Hero from "./components/Hero";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
@@ -18,7 +17,7 @@ import {
   Section6j,
 } from "./components/section6";
 import Section7 from "./components/Section7";
-import Section8 from "./components/Section8";
+import Section8 from "./components/section8/Section8";
 import Section9 from "./components/section9/Section9";
 import Section10 from "./components/Section10";
 import Section11 from "./components/Section11";
