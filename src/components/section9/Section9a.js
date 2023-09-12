@@ -15,7 +15,7 @@ const Section9a = () => {
         width: { xs: "100%" },
         height: { xs: "600px", sm: "400px", md: "300px" },
         paddingX: { xs: "16px", sm: "0px" },
-        paddingTop: { xs: "100px", sm: "0px" },
+        paddingTop: { xs: "200px", sm: "0px" },
         position: { xs: "relative" },
         display: { xs: "flex" },
         flexDirection: { xs: "column", sm: "row" },

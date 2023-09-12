@@ -21,7 +21,7 @@ const Section8a = () => {
       <Box
         sx={{
           width: { xs: "100%", xl: "1200px" },
-          height: { xs: "100vh" },
+          height: { xs: "100vh", sm: "700px", md: "100vh" },
           marginX: { xs: "auto" },
           display: { xs: "flex" },
           gap: { xs: "16px", md: "32px" },
