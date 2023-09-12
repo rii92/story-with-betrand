@@ -14,6 +14,7 @@ const Section9c = () => {
       sx={{
         width: { xs: "100%" },
         height: { xs: "344px" },
+        marginTop: { xs: "150px", md: "0px" },
         position: { xs: "relative" },
         backgroundImage: "url('assets/image/section9/road.png')",
         backgroundRepeat: { xs: "repeat-x" },
