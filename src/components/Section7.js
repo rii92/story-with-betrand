@@ -6,7 +6,7 @@ const Section7 = () => {
   return (
     <Parallax
       blur={{ min: -10, max: 10 }}
-      bgImage={"assets/image/gambar-1.jpg"}
+      bgImage={"assets/image/metropolitan.jpg"}
       bgImageAlt="the dog"
       strength={400}
     >

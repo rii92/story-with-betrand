@@ -13,7 +13,7 @@ const Section9a = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "600px", sm: "400px", lg: "300px" },
+        height: { xs: "600px", sm: "400px", md: "200px" },
         paddingX: { xs: "16px", sm: "0px" },
         position: { xs: "relative" },
         display: { xs: "flex" },
@@ -24,7 +24,7 @@ const Section9a = () => {
     >
       <Parallax
         translateX={[]}
-        speed={sm ? 70 : 50}
+        speed={sm ? 70 : 30}
         style={
           lg
             ? {
@@ -48,6 +48,8 @@ const Section9a = () => {
           sx={{
             width: { xs: "320px", sm: "350px", lg: "400px" },
             boxShadow: { xs: "", sm: "0px 2px 6px rgb(0,0,0, 0.3)" },
+            borderRadius: { xs: "10px" },
+            overflow: { xs: "hidden" },
           }}
         >
           <img
@@ -59,7 +61,7 @@ const Section9a = () => {
       </Parallax>
       <Parallax
         translateX={[]}
-        speed={sm ? 50 : 70}
+        speed={sm ? 50 : 90}
         style={
           lg
             ? { position: "absolute", right: "10%", zIndex: 17 }
