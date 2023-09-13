@@ -76,14 +76,14 @@ const Hero = () => {
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: "24px", sm: "32px", md: "40px" },
+              fontSize: { xs: "26px", sm: "36px" },
               textAlign: { xs: "center", lg: "left" },
               color: color.white,
             }}
           >
-            Transformasi{" "}
-            <span style={{ fontWeight: "bold" }}>Metropolitan</span> <br />{" "}
-            Menuju{" "}
+            Menata Lingkungan,{" "}
+            <span style={{ fontWeight: "bold" }}>Aksi Nyata</span> <br />{" "}
+            Wujudkan{" "}
             <span style={{ fontWeight: "bold" }}>Kota Berkelanjutan</span>
           </Typography>
           <Typography
