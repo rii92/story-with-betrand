@@ -20,9 +20,10 @@ const Section8b = () => {
       <Box
         sx={{
           width: { xs: "100%", xl: "1200px" },
-          height: { xs: "100vh", sm: "700px", md: "100vh" },
+          height: { xs: "100vh", sm: "600px", md: "100vh" },
           marginX: { xs: "auto" },
           display: { xs: "flex" },
+          position: { xs: "relative" },
           gap: { xs: "16px", md: "32px" },
           flexDirection: { xs: "column", sm: "row-reverse" },
           justifyContent: { xs: "center" },
@@ -52,7 +53,7 @@ const Section8b = () => {
             width: { xs: "100px", sm: "130px", md: "160px" },
             position: { xs: "absolute" },
             transform: {
-              xs: "translate(0px,60px)",
+              xs: "translate(0px,0px)",
               sm: "translate(-208px, -78px)",
               md: "translate(-265px, -100px)",
             },
@@ -70,7 +71,7 @@ const Section8b = () => {
             position: { xs: "absolute" },
             zIndex: { xs: 1 },
             transform: {
-              xs: "translate(0px,55px)",
+              xs: "translate(0px,-5px)",
               sm: "translate(-208px, -80px)",
               md: "translate(-265px, -100px)",
             },

@@ -13,7 +13,7 @@ const Section9a = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "400px" },
+        height: { xs: "400px", sm: "200px" },
         paddingX: { xs: "16px", sm: "0px" },
         position: { xs: "relative" },
         display: { xs: "flex" },

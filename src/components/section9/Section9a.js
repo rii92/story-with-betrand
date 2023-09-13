@@ -13,9 +13,9 @@ const Section9a = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "600px", sm: "400px", md: "300px" },
+        height: { xs: "350px", sm: "400px", md: "300px" },
         paddingX: { xs: "16px", sm: "0px" },
-        paddingTop: { xs: "400px", sm: "0px" },
+        paddingTop: { xs: "100px", sm: "0px" },
         position: { xs: "relative" },
         display: { xs: "flex" },
         flexDirection: { xs: "column", sm: "row" },
