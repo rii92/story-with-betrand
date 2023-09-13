@@ -31,7 +31,7 @@ const Section8b = () => {
       >
         <Box
           sx={{ width: { xs: "fit-content" } }}
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-duration="1000"
         >
           <Typography
@@ -43,11 +43,8 @@ const Section8b = () => {
               textAlign: { xs: "center", sm: "left" },
             }}
           >
-            Dia merupakan anggota mapala yang berencana untuk mendaki gunung di
-            sekitaran Bandung untuk mengisi waktu liburannya sebelum pulang.
-            Sebelum keberangkatan, Satria melihat berita di sosial medianya yang
-            mengatakan polusi Jakarta dapat mengurangi harapan hidup seseorang
-            hingga 5,5 tahun. Dia pun penasaran dan mencari tahu hal tersebut.
+            Untuk mengisi waktu liburannya, ia bersama teman klub Mapala
+            kampusnya melakukan kegiatan pendakian di sekitar wilayah Bandung.
           </Typography>
         </Box>
         <Box

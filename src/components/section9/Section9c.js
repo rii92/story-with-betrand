@@ -36,7 +36,7 @@ const Section9c = () => {
           >
             <img
               src="assets/image/section9/motorcycle.png"
-              alt="Car"
+              alt="Motorcycle"
               style={{ width: "100%" }}
             />
           </Box>
@@ -112,7 +112,7 @@ const Section9c = () => {
           >
             <img
               src="assets/image/section9/truck.png"
-              alt="Car"
+              alt="Truck"
               style={{ width: "100%" }}
             />
           </Box>
@@ -150,7 +150,7 @@ const Section9c = () => {
           >
             <img
               src="assets/image/section9/bus.png"
-              alt="Car"
+              alt="Bus"
               style={{ width: "100%" }}
             />
           </Box>
