@@ -13,7 +13,7 @@ const Section9a = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "400px", sm: "500px" },
+        height: { xs: "400px", sm: "200px" },
         paddingX: { xs: "16px", sm: "0px" },
         position: { xs: "relative" },
         display: { xs: "flex" },
@@ -24,7 +24,7 @@ const Section9a = () => {
     >
       <Parallax
         translateX={[]}
-        speed={30}
+        speed={40}
         style={
           lg
             ? {
@@ -46,14 +46,11 @@ const Section9a = () => {
       >
         <Box
           sx={{
-            width: { xs: "320px" },
-            boxShadow: { xs: "", sm: "0px 2px 6px rgb(0,0,0, 0.3)" },
-            borderRadius: { xs: "10px" },
-            overflow: { xs: "hidden" },
+            width: { xs: "320px", sm: "400px", md: "450px" },
           }}
         >
           <img
-            src="assets/image/gas-emisi.jpg"
+            src="assets/image/people-with-lung-disease.png"
             alt="Polusi Jakarta"
             style={{ width: "100%" }}
           />
@@ -61,7 +58,7 @@ const Section9a = () => {
       </Parallax>
       <Parallax
         translateX={[]}
-        speed={90}
+        speed={70}
         style={
           lg
             ? { position: "absolute", right: "15%", zIndex: 17 }
@@ -81,10 +78,10 @@ const Section9a = () => {
           }}
         >
           <Typography sx={{ marginBottom: "8px" }}>
-            Emisi gas buang adalah sisa hasil pembakaran bahan bakar pada suatu
-            mesin, seperti motor maupun mobil. Jakarta merupakan salah satu kota
-            yang sering terjadi kemacetan. Menurut data BPS, pada tahun 2022
-            kendaraan bermotor mencapai 26 juta unit kendaraan.
+            Dari semua polutan yang terdaftar, PM2.5 merupakan ancaman kesehatan
+            terbesar bagi kesehatan manusia. Ini karena PM2.5 dapat masuk jauh
+            ke bagian paling sensitif dari saluran pernapasan saat terhirup dan
+            memicu penyakit pernapasan seperti asma, bronkitis, dan emfisema.
           </Typography>
         </Box>
       </Parallax>

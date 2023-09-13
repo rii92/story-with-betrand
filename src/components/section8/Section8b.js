@@ -20,9 +20,10 @@ const Section8b = () => {
       <Box
         sx={{
           width: { xs: "100%", xl: "1200px" },
-          height: { xs: "100vh", sm: "700px", md: "100vh" },
+          height: { xs: "100vh", sm: "600px", md: "100vh" },
           marginX: { xs: "auto" },
           display: { xs: "flex" },
+          position: { xs: "relative" },
           gap: { xs: "16px", md: "32px" },
           flexDirection: { xs: "column", sm: "row-reverse" },
           justifyContent: { xs: "center" },
@@ -31,7 +32,7 @@ const Section8b = () => {
       >
         <Box
           sx={{ width: { xs: "fit-content" } }}
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-duration="1000"
         >
           <Typography
@@ -43,11 +44,8 @@ const Section8b = () => {
               textAlign: { xs: "center", sm: "left" },
             }}
           >
-            Dia merupakan anggota mapala yang berencana untuk mendaki gunung di
-            sekitaran Bandung untuk mengisi waktu liburannya sebelum pulang.
-            Sebelum keberangkatan, Satria melihat berita di sosial medianya yang
-            mengatakan polusi Jakarta dapat mengurangi harapan hidup seseorang
-            hingga 5,5 tahun. Dia pun penasaran dan mencari tahu hal tersebut.
+            Untuk mengisi waktu liburannya, ia bersama teman klub Mapala
+            kampusnya melakukan kegiatan pendakian di sekitar wilayah Bandung.
           </Typography>
         </Box>
         <Box
@@ -55,7 +53,7 @@ const Section8b = () => {
             width: { xs: "100px", sm: "130px", md: "160px" },
             position: { xs: "absolute" },
             transform: {
-              xs: "translate(0px,60px)",
+              xs: "translate(0px,0px)",
               sm: "translate(-208px, -78px)",
               md: "translate(-265px, -100px)",
             },
@@ -73,7 +71,7 @@ const Section8b = () => {
             position: { xs: "absolute" },
             zIndex: { xs: 1 },
             transform: {
-              xs: "translate(0px,55px)",
+              xs: "translate(0px,-5px)",
               sm: "translate(-208px, -80px)",
               md: "translate(-265px, -100px)",
             },
