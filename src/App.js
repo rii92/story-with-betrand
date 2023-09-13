@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import Hero from "./components/Hero";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
@@ -18,7 +17,7 @@ import {
   Section6j,
 } from "./components/section6";
 import Section7 from "./components/Section7";
-import Section8 from "./components/Section8";
+import Section8 from "./components/section8/Section8";
 import Section9 from "./components/section9/Section9";
 import Section10 from "./components/Section10";
 import Section11 from "./components/Section11";
@@ -29,6 +28,7 @@ import Section15 from "./components/Section15";
 import Section16 from "./components/Section16";
 import Section17 from "./components/Section17";
 import Section18 from "./components/Section18";
+import Bridging1 from "./components/Bridging1";
 
 function App() {
   return (
@@ -49,17 +49,15 @@ function App() {
       <Section6h />
       <Section6i />
       <Section6j />
-      {Array.from({ length: 30 }).map(() => (
+      {Array.from({ length: 20 }).map(() => (
         <br />
       ))}
       <Section7 />
       <Section8 />
       <Section9 />
+      <Bridging1 />
       <Section10 />
       <Section11 />
-      {/* {Array.from({ length: 100 }).map(() => (
-        <br />
-      ))} */}
       <Section12 />
       <Section14 />
       <Section15 />

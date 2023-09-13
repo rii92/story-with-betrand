@@ -13,7 +13,7 @@ const Section9a = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "600px", sm: "400px", lg: "300px" },
+        height: { xs: "400px", sm: "500px" },
         paddingX: { xs: "16px", sm: "0px" },
         position: { xs: "relative" },
         display: { xs: "flex" },
@@ -24,7 +24,7 @@ const Section9a = () => {
     >
       <Parallax
         translateX={[]}
-        speed={sm ? 70 : 50}
+        speed={30}
         style={
           lg
             ? {
@@ -46,8 +46,10 @@ const Section9a = () => {
       >
         <Box
           sx={{
-            width: { xs: "320px", sm: "350px", lg: "400px" },
+            width: { xs: "320px" },
             boxShadow: { xs: "", sm: "0px 2px 6px rgb(0,0,0, 0.3)" },
+            borderRadius: { xs: "10px" },
+            overflow: { xs: "hidden" },
           }}
         >
           <img
@@ -59,10 +61,10 @@ const Section9a = () => {
       </Parallax>
       <Parallax
         translateX={[]}
-        speed={sm ? 50 : 70}
+        speed={90}
         style={
           lg
-            ? { position: "absolute", right: "10%", zIndex: 17 }
+            ? { position: "absolute", right: "15%", zIndex: 17 }
             : sm
             ? { position: "absolute", right: "5%", zIndex: 17 }
             : { position: "absolute", top: "100px", zIndex: 17 }
@@ -83,18 +85,6 @@ const Section9a = () => {
             mesin, seperti motor maupun mobil. Jakarta merupakan salah satu kota
             yang sering terjadi kemacetan. Menurut data BPS, pada tahun 2022
             kendaraan bermotor mencapai 26 juta unit kendaraan.
-          </Typography>
-          <Typography sx={{ marginBottom: "8px" }}>
-            (Grafik yang menggambarkan kemacetan di Jakarta. Motor memenuhi
-            55.9% jalan di jakarta. Mobil memenuhi 93.3%. Truk memenuhi 68.5%.
-            Bus 3.4%. Bayangin kalo semua kendaraan turun ke jalan bersamaan,
-            semua jalan ketutup kendaraan. Bahkan 2x lipat luas jalan di Jakarta
-            ga bisa menampung semua kendaraan yang ada (211.1% luas jalan
-            tertutup kendaraan)).
-          </Typography>
-          <Typography>
-            *catatan jalan mencakup tol, jalan nasional dan jalan daerah. Kalo
-            motor gak menempati jalan tol, dia memenuhi 61.2% jalan di Jakarta.
           </Typography>
         </Box>
       </Parallax>

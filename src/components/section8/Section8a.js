@@ -2,10 +2,10 @@ import { Box, Typography } from "@mui/material";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../css/Section8.css";
-import color from "../themes/Color";
+import "../../css/Section8.css";
+import color from "../../themes/Color";
 
-const Section8 = () => {
+const Section8a = () => {
   useEffect(() => {
     AOS.init();
   });
@@ -14,7 +14,6 @@ const Section8 = () => {
     <Box
       sx={{
         paddingX: { xs: "16px", xl: "0px" },
-        backgroundColor: { xs: color.white },
         position: { xs: "relative" },
         zIndex: { xs: 15 },
       }}
@@ -22,7 +21,7 @@ const Section8 = () => {
       <Box
         sx={{
           width: { xs: "100%", xl: "1200px" },
-          height: { xs: "100vh", sm: "700px" },
+          height: { xs: "100vh", sm: "700px", md: "100vh" },
           marginX: { xs: "auto" },
           display: { xs: "flex" },
           gap: { xs: "16px", md: "32px" },
@@ -32,49 +31,54 @@ const Section8 = () => {
         }}
       >
         <Box
-          sx={{ width: { xs: "100%", sm: "500px", md: "600px" } }}
+          sx={{ width: { xs: "fit-content" } }}
           data-aos="fade-right"
           data-aos-duration="1000"
         >
           <Typography
+            variant="h3"
             sx={{
               marginX: { xs: "auto" },
               marginBottom: { xs: "8px" },
               color: { xs: color.black },
+              fontWeight: { xs: "bold" },
+              textAlign: { xs: "center" },
             }}
           >
-            Di suatu tempat di Jakarta, tinggallah seorang mahasiswa perantauan
-            yang bernama Satria. Dia merupakan anggota mapala yang berencana
-            untuk mendaki gunung di sekitaran Bandung untuk mengisi waktu
-            liburannya sebelum pulang.
-          </Typography>
-          <Typography
-            sx={{
-              marginX: { xs: "auto" },
-              color: { xs: color.black },
-            }}
-          >
-            Sebelum keberangkatan, Satria melihat berita di sosial medianya yang
-            mengatakan polusi Jakarta dapat mengurangi harapan hidup seseorang
-            hingga 5,5 tahun. Dia pun penasaran dan mencari tahu hal tersebut.
+            Dia Satria
           </Typography>
         </Box>
         <Box
           sx={{
+            width: { xs: "0px", sm: "150px", md: "200px" },
+            display: { xs: "none", sm: "block" },
+            transform: { xs: "translateY(-100px)" },
+          }}
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img
+            src="assets/image/arrow-left.png"
+            alt="Arrow"
+            style={{ width: "100%" }}
+          />
+        </Box>
+        <Box
+          sx={{
             position: { xs: "relative" },
-            height: { xs: "300px", sm: "400px", md: "500px" },
-            transform: "translate(0,0)",
+            height: { xs: "400px", sm: "450px", md: "500px" },
+            transform: "translateX(100px)",
           }}
           data-aos="fade-left"
           data-aos-duration="1000"
         >
           <img
             className="tangan-satria"
-            src="assets/image/tangan-satria.png"
+            src="assets/image/satria/tangan-satria.png"
             alt="Tangan"
           />
           <img
-            src="assets/image/satria.png"
+            src="assets/image/satria/satria.png"
             alt="Satria"
             style={{ height: "100%" }}
           />
@@ -84,4 +88,4 @@ const Section8 = () => {
   );
 };
 
-export default Section8;
+export default Section8a;
