@@ -3,10 +3,15 @@ import * as maptilersdk from "@maptiler/sdk";
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import { Parallax } from "react-scroll-parallax";
 import { Box, Typography } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import color from "../themes/Color";
 import "../css/Bridging1.css";
 
 const Bridging1 = () => {
+  const theme = useTheme();
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
+  const md = useMediaQuery(theme.breakpoints.up("md"));
   maptilersdk.config.apiKey = "rH1R16C7vNQTnfeMTaFw";
   const mapContainer = useRef(null);
   const map = useRef(null);
@@ -46,8 +51,10 @@ const Bridging1 = () => {
           paddingX: { xs: "16px" },
           paddingY: { xs: "8px", sm: "16px" },
           position: { xs: "relative" },
-          backgroundImage:
-            "url('assets/image/bridging/street-house-while-night.png')",
+          backgroundImage: {
+            xs: "url('assets/image/bridging/street-house-while-night.png')",
+          },
+          backgroundRepeat: { xs: "repeat-x" },
           overflow: { xs: "hidden" },
         }}
       >
@@ -55,12 +62,12 @@ const Bridging1 = () => {
           sx={{
             width: { xs: "100%", xl: "1200px" },
             height: { xs: "100%" },
+            paddingTop: { xs: "48px" },
             marginX: { xs: "auto" },
             display: { xs: "flex" },
             gap: { xs: "32px" },
-            flexDirection: { xs: "column", sm: "row" },
-            justifyContent: { xs: "end", sm: "center" },
-            alignItems: { xs: "center", sm: "end" },
+            justifyContent: { xs: "center" },
+            alignItems: { xs: "start" },
           }}
         >
           <Box
@@ -88,7 +95,26 @@ const Bridging1 = () => {
             </Typography>
           </Box>
 
-          <Box
+          <Parallax
+            translateX={
+              md
+                ? ["600px", "-600px"]
+                : sm
+                ? ["400px", "-400px"]
+                : ["200px", "-200px"]
+            }
+            style={{ position: "absolute", bottom: "4px" }}
+          >
+            <Box sx={{ width: "250px" }}>
+              <img
+                src="assets/image/bridging/satria-and-asep.png"
+                alt="Satria dan Asep"
+                style={{ width: "100%" }}
+              />
+            </Box>
+          </Parallax>
+
+          {/* <Box
             sx={{
               position: { xs: "relative" },
               height: { xs: "300px", sm: "400px", md: "500px" },
@@ -160,7 +186,7 @@ const Bridging1 = () => {
               alt="Satria"
               style={{ height: "100%", position: "relative", zIndex: 1 }}
             />
-          </Box>
+          </Box> */}
         </Box>
       </Box>
       <Box>

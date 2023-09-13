@@ -16,7 +16,6 @@ import {
   Section6i,
   Section6j,
 } from "./components/section6";
-import Section7 from "./components/Section7";
 import Section8 from "./components/section8/Section8";
 import Section9 from "./components/section9/Section9";
 import Section10 from "./components/Section10";
@@ -39,7 +38,7 @@ function App() {
       <Section4 />
       <Section5 />
       <Section5a />
-      <Section6a />
+      {/* <Section6a />
       <Section6b />
       <Section6c />
       <Section6d />
@@ -48,11 +47,10 @@ function App() {
       <Section6g />
       <Section6h />
       <Section6i />
-      <Section6j />
+      <Section6j /> */}
       {Array.from({ length: 20 }).map(() => (
         <br />
       ))}
-      <Section7 />
       <Section8 />
       <Section9 />
       <Bridging1 />
