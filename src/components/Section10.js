@@ -1,7 +1,14 @@
 import { Box, Typography } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import color from "../themes/Color";
+import { useEffect } from "react";
 
 const Section10 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Box
       sx={{
@@ -13,20 +20,22 @@ const Section10 = () => {
       <Box
         sx={{
           width: { xs: "100%" },
-          height: { xs: "100vh" },
+          height: { xs: "100vh", sm: "700px", md: "100vh" },
           paddingX: { xs: "16px" },
           display: { xs: "flex" },
-          flexDirection: { xs: "column-reverse" },
-          gap: { xs: "24px" },
+          flexDirection: { xs: "column", md: "row" },
+          gap: { xs: "32px", sm: "48px" },
           justifyContent: { xs: "center" },
           alignItems: { xs: "center" },
         }}
       >
         <Typography
           sx={{
-            width: { xs: "100%", sm: "400px", md: "500px" },
+            width: { xs: "100%", sm: "500px" },
             color: { xs: color.black },
           }}
+          data-aos="fade-left"
+          data-aos-duration="1000"
         >
           Mendengar kabar terkait asap dari TPA Sarimukti yang terbakar, satria
           khawatir karena asap tersebut dapat menutupi pandangan pengendara.

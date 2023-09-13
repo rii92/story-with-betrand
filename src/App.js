@@ -28,6 +28,7 @@ import Section16 from "./components/Section16";
 import Section17 from "./components/Section17";
 import Section18 from "./components/Section18";
 import Bridging1 from "./components/Bridging1";
+import SectionPenangananSampah from "./components/SectionPenangananSampah";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
       <Section9 />
       <Bridging1 />
       <Section10 />
+      <SectionPenangananSampah />
       <Section11 />
       <Section12 />
       <Section13 />
