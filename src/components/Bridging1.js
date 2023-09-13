@@ -5,6 +5,8 @@ import { Parallax } from "react-scroll-parallax";
 import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import color from "../themes/Color";
 import "../css/Bridging1.css";
 
@@ -17,6 +19,7 @@ const Bridging1 = () => {
   const map = useRef(null);
 
   useEffect(() => {
+    AOS.init();
     if (map.current) return; // stops map from intializing more than once
 
     map.current = new maptilersdk.Map({
@@ -70,30 +73,24 @@ const Bridging1 = () => {
             alignItems: { xs: "start" },
           }}
         >
-          <Box
-            sx={{ height: { xs: "fit-content", sm: "50%" } }}
-            data-aos="fade-down"
+          <Typography
+            variant="body1"
+            sx={{
+              width: { xs: "100%", sm: "400px", md: "500px" },
+              marginBottom: { xs: "8px" },
+              color: { xs: color.black },
+              textAlign: { xs: "center", sm: "left" },
+            }}
+            data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <Typography
-              variant="body1"
-              sx={{
-                width: { xs: "100%", sm: "400px", md: "500px" },
-                marginBottom: { xs: "8px" },
-                color: { xs: color.black },
-                textAlign: { xs: "center", sm: "left" },
-              }}
-            >
-              <span
-                style={{ backgroundColor: color.white, padding: "1px 2px" }}
-              >
-                Mengetahui fakta tersebut, Satria bersama Asep memilih waktu
-                malam hari untuk menghindari macet dan polusi Jakarta.
-                Sesampainya di rumah Asep yang berada di Bandung, ia
-                beristirahat dan akan memulai pendakian keesokan harinya.
-              </span>
-            </Typography>
-          </Box>
+            <span style={{ backgroundColor: color.white, padding: "1px 2px" }}>
+              Mengetahui fakta tersebut, Satria bersama Asep memilih waktu malam
+              hari untuk menghindari macet dan polusi Jakarta. Sesampainya di
+              rumah Asep yang berada di Bandung, ia beristirahat dan akan
+              memulai pendakian keesokan harinya.
+            </span>
+          </Typography>
 
           <Parallax
             translateX={
@@ -113,80 +110,6 @@ const Bridging1 = () => {
               />
             </Box>
           </Parallax>
-
-          {/* <Box
-            sx={{
-              position: { xs: "relative" },
-              height: { xs: "300px", sm: "400px", md: "500px" },
-              transform: "translateX(100px)",
-            }}
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <Box
-              sx={{
-                width: { xs: "300px", sm: "400px", md: "500px" },
-                position: { xs: "absolute" },
-                transform: {
-                  xs: "translate(-100px,50px)",
-                  sm: "translate(-70px, 80px)",
-                  md: "translate(-40px, 100px)",
-                },
-              }}
-            >
-              <img
-                src="assets/image/bridging/motorcycle.png"
-                alt="Motor"
-                style={{ width: "100%" }}
-              />
-            </Box>
-            <Box
-              sx={{
-                width: { xs: "105px", sm: "145px", md: "175px" },
-                position: { xs: "absolute" },
-                transform: {
-                  xs: "translate(-3px,20px)",
-                  sm: "translate(-7px,25px)",
-                  md: "translate(-7px,40px)",
-                },
-              }}
-            >
-              <img
-                src="assets/image/satria/bag-1.png"
-                alt="Tas"
-                style={{ width: "100%" }}
-              />
-            </Box>
-            <Box
-              sx={{
-                width: { xs: "90px", sm: "110px", md: "130px" },
-                position: { xs: "absolute" },
-                transform: {
-                  xs: "translate(3px,50px)",
-                  sm: "translate(10px,65px)",
-                  md: "translate(17px,93px)",
-                },
-                zIndex: { xs: 2 },
-              }}
-            >
-              <img
-                src="assets/image/satria/bag-2.png"
-                alt="Tas"
-                style={{ width: "100%" }}
-              />
-            </Box>
-            <img
-              className="tangan-satria-di-bridging"
-              src="assets/image/satria/tangan-satria.png"
-              alt="Tangan"
-              style={{ zIndex: 1 }}
-            />
-            <img
-              src="assets/image/bridging/satria.png"
-              alt="Satria"
-              style={{ height: "100%", position: "relative", zIndex: 1 }}
-            />
-          </Box> */}
         </Box>
       </Box>
       <Box>
