@@ -67,6 +67,7 @@ const Section6f = () => {
           paddingY: { xs: "8px" },
           backgroundColor: { xs: color.white },
           fontWeight: { xs: "bold" },
+          fontSize: { xs: "24px", sm: "34px" },
         }}
         data-aos="zoom-in-up"
         data-aos-duration="1000"
@@ -82,6 +83,7 @@ const Section6f = () => {
             paddingX: { xs: "8px" },
             paddingY: { xs: "4px" },
             backgroundColor: { xs: color.white },
+            fontSize: { xs: "16px", sm: "20px" },
           }}
           data-aos="fade-right"
           data-aos-duration="1000"
