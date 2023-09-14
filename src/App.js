@@ -36,11 +36,11 @@ import SectionPeta2 from "./components/SectionPeta2";
 function App() {
   return (
     <div className="App">
-      {/* <Hero /> */}
+      <Hero />
       <Section2 />
       <Section3 />
       <Section4 />
-      <SectionPeta />
+      {/* <SectionPeta />
       <Section5a />
       <Section6a />
       <Section6b />
@@ -51,7 +51,7 @@ function App() {
       <Section6g />
       <Section6h />
       <Section6i />
-      <Section6j />
+      <Section6j /> */}
       {Array.from({ length: 20 }).map(() => (
         <br />
       ))}
