@@ -9,42 +9,42 @@ const SectionSatriaMauMendaki = () => {
     {
       image: "tree-1.png",
       left: "-5%",
-      bottom: { xs: "50px", sm: "100px", md: "50px" },
+      bottom: { xs: "60px", sm: "100px", md: "50px" },
       delay: "600",
       zIndex: -2,
     },
     {
       image: "tree-3.png",
       left: "11%",
-      bottom: { xs: "65px", sm: "120px", md: "65px" },
+      bottom: { xs: "75px", sm: "120px", md: "65px" },
       delay: "1200",
       zIndex: -1,
     },
     {
       image: "tree-5.png",
       left: "25%",
-      bottom: { xs: "80px", sm: "150px", md: "80px" },
+      bottom: { xs: "90px", sm: "150px", md: "80px" },
       delay: "1800",
       zIndex: 0,
     },
     {
       image: "tree-6.png",
       left: "45%",
-      bottom: { xs: "80px", sm: "150px", md: "80px" },
+      bottom: { xs: "90px", sm: "150px", md: "80px" },
       delay: "1800",
       zIndex: 0,
     },
     {
       image: "tree-4.png",
       left: "67%",
-      bottom: { xs: "65px", sm: "120px", md: "65px" },
+      bottom: { xs: "75px", sm: "120px", md: "65px" },
       delay: "1200",
       zIndex: -1,
     },
     {
       image: "tree-2.png",
       left: "90%",
-      bottom: { xs: "50px", sm: "100px", md: "50px" },
+      bottom: { xs: "60px", sm: "100px", md: "50px" },
       delay: "600",
       zIndex: -2,
     },
@@ -97,11 +97,11 @@ const SectionSatriaMauMendaki = () => {
         </Box>
         <Box
           sx={{
-            width: { xs: "100px", sm: "130px", md: "160px" },
+            width: { xs: "135px", sm: "150px", md: "160px" },
             position: { xs: "absolute" },
             transform: {
-              xs: "translate(0px,0px)",
-              sm: "translate(-208px, -78px)",
+              xs: "translate(1px,200px)",
+              sm: "translate(-208px, -90px)",
               md: "translate(-265px, -100px)",
             },
           }}
@@ -114,12 +114,12 @@ const SectionSatriaMauMendaki = () => {
         </Box>
         <Box
           sx={{
-            width: { xs: "75px", sm: "110px", md: "140px" },
+            width: { xs: "100px", sm: "120px", md: "140px" },
             position: { xs: "absolute" },
             zIndex: { xs: 1 },
             transform: {
-              xs: "translate(0px,-5px)",
-              sm: "translate(-208px, -80px)",
+              xs: "translate(1px,240px)",
+              sm: "translate(-208px, -100px)",
               md: "translate(-265px, -100px)",
             },
           }}
