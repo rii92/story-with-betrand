@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import color from "../themes/Color";
 
-const Section2 = () => {
+const SectionJumlahOrangDiKota = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -103,4 +103,4 @@ const Section2 = () => {
   );
 };
 
-export default Section2;
+export default SectionJumlahOrangDiKota;

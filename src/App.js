@@ -1,7 +1,8 @@
 import Hero from "./components/Hero";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
+import SectionJumlahOrangDiKota from "./components/SectionJumlahOrangDiKota";
+import SectionProyeksiJumlahOrangDiKota from "./components/SectionProyeksiJumlahOrangDiKota";
+import SectionKutipanKepalaBappenas from "./components/SectionKutipanKepalaBappenas";
+import SectionPeta from "./components/SectionPeta";
 import Section5 from "./components/Section5";
 import Section5a from "./components/Section5a";
 import {
@@ -26,22 +27,21 @@ import Section14 from "./components/Section14";
 import Section15 from "./components/Section15";
 import Section16 from "./components/Section16";
 import Section17 from "./components/Section17";
-import Bridging1 from "./components/Bridging1";
+import SectionSatriaDanAsepPergiKeBandung from "./components/SectionSatriaDanAsepPergiKeBandung";
 import SectionPenangananSampah from "./components/SectionPenangananSampah";
 import SectionPenangananSampahPie from "./components/SectionPenangananSampahPie";
 import SectionMasalahAirLayak from "./components/SectionMasalahAirLayak";
-import SectionPeta from "./components/SectionPeta";
 import SectionPeta2 from "./components/SectionPeta2";
 
 function App() {
   return (
     <div className="App">
       <Hero />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      {/* <SectionPeta />
-      <Section5a />
+      <SectionJumlahOrangDiKota />
+      <SectionProyeksiJumlahOrangDiKota />
+      <SectionKutipanKepalaBappenas />
+      <SectionPeta />
+      {/* <Section5a />
       <Section6a />
       <Section6b />
       <Section6c />
@@ -57,7 +57,7 @@ function App() {
       ))}
       <Section8 />
       <Section9 />
-      <Bridging1 />
+      <SectionSatriaDanAsepPergiKeBandung />
       <Section10 />
       <SectionPenangananSampah />
       <SectionPenangananSampahPie />

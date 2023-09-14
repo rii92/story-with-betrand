@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import color from "../themes/Color";
 import "../css/Bridging1.css";
 
-const Bridging1 = () => {
+const SectionSatriaDanAsepPergiKeBandung = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
@@ -141,4 +141,4 @@ const Bridging1 = () => {
   );
 };
 
-export default Bridging1;
+export default SectionSatriaDanAsepPergiKeBandung;

@@ -7,7 +7,7 @@ import { Parallax } from "react-scroll-parallax";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-const Section3 = () => {
+const SectionProyeksiJumlahOrangDiKota = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
@@ -227,4 +227,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default SectionProyeksiJumlahOrangDiKota;

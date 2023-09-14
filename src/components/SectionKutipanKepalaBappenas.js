@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import color from "../themes/Color";
 import { Parallax } from "react-scroll-parallax";
 
-const Section4 = () => {
+const SectionKutipanKepalaBappenas = () => {
   return (
     <>
       <Box
@@ -66,4 +66,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default SectionKutipanKepalaBappenas;
