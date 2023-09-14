@@ -1,5 +1,6 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import color from "../themes/Color";
+import { Parallax } from "react-scroll-parallax";
 
 const Section14 = () => {
   return (
@@ -21,8 +22,14 @@ const Section14 = () => {
           marginX: { xs: "auto" },
           color: { xs: color.black },
         }}
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
       >
-        Pembangunan berkelanjutan memiliki 3 (tiga) pilar utama yaitu sosial, lingkungan, dan ekonomi.
+        Dari sudut pandang sosial, pembangunan perkotaan berkelanjutan antara
+        lain bercirikan adanya konsistensi penegakan hukum, termasuk dalam
+        penegakan rencana tata ruang. Selain itu terbangun kondisi etika/moral
+        dalam pelaksanaan pembangunan, adanya keadilan dan kesetaraan hak
+        masyarakat, keamanan dan kenyamanan lingkungan kehidupan.
       </Typography>
     </Box>
   );
