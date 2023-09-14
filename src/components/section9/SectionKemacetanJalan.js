@@ -4,7 +4,7 @@ import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import color from "../../themes/Color";
 
-const Section9c = () => {
+const SectionKemacetanJalan = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
@@ -481,4 +481,4 @@ const Section9c = () => {
   );
 };
 
-export default Section9c;
+export default SectionKemacetanJalan;

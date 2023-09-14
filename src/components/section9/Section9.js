@@ -1,17 +1,17 @@
 import { Box } from "@mui/material";
-import SectionPenjelasanISPUDanPM25 from "./SectionPenjelasanISPUDanPM25";
-import Section9b from "./Section9b";
+import SectionISPUDanPM25 from "./SectionISPUDanPM25";
+import SectionAkibatPolusi from "./SectionAkibatPolusi";
 import color from "../../themes/Color";
-import Section9c from "./Section9c";
+import SectionKemacetanJalan from "./SectionKemacetanJalan";
 
 const Section9 = () => {
   return (
     <Box
       sx={{ backgroundColor: color.white, position: "relative", zIndex: 15 }}
     >
-      <SectionPenjelasanISPUDanPM25 />
-      <Section9b />
-      <Section9c />
+      <SectionISPUDanPM25 />
+      <SectionAkibatPolusi />
+      <SectionKemacetanJalan />
     </Box>
   );
 };

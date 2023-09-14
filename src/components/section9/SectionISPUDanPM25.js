@@ -4,7 +4,7 @@ import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import color from "../../themes/Color";
 
-const SectionPenjelasanISPUDanPM25 = () => {
+const SectionISPUDanPM25 = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const lg = useMediaQuery(theme.breakpoints.up("lg"));
@@ -161,4 +161,4 @@ const SectionPenjelasanISPUDanPM25 = () => {
   );
 };
 
-export default SectionPenjelasanISPUDanPM25;
+export default SectionISPUDanPM25;
