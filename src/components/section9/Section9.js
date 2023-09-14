@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Section9a from "./Section9a";
+import SectionPenjelasanISPUDanPM25 from "./SectionPenjelasanISPUDanPM25";
 import Section9b from "./Section9b";
 import color from "../../themes/Color";
 import Section9c from "./Section9c";
@@ -9,7 +9,7 @@ const Section9 = () => {
     <Box
       sx={{ backgroundColor: color.white, position: "relative", zIndex: 15 }}
     >
-      <Section9a />
+      <SectionPenjelasanISPUDanPM25 />
       <Section9b />
       <Section9c />
     </Box>

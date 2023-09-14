@@ -15,12 +15,13 @@ const Section8c = () => {
         paddingX: { xs: "16px", xl: "0px" },
         position: { xs: "relative" },
         zIndex: { xs: 15 },
+        overflowX: { xs: "hidden" },
       }}
     >
       <Box
         sx={{
           width: { xs: "100%", xl: "1200px" },
-          height: { xs: "100vh", sm: "600px", md: "100vh" },
+          height: { xs: "650px" },
           marginX: { xs: "auto" },
           display: { xs: "flex" },
           gap: { xs: "16px", md: "32px" },
@@ -37,7 +38,7 @@ const Section8c = () => {
           <Typography
             variant="body1"
             sx={{
-              width: { xs: "100%", sm: "400px", md: "500px" },
+              maxWidth: { xs: "100%", sm: "360px", md: "420px" },
               marginX: { xs: "auto" },
               color: { xs: color.black },
               textAlign: { xs: "center", sm: "left" },
@@ -51,7 +52,7 @@ const Section8c = () => {
         <Box
           sx={{
             position: { xs: "relative" },
-            height: { xs: "400px", sm: "450px", md: "500px" },
+            height: { xs: "350px", sm: "400px", md: "450px" },
             transform: "translateY(-100px)",
           }}
           data-aos="fade-left"

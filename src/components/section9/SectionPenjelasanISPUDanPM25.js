@@ -4,7 +4,7 @@ import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import color from "../../themes/Color";
 
-const Section9a = () => {
+const SectionPenjelasanISPUDanPM25 = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const lg = useMediaQuery(theme.breakpoints.up("lg"));
@@ -13,7 +13,7 @@ const Section9a = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "350px", sm: "400px", md: "300px" },
+        height: { xs: "350px", sm: "400px", md: "400px" },
         paddingX: { xs: "16px", sm: "0px" },
         paddingTop: { xs: "100px", sm: "0px" },
         position: { xs: "relative" },
@@ -21,8 +21,77 @@ const Section9a = () => {
         flexDirection: { xs: "column", sm: "row" },
         justifyContent: { xs: "start", sm: "center" },
         alignItems: { xs: "center" },
+        overflow: { xs: "hidden" },
       }}
     >
+      <Parallax
+        translateX={["-300px", "900px"]}
+        style={
+          lg
+            ? {
+                position: "absolute",
+                top: "45%",
+                left: "15%",
+                zIndex: 14,
+              }
+            : sm
+            ? {
+                position: "absolute",
+                left: "5%",
+                zIndex: 14,
+              }
+            : {
+                position: "absolute",
+                zIndex: 14,
+              }
+        }
+      >
+        <Box
+          sx={{
+            width: { xs: "200px", sm: "250px", md: "300px" },
+          }}
+        >
+          <img
+            src="assets/image/section9/smoke-to-right.png"
+            alt="Polusi Jakarta"
+            style={{ width: "100%" }}
+          />
+        </Box>
+      </Parallax>
+      <Parallax
+        translateX={["900px", "-300px"]}
+        style={
+          lg
+            ? {
+                position: "absolute",
+                top: "0%",
+                right: "35%",
+                zIndex: 14,
+              }
+            : sm
+            ? {
+                position: "absolute",
+                right: "5%",
+                zIndex: 14,
+              }
+            : {
+                position: "absolute",
+                zIndex: 14,
+              }
+        }
+      >
+        <Box
+          sx={{
+            width: { xs: "200px", sm: "250px", md: "300px" },
+          }}
+        >
+          <img
+            src="assets/image/section9/smoke-to-left.png"
+            alt="Polusi Jakarta"
+            style={{ width: "100%" }}
+          />
+        </Box>
+      </Parallax>
       <Parallax
         translateX={[]}
         speed={40}
@@ -92,4 +161,4 @@ const Section9a = () => {
   );
 };
 
-export default Section9a;
+export default SectionPenjelasanISPUDanPM25;
