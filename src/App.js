@@ -30,17 +30,19 @@ import Bridging1 from "./components/Bridging1";
 import SectionPenangananSampah from "./components/SectionPenangananSampah";
 import SectionPenangananSampahPie from "./components/SectionPenangananSampahPie";
 import SectionMasalahAirLayak from "./components/SectionMasalahAirLayak";
+import SectionPeta from "./components/SectionPeta";
+import SectionPeta2 from "./components/SectionPeta2";
 
 function App() {
   return (
     <div className="App">
-      <Hero />
+      {/* <Hero /> */}
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5 />
+      <SectionPeta />
       <Section5a />
-      {/* <Section6a />
+      <Section6a />
       <Section6b />
       <Section6c />
       <Section6d />
@@ -49,7 +51,7 @@ function App() {
       <Section6g />
       <Section6h />
       <Section6i />
-      <Section6j /> */}
+      <Section6j />
       {Array.from({ length: 20 }).map(() => (
         <br />
       ))}
