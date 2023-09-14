@@ -12,19 +12,19 @@ const SectionKemacetanJalan = () => {
     // Atas
     {
       translateParallax: ["100px", "-100px"],
-      top: { xs: "13%", sm: "-10%", md: "-13%" },
+      top: { xs: "13%", sm: "-10%", md: "-9%" },
       left: { xs: "5%" },
       image: "motorcycle-left.png",
     },
     {
       translateParallax: ["100px", "-100px"],
-      top: { xs: "13%", sm: "-10%", md: "-13%" },
+      top: { xs: "13%", sm: "-10%", md: "-9%" },
       left: { xs: "60%" },
       image: "motorcycle-left.png",
     },
     {
       translateParallax: ["100px", "-100px"],
-      top: { xs: "13%", sm: "-10%", md: "-13%" },
+      top: { xs: "13%", sm: "-10%", md: "-9%" },
       left: { xs: "90%" },
       image: "motorcycle-left.png",
     },
@@ -179,23 +179,41 @@ const SectionKemacetanJalan = () => {
   ];
 
   return (
-    <Box sx={{ marginTop: { xs: "0px", sm: "200px" } }}>
-      <Typography
-        variant="body1"
-        sx={{
-          width: { xs: "100%", sm: "400px", md: "500px" },
-          paddingX: { xs: "16px" },
-        }}
-      >
-        Jakarta merupakan salah satu kota yang sering terjadi kemacetan. Menurut
-        data BPS, pada tahun 2022 kendaraan bermotor mencapai 26 juta unit
-        kendaraan.
-      </Typography>
+    <Box
+      sx={{
+        marginTop: { xs: "0px", sm: "150px" },
+        paddingTop: { xs: "50px" },
+        backgroundImage: {
+          xs: `linear-gradient(to top right, ${color.darkGreen}, ${color.green})`,
+        },
+        borderRadius: { xs: "16px 16px 0px 0px", sm: "32px 32px 0px 0px" },
+      }}
+    >
       <Box
         sx={{
           width: { xs: "100%", xl: "1200px" },
+          paddingX: { xs: "16px", sm: "40px" },
+          marginX: { xs: "auto" },
+        }}
+      >
+        <Typography
+          variant="body1"
+          sx={{
+            width: { xs: "100%", sm: "400px", md: "500px" },
+          }}
+        >
+          <span style={{ backgroundColor: color.white, padding: "1px 2px" }}>
+            Jakarta merupakan salah satu kota yang sering terjadi kemacetan.
+            Menurut data BPS, pada tahun 2022 kendaraan bermotor mencapai
+            26 juta unit kendaraan.
+          </span>
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          width: { xs: "100%" },
           height: { xs: "fit-content" },
-          paddingTop: { xs: "13%", sm: "6%" },
+          paddingTop: { xs: "13%", sm: "7%" },
           paddingBottom: { xs: "16px", sm: "40px" },
           marginTop: { xs: "50px" },
           position: { xs: "relative" },
@@ -206,7 +224,7 @@ const SectionKemacetanJalan = () => {
           sx={{
             width: { xs: "100%" },
             position: { xs: "relative" },
-            zIndex: { xs: -1 },
+            zIndex: { xs: 0 },
           }}
         >
           <img
@@ -270,7 +288,7 @@ const SectionKemacetanJalan = () => {
 
       <Box
         sx={{
-          width: { xs: "100%", xl: "1200px" },
+          width: { xs: "100%" },
           height: { xs: "fit-content" },
           paddingTop: { xs: "15%", sm: "9%" },
           paddingBottom: { xs: "16px", sm: "40px" },
@@ -282,7 +300,7 @@ const SectionKemacetanJalan = () => {
           sx={{
             width: { xs: "100%" },
             position: { xs: "relative" },
-            zIndex: { xs: -1 },
+            zIndex: { xs: 0 },
           }}
         >
           <img
@@ -346,7 +364,7 @@ const SectionKemacetanJalan = () => {
 
       <Box
         sx={{
-          width: { xs: "100%", xl: "1200px" },
+          width: { xs: "100%" },
           height: { xs: "fit-content" },
           paddingTop: { xs: "20%" },
           paddingBottom: { xs: "16px", sm: "40px" },
@@ -358,7 +376,7 @@ const SectionKemacetanJalan = () => {
           sx={{
             width: { xs: "100%" },
             position: { xs: "relative" },
-            zIndex: { xs: -1 },
+            zIndex: { xs: 0 },
           }}
         >
           <img
@@ -422,7 +440,7 @@ const SectionKemacetanJalan = () => {
 
       <Box
         sx={{
-          width: { xs: "100%", xl: "1200px" },
+          width: { xs: "100%" },
           height: { xs: "fit-content" },
           paddingTop: { xs: "50px", sm: "100px", md: "150px" },
           paddingBottom: { xs: "16px", sm: "40px" },
@@ -434,7 +452,7 @@ const SectionKemacetanJalan = () => {
           sx={{
             width: { xs: "100%" },
             position: { xs: "relative" },
-            zIndex: { xs: -1 },
+            zIndex: { xs: 0 },
           }}
         >
           <img

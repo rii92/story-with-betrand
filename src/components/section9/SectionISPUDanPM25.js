@@ -13,7 +13,7 @@ const SectionISPUDanPM25 = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "350px", sm: "400px", md: "400px" },
+        height: { xs: "400px", sm: "600px", md: "400px" },
         paddingX: { xs: "16px", sm: "0px" },
         paddingTop: { xs: "100px", sm: "0px" },
         position: { xs: "relative" },
@@ -37,10 +37,12 @@ const SectionISPUDanPM25 = () => {
             : sm
             ? {
                 position: "absolute",
+                top: "60%",
                 left: "5%",
                 zIndex: 14,
               }
             : {
+                display: "none",
                 position: "absolute",
                 zIndex: 14,
               }
@@ -59,7 +61,7 @@ const SectionISPUDanPM25 = () => {
         </Box>
       </Parallax>
       <Parallax
-        translateX={["900px", "-300px"]}
+        translateX={lg ? ["900px", "-300px"] : sm ? ["200px", "-800px"] : []}
         style={
           lg
             ? {
@@ -75,6 +77,7 @@ const SectionISPUDanPM25 = () => {
                 zIndex: 14,
               }
             : {
+                display: "none",
                 position: "absolute",
                 zIndex: 14,
               }
