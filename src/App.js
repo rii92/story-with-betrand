@@ -41,7 +41,7 @@ function App() {
       <SectionProyeksiJumlahOrangDiKota />
       <SectionKutipanKepalaBappenas />
       <SectionPeta />
-      {/* <Section5a />
+      <Section5a />
       <Section6a />
       <Section6b />
       <Section6c />
@@ -51,7 +51,7 @@ function App() {
       <Section6g />
       <Section6h />
       <Section6i />
-      <Section6j /> */}
+      <Section6j />
       {Array.from({ length: 20 }).map(() => (
         <br />
       ))}
