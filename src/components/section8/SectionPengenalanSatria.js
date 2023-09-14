@@ -48,11 +48,11 @@ const SectionPengenalanSatria = () => {
         >
           <img
             src="assets/image/monas.png"
-            alt="Arrow"
+            alt="Monas"
             style={{ height: "100%" }}
           />
         </Box>
-        <Box sx={{}} data-aos="fade-right" data-aos-duration="1000">
+        <Box data-aos="fade-right" data-aos-duration="1000">
           <Typography
             variant="body1"
             sx={{
