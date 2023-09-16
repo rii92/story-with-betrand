@@ -11,13 +11,7 @@ const SectionPengenalanSatria = () => {
         zIndex: { xs: 1 },
       }}
     >
-      <Box sx={{ width: { xs: "100%" }, height: { xs: "60vh" } }}>
-        <Typography variant="body1" sx={{ fontSize: { xs: "14px" } }}>
-          <span style={{ padding: "1px 2px", backgroundColor: color.white }}>
-            Dia <b>Satria</b>, seorang mahasiswa yang berkuliah di Jakarta.
-          </span>
-        </Typography>
-      </Box>
+      
       <Box sx={{ width: { xs: "100%" }, height: { xs: "60vh" } }}>
         <Typography variant="body1" sx={{ fontSize: { xs: "14px" } }}>
           <span style={{ padding: "1px 2px", backgroundColor: color.white }}>

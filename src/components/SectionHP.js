@@ -14,12 +14,14 @@ const SectionHP = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "100vh" },
+        height: { xs: "fit-content" },
+        paddingBottom: { xs: "24px" },
         position: { xs: "sticky" },
         zIndex: { xs: 1 },
         display: { xs: "flex" },
         justifyContent: { xs: "center" },
         alignItems: { xs: "center" },
+        backgroundColor: { xs: "#B1D3EF" },
       }}
     >
       <Box

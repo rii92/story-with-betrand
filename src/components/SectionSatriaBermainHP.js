@@ -5,10 +5,10 @@ const SectionSatriaBermainHP = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "100vh" },
+        height: { xs: "fit-content" },
         paddingX: { xs: "16px" },
-        position: { xs: "sticky" },
-        top: { xs: 0 },
+        paddingY: { xs: "24px" },
+        position: { xs: "relative" },
         backgroundColor: { xs: "#C8D9EB" },
         display: { xs: "flex" },
         justifyContent: { xs: "center" },
@@ -33,7 +33,7 @@ const SectionSatriaBermainHP = () => {
         sx={{
           height: { xs: "10px" },
           position: { xs: "absolute" },
-          bottom: { xs: "41vh" },
+          bottom: { xs: "30%" },
           left: { xs: 0 },
           right: { xs: 0 },
           backgroundColor: { xs: "#8A9EDD" },
@@ -42,7 +42,7 @@ const SectionSatriaBermainHP = () => {
       ></Box>
       <Box
         sx={{
-          height: { xs: "41vh" },
+          height: { xs: "30%" },
           position: { xs: "absolute" },
           bottom: { xs: 0 },
           left: { xs: 0 },
