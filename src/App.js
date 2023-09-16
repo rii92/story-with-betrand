@@ -32,6 +32,11 @@ import SectionPenangananSampah from "./components/SectionPenangananSampah";
 import SectionPenangananSampahPie from "./components/SectionPenangananSampahPie";
 import SectionMasalahAirLayak from "./components/SectionMasalahAirLayak";
 import SectionPeta2 from "./components/SectionPeta2";
+import SanitasiLayakSection from "./components/SanitasiLayakSection";
+import BridgingSectionSecond from "./components/BridgingSectionSecond";
+import BridgingSectionFirst from "./components/BridgingSectionFirst";
+
+
 
 function App() {
   return (
@@ -61,6 +66,9 @@ function App() {
       <Section10 />
       <SectionPenangananSampah />
       <SectionPenangananSampahPie />
+      <BridgingSectionFirst />
+      <SanitasiLayakSection />
+      <BridgingSectionSecond />
       <SectionMasalahAirLayak />
       <Section11 />
       <Section12 />
