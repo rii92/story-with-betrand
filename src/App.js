@@ -35,6 +35,7 @@ import SectionPeta2 from "./components/SectionPeta2";
 import SanitasiLayakSection from "./components/SanitasiLayakSection";
 import BridgingSectionSecond from "./components/BridgingSectionSecond";
 import BridgingSectionFirst from "./components/BridgingSectionFirst";
+import SectionSumberAirUtama from "./components/SectionSumberAirUtama";
 
 
 
@@ -70,6 +71,7 @@ function App() {
       <SanitasiLayakSection />
       <BridgingSectionSecond />
       <SectionMasalahAirLayak />
+      <SectionSumberAirUtama />
       <Section11 />
       <Section12 />
       <Section13 />

@@ -94,10 +94,6 @@ const SectionPenangananSampahPie = () => {
     return `${piePiece.name}: ${piePiece.value}%`;
   }, []);
 
-  const renderValue = useCallback((piePiece) => {
-    return `${piePiece.value}%`;
-  }, []);
-
   return (
     <Box
       sx={{
