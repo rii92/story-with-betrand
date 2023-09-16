@@ -76,7 +76,7 @@ const Hero = () => {
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: "26px", sm: "36px" },
+              fontSize: { xs: "28px", sm: "36px" },
               textAlign: { xs: "center", lg: "left" },
               color: color.white,
             }}
@@ -86,7 +86,7 @@ const Hero = () => {
             Wujudkan{" "}
             <span style={{ fontWeight: "bold" }}>Kota Berkelanjutan</span>
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             sx={{
               width: { xs: "250px", sm: "350px" },
@@ -99,7 +99,7 @@ const Hero = () => {
           >
             Sesuaikan gaya membaca yang kamu suka, tombol kiri untuk membaca
             dengan musik dan tombol kanan untuk membaca tanpa musik.
-          </Typography>
+          </Typography> */}
         </Box>
 
         <Box

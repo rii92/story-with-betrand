@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import color from "../themes/Color";
 import { useEffect } from "react";
 
-const Section10 = () => {
+const SectionTPATerbakarSatriaKhawatir = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -13,14 +13,14 @@ const Section10 = () => {
     <Box
       sx={{
         position: { xs: "relative" },
-        zIndex: { xs: 15 },
-        backgroundColor: { xs: color.white },
+        zIndex: { xs: 1 },
+        backgroundColor: { xs: color.orange },
       }}
     >
       <Box
         sx={{
           width: { xs: "100%" },
-          height: { xs: "100vh", sm: "700px", md: "100vh" },
+          height: { xs: "650px" },
           paddingX: { xs: "16px" },
           display: { xs: "flex" },
           flexDirection: { xs: "column", md: "row" },
@@ -32,7 +32,7 @@ const Section10 = () => {
         <Typography
           sx={{
             width: { xs: "100%", sm: "500px" },
-            color: { xs: color.black },
+            color: { xs: color.white },
           }}
           data-aos="fade-left"
           data-aos-duration="1000"
@@ -48,6 +48,7 @@ const Section10 = () => {
           }}
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-delay="1500"
         >
           <Box
             sx={{
@@ -57,7 +58,7 @@ const Section10 = () => {
             }}
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="1000"
+            data-aos-delay="2500"
           >
             <img
               src="assets/image/bubble-question-mark-left.png"
@@ -74,7 +75,7 @@ const Section10 = () => {
             }}
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-delay="1000"
+            data-aos-delay="2500"
           >
             <img
               src="assets/image/bubble-question-mark-right.png"
@@ -93,4 +94,4 @@ const Section10 = () => {
   );
 };
 
-export default Section10;
+export default SectionTPATerbakarSatriaKhawatir;

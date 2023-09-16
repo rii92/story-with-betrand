@@ -1,0 +1,10 @@
+/* Sembunyikan scrollbar dari Chrome, Safari dan Opera */
+.isi-hp::-webkit-scrollbar {
+  display: none;
+}
+
+/* Sembunyikan scrollbar untuk IE, Edge dan Firefox */
+.isi-hp {
+  -ms-overflow-style: none; /* IE dan Edge */
+  scrollbar-width: none; /* Firefox */
+}

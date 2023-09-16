@@ -14,8 +14,9 @@ const Section8c = () => {
       sx={{
         paddingX: { xs: "16px", xl: "0px" },
         position: { xs: "relative" },
-        zIndex: { xs: 15 },
+        zIndex: { xs: 1 },
         overflowX: { xs: "hidden" },
+        backgroundColor: { xs: color.white },
       }}
     >
       <Box
