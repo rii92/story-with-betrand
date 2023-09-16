@@ -525,7 +525,7 @@ const Hero = () => {
               xs: "translate(435px, 210px)",
               lg: "translate(1000px,210px)",
             },
-            zIndex: { xs: 95 },
+            zIndex: { xs: 96 },
           }}
         >
           <img
@@ -543,7 +543,7 @@ const Hero = () => {
               xs: "translate(520px, 260px)",
               lg: "translate(1085px,260px)",
             },
-            zIndex: { xs: 96 },
+            zIndex: { xs: 97 },
           }}
         >
           <img

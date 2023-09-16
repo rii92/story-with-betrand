@@ -171,10 +171,9 @@ const SectionProyeksiJumlahOrangDiKota = () => {
         >
           <span style={{ backgroundColor: color.white, padding: "2px 3px" }}>
             Pada tahun 2045, jumlah penduduk Indonesia diproyeksikan akan
-            mencapai <span style={{ fontWeight: "bold" }}>318,9 juta jiwa</span>
-            , dengan <span style={{ fontWeight: "bold" }}>73 persen</span>{" "}
-            populasi penduduk akan tinggal{" "}
-            <span style={{ fontWeight: "bold" }}>di wilayah perkotaan</span>.
+            mencapai <b>318,9 juta jiwa</b>, dengan <b>73 persen</b> populasi
+            penduduk akan tinggal <b>di wilayah perkotaan</b>. (Bambang
+            Brodjonegoro)
           </span>
         </Typography>
 

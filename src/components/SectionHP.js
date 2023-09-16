@@ -15,7 +15,7 @@ const SectionHP = () => {
       sx={{
         width: { xs: "100%" },
         height: { xs: "fit-content" },
-        paddingBottom: { xs: "24px" },
+        paddingBottom: { xs: "32px" },
         position: { xs: "sticky" },
         zIndex: { xs: 1 },
         display: { xs: "flex" },
@@ -91,7 +91,7 @@ const SectionHP = () => {
                 color: { xs: color.white },
               }}
             >
-              Logo Berita
+              Kempis
             </Typography>
           </Box>
           <Box sx={{ width: { xs: "100%" }, paddingX: { xs: "16px" } }}>

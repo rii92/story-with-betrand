@@ -4,6 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Box, Typography } from "@mui/material";
 import color from "../../themes/Color";
 import { useLayoutEffect } from "react";
+import SectionKemacetanJakarta from "./SectionKemacetanJakarta";
+import SectionTPASarimukti from "./SectionTPASarimukti";
+import SectionPenangananSampah from "./SectionPenangananSampah";
 
 const SectionHorizontalScroll = () => {
   const component = useRef();
@@ -62,193 +65,7 @@ const SectionHorizontalScroll = () => {
             backgroundColor: color.black,
           }}
         >
-          <Box
-            sx={{
-              width: { xs: "80vw" },
-              padding: { xs: "8px" },
-              position: "absolute",
-              top: { xs: "30%" },
-              left: { xs: "20%" },
-              zIndex: { xs: 10 },
-              backgroundColor: { xs: color.white },
-            }}
-          >
-            <Typography variant="body1" sx={{ fontSize: { xs: "14px" } }}>
-              Jakarta merupakan salah satu kota yang sering terjadi kemacetan.
-              Menurut data BPS, pada tahun 2022 kendaraan bermotor mencapai
-              26 juta unit kendaraan.
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "0%" },
-              bottom: { xs: "96px" },
-              zIndex: { xs: 1 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "40%" },
-              bottom: { xs: "96px" },
-              zIndex: { xs: 1 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "13%" },
-              bottom: { xs: "96px" },
-              zIndex: { xs: 1 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "5%" },
-              bottom: { xs: "72px" },
-              zIndex: { xs: 2 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "30%" },
-              bottom: { xs: "72px" },
-              zIndex: { xs: 2 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "10%" },
-              bottom: { xs: "48px" },
-              zIndex: { xs: 4 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "30%" },
-              bottom: { xs: "48px" },
-              zIndex: { xs: 4 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "180px" },
-              position: { xs: "absolute" },
-              left: { xs: "50%" },
-              bottom: { xs: "48px" },
-              zIndex: { xs: 4 },
-            }}
-          >
-            <img
-              src="assets/image/motorcycle.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "480px" },
-              position: { xs: "absolute" },
-              left: { xs: "20%" },
-              bottom: { xs: "96px" },
-              zIndex: { xs: 1 },
-            }}
-          >
-            <img
-              src="assets/image/section9/car-right.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "480px" },
-              position: { xs: "absolute" },
-              left: { xs: "10%" },
-              bottom: { xs: "72px" },
-              zIndex: { xs: 2 },
-            }}
-          >
-            <img
-              src="assets/image/section9/car-right.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Box
-            sx={{
-              width: { xs: "480px" },
-              position: { xs: "absolute" },
-              left: { xs: "30%" },
-              bottom: { xs: "48px" },
-              zIndex: { xs: 3 },
-            }}
-          >
-            <img
-              src="assets/image/section9/car-right.png"
-              alt="Mobil"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <img
-            src="assets/image/city.jpg"
-            alt="City"
-            style={{ height: "100%" }}
-          />
+          <SectionKemacetanJakarta />
         </Box>
         <Box
           className="panel"
@@ -258,11 +75,17 @@ const SectionHorizontalScroll = () => {
             backgroundColor: color.black,
           }}
         >
-          <img
-            src="assets/image/city.jpg"
-            alt="City"
-            style={{ height: "100%" }}
-          />
+          <SectionTPASarimukti />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionPenangananSampah />
         </Box>
         <Box
           className="panel"
@@ -279,13 +102,6 @@ const SectionHorizontalScroll = () => {
           />
         </Box>
       </Box>
-      <Box
-        sx={{
-          width: { xs: "100%" },
-          height: { xs: "100vh" },
-          backgroundColor: { xs: color.lightBlue },
-        }}
-      ></Box>
     </Box>
   );
 };

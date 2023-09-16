@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import "../../css/Section8.css";
 import color from "../../themes/Color";
 
-const SectionSatria = () => {
+const SectionHobiSatria = () => {
   useEffect(() => {
     AOS.init();
   });
@@ -20,9 +20,9 @@ const SectionSatria = () => {
       <Box
         sx={{
           width: { xs: "100%", xl: "1200px" },
-          height: { xs: "650px" },
+          height: { xs: "700px" },
           paddingX: { xs: "16px", xl: "0px" },
-          paddingY: { xs: "40px" },
+          paddingY: { xs: "24px" },
           marginX: { xs: "auto" },
           position: { xs: "relative" },
           zIndex: { xs: 1 },
@@ -35,19 +35,17 @@ const SectionSatria = () => {
       >
         <Box
           sx={{
-            height: { xs: "550px", sm: "570px" },
+            width: { xs: "800px", sm: "570px" },
             position: { xs: "absolute" },
-            top: { xs: "5%" },
-            left: { sm: "15%", md: "25%" },
+            top: { xs: "28%" },
           }}
           data-aos="fade-down"
           data-aos-duration="1000"
-          data-aos-delay="1000"
         >
           <img
-            src="assets/image/monas.png"
-            alt="Monas"
-            style={{ height: "100%" }}
+            src="assets/image/house.png"
+            alt="Rumah"
+            style={{ width: "100%" }}
           />
         </Box>
         <Box
@@ -57,9 +55,22 @@ const SectionSatria = () => {
             zIndex: { xs: 1 },
           }}
         >
+          <Typography
+            variant="body1"
+            sx={{ marginBottom: { xs: "8px" }, fontSize: { xs: "14px" } }}
+          >
+            <span style={{ padding: "1px 2px", backgroundColor: color.white }}>
+              Satria adalah seorang yang hobi bersepeda. Saat ia bersepeda dalam
+              kegiatan Car Free Day (CFD), dia mulai melihat dampak polusi udara
+              yang buruk di jalanan kota. Meskipun merupakan “Hari Bebas
+              Kendaraan”, langit Jakarta tetap tampak gelap gulita dipenuhi
+              kabut polusi.
+            </span>
+          </Typography>
           <Typography variant="body1" sx={{ fontSize: { xs: "14px" } }}>
             <span style={{ padding: "1px 2px", backgroundColor: color.white }}>
-              Dia <b>Satria</b>, seorang mahasiswa yang berkuliah di Jakarta.
+              Dengan rasa ingin tahu yang tinggi, Satria mencari informasi
+              terkait fenomena ini.
             </span>
           </Typography>
         </Box>
@@ -84,56 +95,7 @@ const SectionSatria = () => {
           />
         </Box>
       </Box>
-      <Box
-        sx={{
-          width: { xs: "100%" },
-          height: { xs: "100%" },
-          position: { xs: "absolute" },
-          bottom: { xs: "40px", sm: "70px", md: "50px" },
-        }}
-        data-aos="fade-up"
-        data-aos-duration="800"
-      >
-        <img
-          src="assets/image/building/background-building-in-satria-3.png"
-          alt="Building"
-          style={{ width: "100%", height: "100%" }}
-        />
-      </Box>
-      <Box
-        sx={{
-          width: { xs: "100%" },
-          height: { xs: "100%" },
-          position: { xs: "absolute" },
-          bottom: { xs: "40px", sm: "70px", md: "50px" },
-        }}
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-delay="800"
-      >
-        <img
-          src="assets/image/building/background-building-in-satria-2.png"
-          alt="Building"
-          style={{ width: "100%", height: "100%" }}
-        />
-      </Box>
-      <Box
-        sx={{
-          width: { xs: "100%" },
-          height: { xs: "100%" },
-          position: { xs: "absolute" },
-          bottom: { xs: "40px", sm: "70px", md: "50px" },
-        }}
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-delay="1600"
-      >
-        <img
-          src="assets/image/building/background-building-in-satria-1.png"
-          alt="Building"
-          style={{ width: "100%", height: "100%" }}
-        />
-      </Box>
+
       <Box
         sx={{
           width: { xs: "100%" },
@@ -141,11 +103,10 @@ const SectionSatria = () => {
           position: { xs: "absolute" },
           backgroundColor: { xs: "#9B8C9D" },
           bottom: { xs: 0 },
-          borderRadius: { xs: "100% 100% 0 0" },
         }}
       ></Box>
     </Box>
   );
 };
 
-export default SectionSatria;
+export default SectionHobiSatria;
