@@ -34,6 +34,7 @@ const SectionHP = () => {
         }}
         data-aos="zoom-in"
         data-aos-duration="500"
+        data-aos-delay="1500"
       >
         <Box
           className="isi-hp"
