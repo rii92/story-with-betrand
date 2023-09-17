@@ -1,17 +1,29 @@
 import { Box, Typography } from "@mui/material";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useLayoutEffect, useRef } from "react";
 import "../css/SectionHP.css";
 import color from "../themes/Color";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const SectionHP = () => {
-  useEffect(() => {
-    AOS.init();
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#hp", {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#hp-container",
+        start: "top bottom",
+        end: "+=400",
+        scrub: 1,
+      },
+    });
   }, []);
 
   return (
     <Box
+      id="hp-container"
       sx={{
         width: { xs: "100%" },
         height: { xs: "fit-content" },
@@ -25,16 +37,16 @@ const SectionHP = () => {
       }}
     >
       <Box
+        id="hp"
         sx={{
           width: { xs: "328px", sm: "450px" },
           height: { xs: "645px", sm: "884.9px" },
           padding: { xs: "10px" },
           backgroundColor: { xs: color.black },
           borderRadius: { xs: "20px" },
+          opacity: { xs: 0 },
+          transform: { xs: "translate(0,100px)" },
         }}
-        data-aos="zoom-in"
-        data-aos-duration="500"
-        data-aos-delay="1500"
       >
         <Box
           className="isi-hp"
