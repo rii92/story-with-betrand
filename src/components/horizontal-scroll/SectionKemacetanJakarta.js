@@ -53,7 +53,7 @@ const SectionKemacetanJakarta = () => {
     },
     {
       width: { xs: "180px", sm: "250px" },
-      left: { xs: "30%" },
+      left: { xs: "35%" },
       bottom: { xs: "48px", sm: "80px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
@@ -61,7 +61,7 @@ const SectionKemacetanJakarta = () => {
     },
     {
       width: { xs: "180px", sm: "250px" },
-      left: { xs: "50%" },
+      left: { xs: "60%" },
       bottom: { xs: "48px", sm: "80px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
@@ -97,11 +97,11 @@ const SectionKemacetanJakarta = () => {
     <>
       <Box
         sx={{
-          width: { xs: "80vw" },
-          padding: { xs: "8px 16px" },
+          width: { xs: "80vw", md: "60%" },
+          padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "30%" },
-          left: { xs: "20%" },
+          left: { xs: "20%", md: "15%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -119,10 +119,18 @@ const SectionKemacetanJakarta = () => {
       {kendaraans.map((kendaraan) => (
         <Box
           sx={{
-            width: { xs: kendaraan.width.xs, sm: kendaraan.width.sm },
+            width: {
+              xs: kendaraan.width.xs,
+              sm: kendaraan.width.sm,
+              md: kendaraan.width.xs,
+            },
             position: { xs: "absolute" },
             left: { xs: kendaraan.left.xs },
-            bottom: { xs: kendaraan.bottom.xs, sm: kendaraan.bottom.sm },
+            bottom: {
+              xs: kendaraan.bottom.xs,
+              sm: kendaraan.bottom.sm,
+              md: kendaraan.bottom.xs,
+            },
             zIndex: { xs: kendaraan.zIndex },
           }}
         >

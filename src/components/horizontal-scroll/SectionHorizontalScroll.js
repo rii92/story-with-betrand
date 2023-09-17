@@ -36,7 +36,7 @@ const SectionHorizontalScroll = () => {
       <Box
         ref={slider}
         sx={{
-          width: { xs: "500%" },
+          width: { xs: "500%", md: "fit-content" },
           height: { xs: "100vh" },
           display: { xs: "flex" },
           overflow: { xs: "hidden" },
@@ -44,7 +44,7 @@ const SectionHorizontalScroll = () => {
       >
         <Box
           sx={{
-            width: { xs: "150px", sm: "250px" },
+            width: { xs: "150px", sm: "250px", md: "160px" },
             position: { xs: "absolute" },
             left: { xs: "16px" },
             bottom: { xs: "32px" },

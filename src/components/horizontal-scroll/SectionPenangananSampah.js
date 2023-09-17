@@ -85,11 +85,11 @@ const SectionPenangananSampah = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw", sm: "70vw" },
-          padding: { xs: "8px 16px" },
+          width: { xs: "90vw", sm: "70vw", md: "40%" },
+          padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
-          top: { xs: "20%", sm: "35%" },
-          left: { xs: "20%", sm: "10%" },
+          top: { xs: "20%", sm: "35%", md: "10%" },
+          left: { xs: "20%", sm: "10%", md: "0%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -117,13 +117,13 @@ const SectionPenangananSampah = () => {
 
       <Box
         sx={{
-          width: { xs: "90vw" },
-          height: { xs: "30vh" },
+          width: { xs: "90vw", md: "53%" },
+          height: { xs: "30vh", md: "50%" },
           paddingY: { xs: "16px" },
-          paddingRight: { xs: "16px" },
+          paddingRight: { xs: "24px" },
           position: "absolute",
           top: { xs: "20%" },
-          left: { xs: "53%", sm: "45%" },
+          left: { xs: "53%", sm: "45%", md: "43%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
