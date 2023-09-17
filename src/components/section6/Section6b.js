@@ -1,7 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import { useContext, useEffect, useRef } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import PetaContext from "../../context/PetaContext";
 import color from "../../themes/Color";
 
@@ -11,12 +9,6 @@ const Section6b = () => {
     setPosisiAtasElementMetropolitanKedua,
   } = useContext(PetaContext);
   const metropolitanKedua = useRef();
-  const regions = [
-    "Kota Palembang",
-    "Kabupaten Banyuasin",
-    "Kabupaten Ogan Ilir",
-    "Kabupaten Ogan Komering Ilir",
-  ];
 
   const getCoords = (elem) => {
     // crossbrowser version
@@ -38,9 +30,8 @@ const Section6b = () => {
   };
 
   useEffect(() => {
-    AOS.init();
     const posisiMetropolitanKedua = getCoords(metropolitanKedua);
-    setPosisiAtasElementMetropolitanKedua(posisiMetropolitanKedua.top);
+    setPosisiAtasElementMetropolitanKedua(posisiMetropolitanKedua.left);
   }, [posisiAtasElementMetropolitanKedua]);
 
   return (
@@ -51,44 +42,51 @@ const Section6b = () => {
         marginX: { xs: "auto" },
         marginBottom: { xs: "100px" },
         paddingX: { xs: "16px", md: "40px", xl: "0px" },
-        position: { xs: "relative" },
-        zIndex: { xs: 10 },
+        display: { xs: "flex" },
+        justifyContent: { xs: "start" },
+        alignItems: { xs: "center" },
       }}
       ref={metropolitanKedua}
     >
-      <Typography
-        variant="h4"
+      <Box
         sx={{
-          width: { xs: "fit-content" },
-          paddingX: { xs: "16px" },
-          paddingY: { xs: "8px" },
+          position: { xs: "relative" },
+          width: { xs: "100%", sm: "470px" },
+          padding: { xs: "8px 16px", sm: "16px 24px" },
           backgroundColor: { xs: color.white },
-          fontWeight: { xs: "bold" },
-          fontSize: { xs: "24px", sm: "34px" },
         }}
-        data-aos="zoom-in-up"
-        data-aos-duration="1000"
       >
-        Patungraya Agung
-      </Typography>
-      {regions.map((region, index) => (
         <Typography
-          variant="h6"
-          sx={{
-            width: { xs: "fit-content" },
-            marginTop: { xs: "8px" },
-            paddingX: { xs: "8px" },
-            paddingY: { xs: "4px" },
-            backgroundColor: { xs: color.white },
-            fontSize: { xs: "16px", sm: "20px" },
-          }}
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay={index * 300}
+          variant="body1"
+          sx={{ fontSize: { xs: "14px", sm: "18px" } }}
         >
-          {region}
+          Kota Palembang, Kabupaten Banyuasin, Kabupaten Ogan Ilir, dan
+          Kabupaten Ogan Komering Ilir
         </Typography>
-      ))}
+        <Typography
+          variant="h4"
+          sx={{
+            fontSize: { xs: "24px", sm: "34px" },
+            fontWeight: { xs: "bold" },
+          }}
+        >
+          Patungraya Agung
+        </Typography>
+        <Box
+          sx={{
+            width: { xs: "150px" },
+            position: { xs: "absolute" },
+            bottom: { xs: "-50px" },
+            right: { xs: "-50px" },
+          }}
+        >
+          <img
+            src="assets/image/city-icon/patungraya-agung.png"
+            alt="Icon Patungraya Agung"
+            style={{ width: "100%" }}
+          />
+        </Box>
+      </Box>
     </Box>
   );
 };

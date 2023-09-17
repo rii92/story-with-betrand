@@ -35,10 +35,12 @@ const Section5a = () => {
   return (
     <Box
       sx={{
+        width: { xs: "center" },
         height: { xs: "100vh" },
         paddingX: { xs: "16px", md: "40px", xl: "0px" },
-        position: { xs: "relative" },
-        zIndex: { xs: 10 },
+        display: { xs: "flex" },
+        justifyContent: { xs: "start" },
+        alignItems: { xs: "center" },
       }}
       ref={slideAwalPeta}
     >
@@ -46,8 +48,7 @@ const Section5a = () => {
         variant="body1"
         sx={{
           width: { xs: "100%", md: "450px" },
-          marginLeft: { xs: "auto" },
-          textAlign: { xs: "left", md: "right" },
+          textAlign: { xs: "left" },
           fontSize: { xs: "12px", sm: "16px" },
           color: color.white,
         }}
