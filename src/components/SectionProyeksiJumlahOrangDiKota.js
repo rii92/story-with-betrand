@@ -173,7 +173,7 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             Pada tahun 2045, jumlah penduduk Indonesia diproyeksikan akan
             mencapai <b>318,9 juta jiwa</b>, dengan <b>73 persen</b> populasi
             penduduk akan tinggal <b>di wilayah perkotaan</b>. (Bambang
-            Brodjonegoro)
+            Brodjonegoro, 2019)
           </span>
         </Typography>
 

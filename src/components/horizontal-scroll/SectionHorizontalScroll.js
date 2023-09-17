@@ -7,6 +7,7 @@ import { useLayoutEffect } from "react";
 import SectionKemacetanJakarta from "./SectionKemacetanJakarta";
 import SectionTPASarimukti from "./SectionTPASarimukti";
 import SectionPenangananSampah from "./SectionPenangananSampah";
+import SectionSungaiKotor from "./SectionSungaiKotor";
 
 const SectionHorizontalScroll = () => {
   const component = useRef();
@@ -94,8 +95,18 @@ const SectionHorizontalScroll = () => {
             backgroundColor: color.black,
           }}
         >
+          <SectionSungaiKotor />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
           <img
-            src="assets/image/city.jpg"
+            src="assets/image/dirty-river.png"
             alt="City"
             style={{ height: "100%" }}
           />
