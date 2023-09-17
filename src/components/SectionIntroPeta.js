@@ -48,16 +48,16 @@ const Section5a = () => {
         variant="body1"
         sx={{
           width: { xs: "100%", md: "450px" },
+          padding: { xs: "8px 16px", sm: "16px 24px" },
           textAlign: { xs: "left" },
           fontSize: { xs: "12px", sm: "16px" },
-          color: color.white,
+          backgroundColor: { xs: color.white },
         }}
       >
-        <span style={{ backgroundColor: color.black, padding: "2px 3px" }}>
-          Oleh karenanya, strategi pembangunan perkotaan Indonesia ke depan akan
-          menitikberatkan pada aglomerasi perkotaan atau wilayah metropolitan
-          sebagai alat pertumbuhan ekonomi.
-        </span>
+        Oleh karenanya, strategi pembangunan perkotaan Indonesia ke depan akan{" "}
+        <strong>menitikberatkan</strong> pada{" "}
+        <strong>aglomerasi perkotaan</strong> atau{" "}
+        <strong>wilayah metropolitan</strong> sebagai alat pertumbuhan ekonomi.
       </Typography>
     </Box>
   );

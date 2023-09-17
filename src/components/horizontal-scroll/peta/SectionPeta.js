@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Box } from "@mui/material";
 import { useLayoutEffect } from "react";
-import Section5a from "../../Section5a";
+import SectionIntroPeta from "../../SectionIntroPeta";
 import {
   Section6a,
   Section6b,
@@ -83,7 +83,7 @@ const SectionHorizontalScrollPeta = () => {
             zIndex: 2,
           }}
         >
-          <Section5a />
+          <SectionIntroPeta />
         </Box>
         {componentMetropolitan.map((metropolitan) => (
           <Box
