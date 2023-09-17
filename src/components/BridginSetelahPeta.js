@@ -30,9 +30,9 @@ const BridginSetelahPeta = () => {
         data-aos-duration="1000"
       >
         Meskipun berkembang secara pesat, wilayah metropolitan kemudian
-        menghadapi berbagai permasalahan yang beragam, termasuk juga terkait isu
-        lingkungan. Beberapa kota di atas, merupakan hanya sebagian dari wilayah
-        metropolitan di Indonesia.
+        <strong>menghadapi berbagai permasalahan</strong> yang beragam, termasuk
+        juga terkait isu lingkungan. Beberapa kota di atas, merupakan hanya
+        sebagian dari wilayah metropolitan di Indonesia.
       </Typography>
     </Box>
   );
