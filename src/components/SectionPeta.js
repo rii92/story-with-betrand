@@ -2,6 +2,12 @@ import { useContext, useEffect, useState } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import PetaContext from "../context/PetaContext";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useRef } from "react";
+import { useLayoutEffect } from "react";
+import { Box } from "@mui/material";
+import color from "../themes/Color";
 
 const SetViewOnClick = ({ coords, zoom }) => {
   const map = useMap();
@@ -28,6 +34,7 @@ const SectionPeta = () => {
   } = useContext(PetaContext);
   const [coords, setCoords] = useState([-1.694867, 118.0597507]);
   const [zoom, setZoom] = useState(5);
+  const mapContainer = useRef();
   const metropolitan = [
     [3.4811201, 98.047515, 9], // Mebidangro
     [-2.9509919, 104.5710289, 9], // Patungraya Agung
@@ -106,6 +113,20 @@ const SectionPeta = () => {
   };
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+      trigger: "#map-container", // What element triggers the scroll\
+      // scroller: "#map-container",
+      scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
+      start: "top top", // Can be top, center, bottom
+      end: "bottom bottom",
+      pin: "#map",
+      pinSpacing: false,
+      markers: true,
+    });
+  }, []);
+
+  useEffect(() => {
     window.addEventListener("scroll", isPindahKoordinat);
 
     return () => {
@@ -119,23 +140,29 @@ const SectionPeta = () => {
   };
 
   return (
-    <MapContainer
-      center={coords}
-      zoom={zoom}
-      scrollWheelZoom={false}
-      zoomAnimation={true}
-      zoomControl={false}
-      dragging={false}
-      style={{
-        position: "sticky",
-        top: 0,
-        width: "100%",
-        height: "100vh",
-      }}
-    >
-      <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" />
-      <SetViewOnClick coords={coords} zoom={zoom} />
-    </MapContainer>
+    <Box id="map-container" sx={{ height: "400vh" }}>
+      <h1 id="map" style={{ position: "absolute", zIndex: 100000000 }}>
+        Ini adalah section peta
+      </h1>
+      {/* <MapContainer
+        ref={mapContainer}
+        center={coords}
+        zoom={zoom}
+        scrollWheelZoom={false}
+        zoomAnimation={true}
+        zoomControl={false}
+        dragging={false}
+        style={{
+          position: { xs: "relative" },
+          zIndex: { xs: 15 },
+          width: "100%",
+          height: "100vh",
+        }}
+      >
+        <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" />
+        <SetViewOnClick coords={coords} zoom={zoom} />
+      </MapContainer> */}
+    </Box>
   );
 };
 

@@ -10,7 +10,7 @@ const SectionTPASarimukti = () => {
           padding: { xs: "8px" },
           position: "absolute",
           top: { xs: "20%" },
-          left: { xs: "20%" },
+          left: { xs: "40%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -19,14 +19,13 @@ const SectionTPASarimukti = () => {
           variant="body1"
           sx={{ fontSize: { xs: "14px", sm: "16px" } }}
         >
-          Saat ia melewati daerah di sekitar TPA Sarimukti, asap pekat
-          mengganggu pandangannya. Hal ini disebabkan karena kebakaran di TPA
-          Sarimukti yang terjadi sejak Sabtu (19/8/2023). Penyebabnya diduga
-          akibat dari puntung rokok serta adanya gas metan dari tumpukan sampah.
-          Hingga saat ini, area yang terbakar sekitar 10 hektar di zona 4, 3 dan
-          2. Akibatnya, asap kebakaran yang ditimbulkan menyebar ke tiga desa.
-          Ketiga desa itu, yaitu Desa Sarimukti, Desa Mandalasari, Desa
-          Rajamandala.
+          Saat dalam perjalanan ia melihat berita Kebakaran di TPA Sarimukti.
+          Kebakaran di TPA Sarimukti terjadi sejak Sabtu (19/8/2023).
+          Penyebabnya diduga akibat dari puntung rokok serta adanya gas metan
+          dari tumpukan sampah. Hingga saat ini, area yang terbakar sekitar 10
+          hektar di zona 4, 3 dan 2. Akibatnya, asap kebakaran yang ditimbulkan
+          menyebar ke tiga desa, yaitu Desa Sarimukti, Desa Mandalasari, Desa
+          Rajamandala. (Republika.co.id, 2023)
         </Typography>
       </Box>
 

@@ -28,12 +28,12 @@ function App() {
       <SectionJumlahOrangDiKota />
       <SectionProyeksiJumlahOrangDiKota />
       <SectionKutipanKepalaBappenas />
-      <SectionPeta />
+      {/* <SectionPeta />
       <Section5a />
       <Section6a />
       <Section6b />
       <Section6c />
-      <Section6d />
+      <Section6d /> */}
     </div>
   );
 }

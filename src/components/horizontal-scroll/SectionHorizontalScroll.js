@@ -24,7 +24,7 @@ const SectionHorizontalScroll = () => {
           pin: true,
           scrub: 1,
           end: () => "+=" + slider.current.offsetWidth,
-          markers: true,
+          // markers: true,
         },
       });
     }, component);
