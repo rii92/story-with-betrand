@@ -85,11 +85,11 @@ const SectionPenangananSampah = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw" },
+          width: { xs: "90vw", sm: "70vw" },
           padding: { xs: "8px 16px" },
           position: "absolute",
-          top: { xs: "20%" },
-          left: { xs: "20%" },
+          top: { xs: "20%", sm: "35%" },
+          left: { xs: "20%", sm: "10%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -119,10 +119,11 @@ const SectionPenangananSampah = () => {
         sx={{
           width: { xs: "90vw" },
           height: { xs: "30vh" },
+          paddingY: { xs: "16px" },
           paddingRight: { xs: "16px" },
           position: "absolute",
           top: { xs: "20%" },
-          left: { xs: "53%" },
+          left: { xs: "53%", sm: "45%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}

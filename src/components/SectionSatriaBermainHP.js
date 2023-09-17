@@ -6,8 +6,8 @@ const SectionSatriaBermainHP = () => {
       sx={{
         width: { xs: "100%" },
         height: { xs: "fit-content" },
-        paddingX: { xs: "16px" },
-        paddingY: { xs: "24px" },
+        paddingX: { xs: "16px", sm: "40px" },
+        paddingY: { xs: "24px", sm: "40px" },
         position: { xs: "relative" },
         backgroundColor: { xs: "#C8D9EB" },
         display: { xs: "flex" },

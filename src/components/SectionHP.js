@@ -15,7 +15,7 @@ const SectionHP = () => {
       sx={{
         width: { xs: "100%" },
         height: { xs: "fit-content" },
-        paddingBottom: { xs: "32px" },
+        paddingBottom: { xs: "32px", sm: "48px" },
         position: { xs: "sticky" },
         zIndex: { xs: 1 },
         display: { xs: "flex" },
@@ -26,8 +26,8 @@ const SectionHP = () => {
     >
       <Box
         sx={{
-          width: { xs: "328px" },
-          height: { xs: "600px" },
+          width: { xs: "328px", sm: "450px" },
+          height: { xs: "645px", sm: "884.9px" },
           padding: { xs: "10px" },
           backgroundColor: { xs: color.black },
           borderRadius: { xs: "20px" },
@@ -66,18 +66,26 @@ const SectionHP = () => {
               color: { xs: color.white },
             }}
           >
-            <Box>
-              <Typography>10.24 AM</Typography>
-            </Box>
-            <Box>
-              <Typography>100%</Typography>
-            </Box>
+            <Typography
+              sx={{
+                fontSize: { xs: "12px", sm: "16px" },
+              }}
+            >
+              10.24 AM
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: { xs: "12px", sm: "16px" },
+              }}
+            >
+              100%
+            </Typography>
           </Box>
           <Box
             sx={{
               width: { xs: "100%" },
-              height: { xs: "50px" },
               paddingX: { xs: "16px" },
+              paddingY: { xs: "16px", sm: "24px" },
               marginBottom: { xs: "8px" },
               display: { xs: "flex" },
               alignItems: { xs: "center" },
@@ -87,7 +95,7 @@ const SectionHP = () => {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "24px" },
+                fontSize: { xs: "24px", sm: "32px" },
                 fontWeight: { xs: "bold" },
                 color: { xs: color.white },
               }}
@@ -96,20 +104,26 @@ const SectionHP = () => {
             </Typography>
           </Box>
           <Box sx={{ width: { xs: "100%" }, paddingX: { xs: "16px" } }}>
-            <Typography variant="h3" sx={{ fontSize: { xs: "20px" } }}>
+            <Typography
+              variant="h3"
+              sx={{ fontSize: { xs: "20px", sm: "28px" } }}
+            >
               Ternyata, polusi Jakarta dapat mengurangi harapan hidup seseorang
               hingga <b>5,5 tahun</b>.
             </Typography>
             <Box
               sx={{
                 width: { xs: "100%" },
-                height: "150px",
+                height: { xs: "150px", sm: "200px" },
                 margin: { xs: "16px 0px 8px" },
                 backgroundColor: { xs: color.lightBlue },
                 borderRadius: { xs: "12px" },
               }}
             ></Box>
-            <Typography variant="body1" sx={{ fontSize: "12px" }}>
+            <Typography
+              variant="body1"
+              sx={{ fontSize: { xs: "12px", sm: "16px" } }}
+            >
               Menurut data yang dikeluarkan oleh Kementerian Lingkungan Hidup
               dan Kehutanan (MenLHK), nilai Indeks Standar Pencemar Udara (ISPU)
               Jakarta mencapai 130 yang berarti udara di Jakarta tidak sehat.
@@ -122,13 +136,16 @@ const SectionHP = () => {
             <Box
               sx={{
                 width: { xs: "100%" },
-                height: "150px",
+                height: { xs: "150px", sm: "200px" },
                 margin: { xs: "16px 0px 8px" },
                 backgroundColor: { xs: color.lightBlue },
                 borderRadius: { xs: "12px" },
               }}
             ></Box>
-            <Typography variant="body1" sx={{ fontSize: "12px" }}>
+            <Typography
+              variant="body1"
+              sx={{ fontSize: { xs: "12px", sm: "16px" } }}
+            >
               Dari semua polutan yang terdaftar, PM2.5 merupakan ancaman
               kesehatan terbesar bagi kesehatan manusia. Ini karena PM2.5 dapat
               masuk jauh ke bagian paling sensitif dari saluran pernapasan saat

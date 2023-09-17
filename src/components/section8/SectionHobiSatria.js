@@ -33,7 +33,7 @@ const SectionHobiSatria = () => {
       <Box
         ref={slider}
         sx={{
-          width: { xs: "500%" },
+          width: { xs: "400%", sm: "300%" },
           height: { xs: "100vh" },
           display: { xs: "flex" },
           overflow: { xs: "hidden" },
@@ -41,7 +41,7 @@ const SectionHobiSatria = () => {
       >
         <Box
           sx={{
-            width: { xs: "150px" },
+            width: { xs: "200px", sm: "300px" },
             position: { xs: "absolute" },
             left: { xs: "16px" },
             bottom: { xs: "32px" },
@@ -68,7 +68,7 @@ const SectionHobiSatria = () => {
               padding: { xs: "8px" },
               position: "absolute",
               top: { xs: "30%" },
-              left: { xs: "20%" },
+              left: { xs: "20%", sm: "10%" },
               zIndex: { xs: 10 },
               backgroundColor: { xs: color.white },
             }}
@@ -101,7 +101,7 @@ const SectionHobiSatria = () => {
         >
           <Box
             sx={{
-              width: { xs: "80vw" },
+              width: { xs: "80vw", sm: "50vw" },
               padding: { xs: "8px" },
               position: "absolute",
               top: { xs: "30%" },

@@ -44,7 +44,7 @@ const SectionHorizontalScroll = () => {
       >
         <Box
           sx={{
-            width: { xs: "150px" },
+            width: { xs: "150px", sm: "250px" },
             position: { xs: "absolute" },
             left: { xs: "16px" },
             bottom: { xs: "32px" },
