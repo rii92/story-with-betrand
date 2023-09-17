@@ -50,55 +50,77 @@ const SectionPeta = () => {
   };
 
   const cekKoordinatSekarang = (scrollTop) => {
+    const pengenalan = 10528,
+      pertama = 11945,
+      kedua = 13362,
+      ketiga = 14778,
+      keempat = 16195,
+      kelima = 17612,
+      keenam = 19029,
+      ketujuh = 20446,
+      kedelapan = 21862,
+      kesembilan = 23279,
+      kesepuluh = 24696;
+
     if (
-      Math.floor(scrollTop) >= posisiAtasElementPengenalan + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanPertama + 100
+      Math.floor(scrollTop) > pengenalan + 200 &&
+      Math.floor(scrollTop) < pertama + 200
     ) {
+      // console.log("Mebidangro");
       pindahKoordinatPeta(0);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanPertama + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKedua + 100
+      Math.floor(scrollTop) > pertama + 200 &&
+      Math.floor(scrollTop) < kedua + 200
     ) {
+      // console.log("Patungraya Agung", posisiAtasElementMetropolitanPertama);
       pindahKoordinatPeta(1);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKedua + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKetiga + 100
+      Math.floor(scrollTop) > kedua + 200 &&
+      Math.floor(scrollTop) < ketiga + 200
     ) {
+      // console.log("Jabodetabekpunjur", posisiAtasElementMetropolitanKedua);
       pindahKoordinatPeta(2);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKetiga + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKeempat + 100
+      Math.floor(scrollTop) > ketiga + 200 &&
+      Math.floor(scrollTop) < keempat + 200
     ) {
+      // console.log("Cekungan Bandung", posisiAtasElementMetropolitanKetiga);
       pindahKoordinatPeta(3);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKeempat + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKelima + 100
+      Math.floor(scrollTop) > keempat + 200 &&
+      Math.floor(scrollTop) < kelima + 200
     ) {
+      // console.log("Kedungsepur", posisiAtasElementMetropolitanKeempat);
       pindahKoordinatPeta(4);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKelima + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKeenam + 100
+      Math.floor(scrollTop) > kelima + 200 &&
+      Math.floor(scrollTop) < keenam + 200
     ) {
+      // console.log("Gerbangkertosusila", posisiAtasElementMetropolitanKelima);
       pindahKoordinatPeta(5);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKeenam + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKetujuh + 100
+      Math.floor(scrollTop) > keenam + 200 &&
+      Math.floor(scrollTop) < ketujuh + 200
     ) {
+      // console.log("Banjar Bakula", posisiAtasElementMetropolitanKeenam);
       pindahKoordinatPeta(6);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKetujuh + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKedelapan + 100
+      Math.floor(scrollTop) > ketujuh + 200 &&
+      Math.floor(scrollTop) < kedelapan + 200
     ) {
+      // console.log("Sarbagita", posisiAtasElementMetropolitanKetujuh);
       pindahKoordinatPeta(7);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKedelapan + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKesembilan + 100
+      Math.floor(scrollTop) > kedelapan + 200 &&
+      Math.floor(scrollTop) < kesembilan + 200
     ) {
+      // console.log("Mamminasata", posisiAtasElementMetropolitanKedelapan);
       pindahKoordinatPeta(8);
     } else if (
-      Math.floor(scrollTop) >= posisiAtasElementMetropolitanKesembilan + 100 &&
-      Math.floor(scrollTop) <= posisiAtasElementMetropolitanKesepuluh + 100
+      Math.floor(scrollTop) > kesembilan + 200 &&
+      Math.floor(scrollTop) < kesepuluh + 200
     ) {
+      // console.log("Bimindo", posisiAtasElementMetropolitanKesepuluh);
       pindahKoordinatPeta(9);
     } else {
       pindahKoordinatPeta(10);
@@ -115,6 +137,7 @@ const SectionPeta = () => {
 
   const isPindahKoordinat = (e) => {
     const scrollTop = window.scrollY;
+    console.log(scrollTop);
     cekKoordinatSekarang(scrollTop);
   };
 

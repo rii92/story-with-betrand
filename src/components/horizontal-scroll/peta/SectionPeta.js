@@ -34,7 +34,27 @@ const SectionHorizontalScrollPeta = () => {
   const component = useRef();
   const slider = useRef();
 
+  const getCoords = (elem) => {
+    // crossbrowser version
+    var box = elem.current.getBoundingClientRect();
+
+    var body = document.body;
+    var docEl = document.documentElement;
+
+    var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+    var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+
+    var clientTop = docEl.clientTop || body.clientTop || 0;
+    var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+
+    var top = box.top;
+    var left = box.left;
+
+    return { top: Math.round(top), left: Math.round(left) };
+  };
+
   useLayoutEffect(() => {
+    console.log("posisi atas", getCoords(component).top);
     gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
       let panels = gsap.utils.toArray(".panel");
@@ -45,11 +65,13 @@ const SectionHorizontalScrollPeta = () => {
           trigger: slider.current,
           pin: true,
           scrub: 1,
+          snap: 1 / (panels.length - 1),
           end: () => "+=" + slider.current.offsetWidth,
           // markers: true,
         },
       });
     }, component);
+    console.log(slider.current.offsetWidth);
     return () => ctx.revert();
   });
 
@@ -58,7 +80,7 @@ const SectionHorizontalScrollPeta = () => {
       <Box
         ref={slider}
         sx={{
-          width: { xs: "1100%" },
+          width: { xs: "1200%" },
           height: { xs: "100vh" },
           display: { xs: "flex" },
           overflow: { xs: "hidden" },
@@ -98,6 +120,15 @@ const SectionHorizontalScrollPeta = () => {
             {metropolitan}
           </Box>
         ))}
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            position: { xs: "relative" },
+            zIndex: 2,
+          }}
+        ></Box>
       </Box>
     </Box>
   );
