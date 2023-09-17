@@ -8,6 +8,12 @@ import SectionKemacetanJakarta from "./SectionKemacetanJakarta";
 import SectionTPASarimukti from "./SectionTPASarimukti";
 import SectionPenangananSampah from "./SectionPenangananSampah";
 import SectionSungaiKotor from "./SectionSungaiKotor";
+import SectionPenyumbangSampah from "./SectionPenyumbangSampah";
+import SectionPenyumbangSampahLanjutan from "./SectionPenyumbangSampahLanjutan";
+import SectionSanitasiDiBandung from "./SectionSanitasiDiBandung";
+import SectionSanitasiDiBandungLanjutan from "./SectionSanitasiDiBandungLanjutan";
+import SectionSungaiKotorLanjutan from "./SectionSungaiKotorLanjutan";
+import SectionSungaiKotorLanjutan2 from "./SectionSungaiKotorLanjutan2";
 
 const SectionHorizontalScroll = () => {
   const component = useRef();
@@ -36,7 +42,7 @@ const SectionHorizontalScroll = () => {
       <Box
         ref={slider}
         sx={{
-          width: { xs: "500%", md: "fit-content" },
+          width: { xs: "1000%", md: "fit-content" },
           height: { xs: "100vh" },
           display: { xs: "flex" },
           overflow: { xs: "hidden" },
@@ -95,7 +101,67 @@ const SectionHorizontalScroll = () => {
             backgroundColor: color.black,
           }}
         >
+          <SectionPenyumbangSampah />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionPenyumbangSampahLanjutan />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionSanitasiDiBandung />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionSanitasiDiBandungLanjutan />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
           <SectionSungaiKotor />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionSungaiKotorLanjutan />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionSungaiKotorLanjutan2 />
         </Box>
         <Box
           className="panel"
