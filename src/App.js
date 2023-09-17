@@ -13,17 +13,17 @@ import BridginSetelahPeta from "./components/BridginSetelahPeta";
 function App() {
   return (
     <div>
-      <Hero />
+      {/* <Hero />
       <SectionPengenalanSatria />
       <SectionHobiSatria />
       <SectionSatriaBermainHP />
-      <SectionHP />
+      <SectionHP /> */}
       <SectionHorizontalScroll />
-      <SectionJumlahOrangDiKota />
+      {/* <SectionJumlahOrangDiKota />
       <SectionProyeksiJumlahOrangDiKota />
       <SectionKutipanKepalaBappenas />
       <SectionHorizontalScrollPeta />
-      <BridginSetelahPeta />
+      <BridginSetelahPeta /> */}
     </div>
   );
 }

@@ -8,6 +8,8 @@ import SectionKemacetanJakarta from "./SectionKemacetanJakarta";
 import SectionTPASarimukti from "./SectionTPASarimukti";
 import SectionPenangananSampah from "./SectionPenangananSampah";
 import SectionSungaiKotor from "./SectionSungaiKotor";
+import SectionPenyumbangSampah from "./SectionPenyumbangSampah";
+import SectionPenyumbangSampahLanjutan from "./SectionPenyumbangSampahLanjutan";
 
 const SectionHorizontalScroll = () => {
   const component = useRef();
@@ -86,6 +88,26 @@ const SectionHorizontalScroll = () => {
           }}
         >
           <SectionPenangananSampah />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionPenyumbangSampah />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionPenyumbangSampahLanjutan />
         </Box>
         <Box
           className="panel"
