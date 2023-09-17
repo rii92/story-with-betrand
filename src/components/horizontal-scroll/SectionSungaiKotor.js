@@ -6,11 +6,11 @@ const SectionSungaiKotor = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw", md: "60%" },
+          width: { xs: "90vw", md: "35%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
-          top: { xs: "20%", sm: "30%", md: "20%" },
-          left: { xs: "40%", md: "35%" },
+          top: { xs: "20%", sm: "30%", md: "10%" },
+          left: { xs: "40%", md: "5%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -34,6 +34,24 @@ const SectionSungaiKotor = () => {
           kemudian diikuti oleh DKI Jakarta (42,73). Kualitas air pada 2
           provinsi tersebut tergolong pada kategori Buruk.
         </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          width: { xs: "90vw", md: "50%" },
+          padding: { xs: "8px 16px" },
+          position: "absolute",
+          top: { xs: "20%", sm: "30%", md: "20%" },
+          left: { xs: "40%", md: "43%" },
+          zIndex: { xs: 10 },
+          backgroundColor: { xs: color.white },
+        }}
+      >
+        <img
+          src="assets/image/peta-kualitas-air.png"
+          alt="Peta Kualitas Air"
+          style={{ width: "100%" }}
+        />
       </Box>
 
       <img

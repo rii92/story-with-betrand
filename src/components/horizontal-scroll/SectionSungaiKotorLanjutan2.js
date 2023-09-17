@@ -11,7 +11,7 @@ import {
 } from "recharts";
 import color from "../../themes/Color";
 
-const SectionPenangananSampah = () => {
+const SectionSungaiKotorLanjutan2 = () => {
   const dataPenangananSampah = [
     {
       name: "2020",
@@ -98,20 +98,15 @@ const SectionPenangananSampah = () => {
           variant="body1"
           sx={{
             fontSize: { xs: "14px", sm: "16px" },
-            marginBottom: { xs: "8px" },
           }}
         >
-          Penanganan sampah merupakan permasalahan yang terjadi di berbagai
-          wilayah di Indonesia. Penanganan sampah di Indonesia terjadi secara
-          fluktuatif setiap tahunnya.
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{ fontSize: { xs: "14px", sm: "16px" } }}
-        >
-          Wilayah Kota Bandung, Kabupaten Bandung, Kabupaten Bandung Barat, dan
-          Kota Cimahi (Cekungan Bandung) ini merupakan salah satu wilayah dengan
-          penanganan sampah yang terendah.
+          Selain itu, keberadaan pemukiman kumuh di sekitar bantaran sungai juga
+          berpotensi menyebabkan banjir. Hal tersebut dapat terjadi karena
+          kurangnya daerah resapan maupun akibat perilaku membuang sampah
+          sembarangan yang dilakukan penduduk pada pemukiman tersebut.
+          Berdasarkan data dari Publikasi Statistik Lingkungan Hidup BPS,
+          terdapat korelasi positif antara jumlah desa yang memiliki pemukiman
+          kumuh dengan kejadian banjir.
         </Typography>
       </Box>
 
@@ -135,55 +130,22 @@ const SectionPenangananSampah = () => {
             <XAxis dataKey="name" type="category" />
             <Tooltip content={renderTooltip} />
             <Legend verticalAlign="top" height={60} formatter={renderLegend} />
-            {/* <Line name="Bimindo" dataKey="persentaseBimindo" stroke="#0772E2" />
-            <Line
-              name="Sarbagita"
-              dataKey="persentaseSarbagita"
-              stroke="#13AFBE"
-            />
-            <Line
-              name="Jabodetabekpunjur"
-              dataKey="persentaseJabodetabekpunjur"
-              stroke="#EF0197"
-            />
-            <Line
-              name="Banjar Bakula"
-              dataKey="persentaseBanjarBakula"
-              stroke="#F17005"
-            />
-            <Line
-              name="Patungraya Agung"
-              dataKey="persentasePatungrayaAgung"
-              stroke="#FDA806"
-            /> */}
             <Line
               name="Cekungan Bandung"
               dataKey="persentaseCekunganBandung"
               stroke="#84AD56"
             />
-            {/* <Line
-              name="Mamminasata"
-              dataKey="persentaseMamminasata"
-              stroke="#6039AD"
-            />
-            <Line label="" dataKey="persentaseMebidangro" stroke="#02A9F0" />
-            <Line
-              name="Gerbangkertosusila"
-              dataKey="persentaseGerbangkertosusila"
-              stroke="#E9417A"
-            />
-            <Line
-              name="Kedungsepur"
-              dataKey="persentaseKedungsepur"
-              stroke="#E37C58"
-            /> */}
           </LineChart>
         </ResponsiveContainer>
       </Box>
 
-      <img src="assets/image/city.jpg" alt="City" style={{ height: "100%" }} />
+      <img
+        src="assets/image/dirty-river.png"
+        alt="City"
+        style={{ height: "100%" }}
+      />
     </>
   );
 };
 
-export default SectionPenangananSampah;
+export default SectionSungaiKotorLanjutan2;
