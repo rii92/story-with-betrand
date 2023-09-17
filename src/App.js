@@ -8,6 +8,7 @@ import SectionJumlahOrangDiKota from "./components/SectionJumlahOrangDiKota";
 import SectionProyeksiJumlahOrangDiKota from "./components/SectionProyeksiJumlahOrangDiKota";
 import SectionKutipanKepalaBappenas from "./components/SectionKutipanKepalaBappenas";
 import SectionHorizontalScrollPeta from "./components/horizontal-scroll/peta/SectionPeta";
+import BridginSetelahPeta from "./components/BridginSetelahPeta";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <SectionProyeksiJumlahOrangDiKota />
       <SectionKutipanKepalaBappenas />
       <SectionHorizontalScrollPeta />
+      <BridginSetelahPeta />
     </div>
   );
 }
