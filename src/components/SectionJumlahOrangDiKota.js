@@ -42,7 +42,7 @@ const SectionJumlahOrangDiKota = () => {
             atau setengah dari populasi manusia di{" "}
             <span style={{ fontWeight: "bold" }}>dunia</span> kini tinggal di
             perkotaan. Di masa mendatang, jumlah ini diperkirakan akan terus
-            meningkat. (United Nations)
+            meningkat. (United Nations, 2018)
           </Typography>
         </Box>
         <Box
