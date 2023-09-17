@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import color from "../../themes/Color";
 import { useLayoutEffect } from "react";
 import SectionKemacetanJakarta from "./SectionKemacetanJakarta";
@@ -24,7 +24,6 @@ const SectionHorizontalScroll = () => {
           pin: true,
           scrub: 1,
           end: () => "+=" + slider.current.offsetWidth,
-          // markers: true,
         },
       });
     }, component);
