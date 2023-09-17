@@ -23,7 +23,7 @@ const SectionPenyumbangSampah = () => {
             marginBottom: { xs: "8px" },
           }}
         >
-          Menurut data dari menlhk, rumah tangga menjadi penyumbang paling
+          Menurut data dari MenLHK, rumah tangga menjadi penyumbang paling
           banyak di Kota Bandung. Sebesar 60% sampah di Kota Bandung berasal
           dari rumah tangga. Jenis sampah yang terbanyak merupakan sampah sisa
           makanan sebesar 45%, diikuti dengan sampah plastik 17%.

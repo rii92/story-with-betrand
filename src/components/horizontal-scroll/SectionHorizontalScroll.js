@@ -6,13 +6,14 @@ import color from "../../themes/Color";
 import { useLayoutEffect } from "react";
 import SectionKemacetanJakarta from "./SectionKemacetanJakarta";
 import SectionTPASarimukti from "./SectionTPASarimukti";
-import SectionPenangananSampah from "./SectionSungaiKotorLanjutan";
+import SectionPenangananSampah from "./SectionPenangananSampah";
 import SectionSungaiKotor from "./SectionSungaiKotor";
 import SectionPenyumbangSampah from "./SectionPenyumbangSampah";
 import SectionPenyumbangSampahLanjutan from "./SectionPenyumbangSampahLanjutan";
 import SectionSanitasiDiBandung from "./SectionSanitasiDiBandung";
 import SectionSanitasiDiBandungLanjutan from "./SectionSanitasiDiBandungLanjutan";
 import SectionSungaiKotorLanjutan from "./SectionSungaiKotorLanjutan";
+import SectionSungaiKotorLanjutan2 from "./SectionSungaiKotorLanjutan2";
 
 const SectionHorizontalScroll = () => {
   const component = useRef();
@@ -151,6 +152,16 @@ const SectionHorizontalScroll = () => {
           }}
         >
           <SectionSungaiKotorLanjutan />
+        </Box>
+        <Box
+          className="panel"
+          sx={{
+            width: { xs: "100%" },
+            height: { xs: "100vh" },
+            backgroundColor: color.black,
+          }}
+        >
+          <SectionSungaiKotorLanjutan2 />
         </Box>
         <Box
           className="panel"
