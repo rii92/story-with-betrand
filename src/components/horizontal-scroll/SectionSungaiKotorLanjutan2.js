@@ -8,7 +8,6 @@ import {
   ScatterChart,
   Scatter,
 } from "recharts";
-import color from "../../themes/Color";
 
 const SectionSungaiKotorLanjutan2 = () => {
   const kendaraans = [

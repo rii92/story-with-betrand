@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import color from "../../themes/Color";
 
 const SectionSungaiKotor = () => {
   const kendaraans = [

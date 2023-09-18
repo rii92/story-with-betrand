@@ -8,7 +8,6 @@ import {
   Legend,
 } from "recharts";
 
-import color from "../../themes/Color";
 
 const SectionPenyumbangSampahLanjutan = () => {
   const kendaraans = [

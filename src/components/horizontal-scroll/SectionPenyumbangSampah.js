@@ -1,7 +1,5 @@
 import { Box, Typography } from "@mui/material";
 
-import color from "../../themes/Color";
-
 const SectionPenyumbangSampah = () => {
   const kendaraans = [
     {
