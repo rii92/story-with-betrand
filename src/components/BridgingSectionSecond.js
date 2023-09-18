@@ -1,6 +1,5 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import color from "../themes/Color";
-import { Parallax } from "react-scroll-parallax";
 
 const BridgingSectionSecond = () => {
   return (

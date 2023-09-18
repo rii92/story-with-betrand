@@ -4,11 +4,34 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import color from "../themes/Color";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 const SectionJumlahOrangDiKota = () => {
   useEffect(() => {
-    AOS.init();
-  }, []);
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      "#text-sekitar",
+      {
+        opacity: 0,
+        x: -100, // Geser objek ke kanan sejauh 100px
+      },
+      {
+        opacity: 1,
+        x: 0, // Geser objek kembali ke posisi awal
+        duration: 0.2,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: "#text-sekitar-container",
+          start: "top 80%", // Mulai animasi saat elemen container berjarak 80% dari atas
+          end: "center center", // Akhiri animasi saat elemen container berada di tengah layar
+          scrub: true,
+        },
+      }
+    );
+  });
 
   return (
     <Box
@@ -27,6 +50,7 @@ const SectionJumlahOrangDiKota = () => {
           justifyContent: { xs: "inherit", md: "space-between" },
           gap: { xs: "32px" },
         }}
+        id="text-sekitar-container"
       >
         <Box>
           <Typography
@@ -37,6 +61,7 @@ const SectionJumlahOrangDiKota = () => {
               textAlign: { xs: "center", md: "left" },
               // color: { xs: color.darkBlue },
             }}
+            id="text-sekitar"
           >
             Sekitar <span style={{ fontWeight: "bold" }}>3,5 miliar orang</span>{" "}
             atau setengah dari populasi manusia di{" "}

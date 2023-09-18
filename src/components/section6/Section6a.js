@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { useContext, useEffect, useRef } from "react";
 import PetaContext from "../../context/PetaContext";
-import color from "../../themes/Color";
 
 const Section6a = () => {
   const {

@@ -1,11 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import color from "../themes/Color";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 const SectionProyeksiJumlahOrangDiKota = () => {
   const theme = useTheme();
@@ -14,8 +15,48 @@ const SectionProyeksiJumlahOrangDiKota = () => {
   const lg = useMediaQuery(theme.breakpoints.up("lg"));
 
   useEffect(() => {
-    AOS.init();
-  }, []);
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      "#city",
+      {
+        opacity: 0,
+        y: 100, // Geser objek ke kanan sejauh 100px
+      },
+      {
+        opacity: 1,
+        y: 0, // Geser objek kembali ke posisi awal
+        duration: 0.2,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: "#city-container",
+          start: "top 30%", // Mulai animasi saat elemen container berjarak 80% dari atas
+          end: "center center", // Akhiri animasi saat elemen container berada di tengah layar
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      "#jumlah-penduduk",
+      {
+        opacity: 0,
+        x: -100, // Geser objek ke kiri sejauh 100px
+      },
+      {
+        opacity: 1,
+        x: 0, // Geser objek kembali ke posisi awal
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: "#city-container",
+          start: "top 80%", // Mulai animasi saat elemen container berjarak 80% dari atas
+          end: "center center", // Akhiri animasi saat elemen container berada di tengah layar
+          scrub: true,
+        },
+      }
+    );
+  })
 
   return (
     <Box
@@ -31,8 +72,9 @@ const SectionProyeksiJumlahOrangDiKota = () => {
           width: { xs: "100%", xl: "1200px" },
           marginX: { xs: "auto" },
           position: { xs: "relative" },
-          backgroundColor: color.white
+          backgroundColor: color.white,
         }}
+        id="city-container"
       >
         <Parallax
           translateX={["-100px", "0px"]}
@@ -169,7 +211,8 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             // marginX: {xs: "auto"}
             // fontSize: { xs: "12px", sm: "16px" },
           }}
-          data-aos="fade-right"
+          // data-aos="fade-right"
+          id="jumlah-penduduk"
         >
           <span style={{ backgroundColor: color.white, padding: "2px 3px" }}>
             Pada tahun 2045, jumlah penduduk Indonesia diproyeksikan akan
@@ -186,12 +229,10 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             position: "absolute",
             zIndex: 3,
             bottom: 0,
-            left: "50%",
-            transform: "translateX(-50%)",
+            // left: "50%",
+            // transform: "translateX(-50%)",
           }}
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="1600"
+          id="city"
         />
         <img
           className="image-city"
@@ -201,12 +242,13 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             position: "absolute",
             zIndex: 2,
             bottom: 0,
-            left: "50%",
-            transform: "translateX(-50%)",
+            // left: "50%",
+            // transform: "translateX(-50%)",
           }}
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="800"
+          id="city"
+          // data-aos="fade-up"
+          // data-aos-duration="800"
+          // data-aos-delay="800"
         />
         <img
           className="image-city"
@@ -216,11 +258,12 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             position: "absolute",
             zIndex: 1,
             bottom: 0,
-            left: "50%",
-            transform: "translateX(-50%)",
+            // left: "50%",
+            // transform: "translateX(-50%)",
           }}
-          data-aos="fade-up"
-          data-aos-duration="800"
+          id="city"
+          // data-aos="fade-up"
+          // data-aos-duration="800"
         />
       </Box>
     </Box>
