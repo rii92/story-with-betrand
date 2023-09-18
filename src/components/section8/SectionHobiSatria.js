@@ -29,7 +29,10 @@ const SectionHobiSatria = () => {
   });
 
   return (
-    <Box ref={component}>
+    <Box
+      ref={component}
+      sx={{ width: { xs: "100%" }, backgroundColor: { xs: "#C8D9EB" } }}
+    >
       <Box
         ref={slider}
         sx={{

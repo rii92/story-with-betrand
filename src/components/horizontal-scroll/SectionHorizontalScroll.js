@@ -38,11 +38,14 @@ const SectionHorizontalScroll = () => {
   });
 
   return (
-    <Box ref={component}>
+    <Box
+      ref={component}
+      sx={{ width: { xs: "100%" }, backgroundColor: { xs: color.white } }}
+    >
       <Box
         ref={slider}
         sx={{
-          width: { xs: "1000%", md: "fit-content" },
+          width: { xs: "1500%", md: "fit-content" },
           height: { xs: "100vh" },
           display: { xs: "flex" },
           overflow: { xs: "hidden" },
