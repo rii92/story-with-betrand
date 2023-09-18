@@ -73,10 +73,10 @@ const SectionSungaiKotor = () => {
 
       <Box
         sx={{
-          width: { xs: "320px", sm: "450px", md: "500px" },
+          width: { xs: "320px", sm: "600px", md: "700px" },
           position: "absolute",
-          top: { xs: "10%" },
-          left: { xs: "35%", md: "45%" },
+          top: { xs: "20%", md: "10%" },
+          left: { xs: "30%", md: "45%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: "white" },
           border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
@@ -90,8 +90,8 @@ const SectionSungaiKotor = () => {
           style={{ width: "100%" }}
         />
         <Typography sx={{ fontSize: "12px" }}>
-          Sumber: Indeks Kualitas Lingkungan Hidup (Kementerian Lingkungan
-          Hidup dan Kehutanan, 2020)
+          Sumber: Indeks Kualitas Lingkungan Hidup (Kementerian Lingkungan Hidup
+          dan Kehutanan, 2020)
         </Typography>
       </Box>
 

@@ -91,7 +91,7 @@ const SectionPenyumbangSampahLanjutan = () => {
       <Box
         sx={{
           width: { xs: "320px", sm: "450px", md: "500px" },
-          height: { xs: "70%", sm: "75%", md: "80%" },
+          height: { xs: "450px", sm: "450px", md: "400px" },
           padding: { xs: "8px 16px", sm: "8px 24px 16px" },
           position: "absolute",
           top: { xs: "5%", sm: "5%", md: "0%" },
@@ -137,7 +137,7 @@ const SectionPenyumbangSampahLanjutan = () => {
       <Box
         sx={{
           width: { xs: "320px", sm: "450px", md: "500px" },
-          height: { xs: "65%", sm: "70%", md: "75%" },
+          height: { xs: "450px", sm: "450px", md: "400px" },
           padding: { xs: "8px 16px", sm: "8px 24px 16px" },
           position: "absolute",
           top: { xs: "5%", sm: "5%", md: "0%" },

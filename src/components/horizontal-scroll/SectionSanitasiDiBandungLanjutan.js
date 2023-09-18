@@ -58,7 +58,7 @@ const SectionSanitasiDiBandungLanjutan = () => {
           }}
         >
           Pada tahun 2020 terdapat 44,82% warga Kota Bandung buang air besar
-          (BAB) di kolam/Sawah/Sungai/Danau/Laut (Badan Pusat Statistik)
+          (BAB) di Kolam/Sawah/Sungai/Danau/Laut (Badan Pusat Statistik)
         </Typography>
         <Typography
           variant="body1"

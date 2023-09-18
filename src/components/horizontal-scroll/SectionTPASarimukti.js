@@ -40,11 +40,11 @@ const SectionTPASarimukti = () => {
     <>
       <Box
         sx={{
-          width: { xs: "320px", sm: "450px", md: "500px" },
+          width: { xs: "320px", sm: "450px" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "20%", sm: "30%", md: "20%" },
-          left: { xs: "38%", md: "35%" },
+          left: { xs: "0%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: "white" },
           border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
@@ -92,7 +92,7 @@ const SectionTPASarimukti = () => {
       ))}
 
       <img
-        src="assets/image/bg-city.png"
+        src="assets/image/tpa-sarimukti.png"
         alt="City"
         style={{ height: "100%" }}
       />
