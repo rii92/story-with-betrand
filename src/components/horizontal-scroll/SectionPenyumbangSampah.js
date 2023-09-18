@@ -71,9 +71,9 @@ const SectionPenyumbangSampah = () => {
           top: { xs: "10%", sm: "30%", md: "10%" },
           left: { xs: "20%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography

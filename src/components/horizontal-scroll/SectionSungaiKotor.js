@@ -70,9 +70,9 @@ const SectionSungaiKotor = () => {
           top: { xs: "20%", sm: "30%", md: "10%" },
           left: { xs: "0%", md: "5%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography
@@ -103,9 +103,9 @@ const SectionSungaiKotor = () => {
           top: { xs: "20%" },
           left: { xs: "35%", md: "43%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
           overflow: { xs: "hidden" },
         }}
       >

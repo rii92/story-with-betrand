@@ -31,7 +31,13 @@ const SectionHobiSatria = () => {
   return (
     <Box
       ref={component}
-      sx={{ width: { xs: "100%" }, backgroundColor: { xs: "#C8D9EB" } }}
+      sx={{
+        width: { xs: "100%" },
+        backgroundImage: {
+          xs: `linear-gradient(to top, rgba(209,219,213,1) , rgba(150,140,125,1) , rgba(150,140,125,1) , rgba(193,190,68,1) , rgba(193,190,68,1) , rgba(209,219,213,1) )`,
+        },
+        overflowX: { xs: "hidden" },
+      }}
     >
       <Box
         ref={slider}

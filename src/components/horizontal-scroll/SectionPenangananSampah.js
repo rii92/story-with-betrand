@@ -71,9 +71,9 @@ const SectionSungaiKotorLanjutan2 = () => {
           top: { xs: "20%", sm: "35%", md: "10%" },
           left: { xs: "10%", md: "0%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography
@@ -107,53 +107,74 @@ const SectionSungaiKotorLanjutan2 = () => {
           top: { xs: "20%", sm: "35%", md: "10%" },
           left: { xs: "43%", sm: "45%", md: "43%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
-        <table border={1}>
+        <Typography
+          sx={{
+            width: "300px",
+            marginBottom: "8px",
+            textAlign: "center",
+            fontSize: "14px",
+          }}
+        >
+          Judul tabel Persentase Penanganan Sampah menurut Wilayah Kota
+          Metropolitan
+        </Typography>
+        <table style={{ borderCollapse: "collapse", border: "0px" }}>
           <thead>
-            <tr style={{ border: "1px solid black" }}>
-              <th>Wilayah</th>
-              <th>Penanganan Sampah (%)</th>
+            <tr
+              style={{
+                backgroundColor: color.lightBlue,
+              }}
+            >
+              <th style={{ padding: "3px" }}>Wilayah</th>
+              <th style={{ padding: "3px" }}>Penanganan Sampah (%)</th>
             </tr>
           </thead>
           <tbody>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr style={{ textAlign: "center" }}>
               <td>Patungraya Agung</td>
               <td>74.60</td>
             </tr>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr style={{ textAlign: "center" }}>
               <td>Bimindo</td>
               <td>71.85</td>
             </tr>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr style={{ textAlign: "center" }}>
               <td>Jabodetabekpunjur</td>
               <td>71.27</td>
             </tr>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr style={{ textAlign: "center" }}>
               <td>Sarbagita</td>
               <td>69.72</td>
             </tr>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr style={{ textAlign: "center" }}>
               <td>Banjar Bakula</td>
               <td>58.85</td>
             </tr>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr style={{ textAlign: "center" }}>
               <td>Mamminasata</td>
               <td>50.42</td>
             </tr>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr style={{ textAlign: "center" }}>
               <td>Mebidangro</td>
               <td>33.75</td>
             </tr>
-            <tr style={{ border: "1px solid black", textAlign: "center" }}>
+            <tr
+              style={{ borderBottom: "1px solid black", textAlign: "center" }}
+            >
               <td>Cekungan Bandung</td>
               <td>24.95</td>
             </tr>
           </tbody>
         </table>
+        <Typography sx={{ width: "300px", marginTop: "8px", fontSize: "12px" }}>
+          Sumber: Sistem Informasi Pengelolaan Sampah Nasional (Kementerian
+          Lingkungan Hidup dan Kehutanan, 2021)
+        </Typography>
       </Box>
 
       {kendaraans.map((kendaraan) => (
