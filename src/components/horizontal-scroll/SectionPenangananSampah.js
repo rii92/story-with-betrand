@@ -65,11 +65,11 @@ const SectionSungaiKotorLanjutan2 = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw", sm: "70vw", md: "40%" },
+          width: { xs: "30%", md: "40%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "20%", sm: "35%", md: "10%" },
-          left: { xs: "20%", sm: "10%", md: "0%" },
+          left: { xs: "10%", md: "0%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -102,8 +102,8 @@ const SectionSungaiKotorLanjutan2 = () => {
           width: { xs: "fit-content" },
           padding: { xs: "8px" },
           position: "absolute",
-          top: { xs: "20%" },
-          left: { xs: "53%", sm: "45%", md: "43%" },
+          top: { xs: "20%", sm: "35%", md: "10%" },
+          left: { xs: "43%", sm: "45%", md: "43%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}

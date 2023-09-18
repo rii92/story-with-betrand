@@ -97,11 +97,11 @@ const SectionKemacetanJakarta = () => {
     <>
       <Box
         sx={{
-          width: { xs: "80vw", md: "60%" },
+          width: { xs: "30%", md: "65%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "30%" },
-          left: { xs: "20%", md: "15%" },
+          left: { xs: "15%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}

@@ -64,11 +64,11 @@ const SectionSanitasiDiBandungLanjutan = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw", sm: "70vw", md: "60%" },
+          width: { xs: "30%", sm: "40%", md: "60%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
-          top: { xs: "10%" },
-          left: { xs: "20%", sm: "10%", md: "20%" },
+          top: { xs: "10%", sm: "30%", md: "10%" },
+          left: { xs: "30%", sm: "20%", md: "20%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -121,11 +121,7 @@ const SectionSanitasiDiBandungLanjutan = () => {
         </Box>
       ))}
 
-      <img
-        src="assets/image/sanitasi-di-bandung.png"
-        alt="City"
-        style={{ height: "100%" }}
-      />
+      <img src="assets/image/city.jpg" alt="City" style={{ height: "100%" }} />
     </>
   );
 };

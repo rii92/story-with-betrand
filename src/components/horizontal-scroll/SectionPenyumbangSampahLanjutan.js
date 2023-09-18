@@ -1,9 +1,15 @@
 import { Box, Typography } from "@mui/material";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 import color from "../../themes/Color";
 
 const SectionPenyumbangSampahLanjutan = () => {
+  const theme = useTheme();
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
+  const md = useMediaQuery(theme.breakpoints.up("md"));
+  const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const kendaraans = [
     {
       width: { xs: "180px", sm: "250px" },
@@ -62,6 +68,7 @@ const SectionPenyumbangSampahLanjutan = () => {
       alt: "Mobil",
     },
   ];
+
   const dataJenisSampah = [
     { name: "Sisa Makanan", value: 44.52 },
     { name: "Kayu/Ranting", value: 3.98 },
@@ -100,20 +107,16 @@ const SectionPenyumbangSampahLanjutan = () => {
     return `${(percent * 100).toFixed(2)}%`;
   };
 
-  const renderColorfulLegendText = (value, entry) => {
-    return <span style={{ color: "black" }}>{value}</span>;
-  };
-
   return (
     <>
       <Box
         sx={{
-          width: { xs: "90vw", md: "40%" },
-          height: { xs: "30vh", md: "50%" },
+          width: { xs: "30%", sm: "25%", md: "40%" },
+          height: { xs: "40%", sm: "30%", md: "55%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
-          top: { xs: "15%" },
-          left: { xs: "53%", sm: "45%", md: "0%" },
+          top: { xs: "15%", sm: "30%", md: "5%" },
+          left: { xs: "0%", sm: "10%", md: "0%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -144,12 +147,12 @@ const SectionPenyumbangSampahLanjutan = () => {
 
       <Box
         sx={{
-          width: { xs: "90vw", md: "40%" },
-          height: { xs: "30vh", md: "50%" },
+          width: { xs: "30%", sm: "25%", md: "40%" },
+          height: { xs: "40%", sm: "30%", md: "55%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
-          top: { xs: "15%" },
-          left: { xs: "53%", sm: "45%", md: "45%" },
+          top: { xs: "15%", sm: "30%", md: "5%" },
+          left: { xs: "34%", sm: "40%", md: "45%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
