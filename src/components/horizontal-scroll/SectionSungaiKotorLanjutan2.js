@@ -112,7 +112,7 @@ const SectionSungaiKotorLanjutan2 = () => {
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "10%", md: "5%" },
-          left: { xs: "20%", md: "36%" },
+          left: { xs: "20%", sm: "15%", md: "36%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: "white" },
           border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },

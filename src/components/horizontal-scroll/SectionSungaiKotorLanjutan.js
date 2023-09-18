@@ -37,7 +37,7 @@ const SectionSungaiKotorLanjutan = () => {
     },
     {
       width: { xs: "480px", sm: "740px" },
-      left: { xs: "20%" },
+      left: { xs: "25%" },
       bottom: { xs: "96px", sm: "128px", md: "50px" },
       zIndex: 1,
       image: "assets/image/cars-05.png",
@@ -46,7 +46,7 @@ const SectionSungaiKotorLanjutan = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "30%" },
-      bottom: { xs: "48px", sm: "56px", md: "-30px" },
+      bottom: { xs: "-16px", sm: "-32px", md: "-30px" },
       zIndex: 3,
       image: "assets/image/cars-06.png",
       alt: "Mobil",

@@ -37,7 +37,7 @@ const SectionTPASarimukti = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "30%" },
-      bottom: { xs: "48px", sm: "56px", md: "-20px" },
+      bottom: { xs: "0px", sm: "-16px", md: "-20px" },
       zIndex: 4,
       image: "assets/image/cars-03.png",
       alt: "Mobil",

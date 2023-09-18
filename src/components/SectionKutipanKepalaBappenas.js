@@ -33,15 +33,15 @@ const SectionKutipanKepalaBappenas = () => {
               position: "absolute",
               top: "-60px",
               right: "30px",
-              fontSize: { xs: "60px", md: "128px" },
+              fontSize: { xs: "96px", md: "128px" },
             }}
           />
           <Box
             sx={{
-              width: { xs: "150px", sm: "200px", md: "250px" },
+              width: { xs: "130px", sm: "170px", md: "250px" },
               position: "absolute",
               left: { xs: 0, md: "-30px" },
-              bottom: { xs: "-20px" },
+              bottom: { xs: "-50px", sm: "-20px" },
             }}
           >
             <img

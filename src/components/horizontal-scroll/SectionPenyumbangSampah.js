@@ -14,7 +14,7 @@ const SectionPenyumbangSampah = () => {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "13%" },
       bottom: { xs: "96px", sm: "128px" },
-      zIndex: 1,
+      zIndex: 2,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
     },

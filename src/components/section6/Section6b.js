@@ -75,10 +75,10 @@ const Section6b = () => {
         </Typography>
         <Box
           sx={{
-            width: { xs: "130px" },
+            width: { xs: "100px", sm: "130px" },
             position: { xs: "absolute" },
-            bottom: { xs: "-50px" },
-            right: { xs: "-50px" },
+            bottom: { xs: "-40px", sm: "-50px" },
+            right: { xs: "-20px", sm: "-50px" },
           }}
         >
           <img
