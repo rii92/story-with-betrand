@@ -1,15 +1,13 @@
-import color from "../themes/Color";
 import { Box, Grid, Paper, Typography } from "@mui/material";
+import color from "../themes/Color";
 import { Parallax, useParallax } from "react-scroll-parallax";
-import { BgContainer } from "./bg-container";
-import AccessibleOutlinedIcon from "@mui/icons-material/AccessibleOutlined";
-import AirplanemodeActiveOutlinedIcon from "@mui/icons-material/AirplanemodeActiveOutlined";
 
-const Section13 = () => {
+const Section23 = () => {
   const parallax = useParallax({
     rotate: [0, 360],
     shouldAlwaysCompleteAnimation: true,
   });
+
   return (
     <Box
       sx={{
@@ -24,7 +22,7 @@ const Section13 = () => {
       }}
     >
       <Grid container spacing={2}>
-        <Grid
+      <Grid
           item
           xs
           sx={{
@@ -49,97 +47,15 @@ const Section13 = () => {
                   justifyContent: "center",
                   fontSize: "4rem", // Ganti dengan ukuran font yang sesuai
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                  backgroundColor: "blue", // Ganti dengan efek bayangan yang sesuai
+                  backgroundColor: "blue" // Ganti dengan efek bayangan yang sesuai
                 }}
                 elevation={4}
               >
                 <img
-                  src="assets/image/unitedNation.png"
+                  src="assets/image/handshake.png"
                   alt="Road"
                   className="slow"
                 />
-                <div
-                  style={{
-                    position: "absolute", // Ganti dengan warna latar belakang yang sesuai
-                    // Ganti dengan border radius yang sesuai
-                    height: "3.5rem", // Ganti dengan tinggi yang sesuai
-                    width: "3.5rem", // Ganti dengan lebar yang sesuai
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    transformOrigin: "center",
-                    willChange: "transform",
-                    top: "-15%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                >
-                  <img
-                    src="assets/image/walkingPeople.png"
-                    alt="Road"
-                    className="slow"
-                    style={{ width: "150px" }}
-                  />
-                </div>
-                <div
-                  style={{
-                    position: "absolute", // Ganti dengan warna latar belakang yang sesuai
-                    // Ganti dengan border radius yang sesuai
-                    height: "3.5rem", // Ganti dengan tinggi yang sesuai
-                    width: "3.5rem", // Ganti dengan lebar yang sesuai
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    transformOrigin: "center",
-                    willChange: "transform",
-                    right: "0",
-                    top: "50%",
-                    transform: "translate(50%, -50%)",
-                  }}
-                >
-                  <AirplanemodeActiveOutlinedIcon fontSize="30px" />
-                </div>
-                <div
-                  style={{
-                    position: "absolute", // Ganti dengan warna latar belakang yang sesuai
-                    // Ganti dengan border radius yang sesuai
-                    height: "3.5rem", // Ganti dengan tinggi yang sesuai
-                    width: "3.5rem", // Ganti dengan lebar yang sesuai
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    transformOrigin: "center",
-                    willChange: "transform",
-                    bottom: "-15%",
-                    left: "50%",
-                    transform: "translate(-50%, 50%) rotate(180deg)",
-                  }}
-                >
-                  <img
-                    src="assets/image/walkingPeople.png"
-                    alt="Road"
-                    className="slow"
-                    style={{ width: "150px" }}
-                  />
-                </div>
-                <div
-                  style={{
-                    position: "absolute", // Ganti dengan warna latar belakang yang sesuai
-                    // Ganti dengan border radius yang sesuai
-                    height: "3.5rem", // Ganti dengan tinggi yang sesuai
-                    width: "3.5rem", // Ganti dengan lebar yang sesuai
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    transformOrigin: "center",
-                    willChange: "transform",
-                    top: "50%",
-                    left: "0",
-                    transform: "translate(-50%, -50%)",
-                  }}
-                >
-                  <AirplanemodeActiveOutlinedIcon fontSize="30px" />
-                </div>
               </Paper>
             </Parallax>
           </Box>
@@ -154,7 +70,7 @@ const Section13 = () => {
               }}
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-            >
+            >  
               Tren perkotaan global menunjukkan perubahan signifikan dalam
               beberapa dekade terakhir. Dalam upaya mencapai Tujuan 11
               Sustainable Development Goals (SDGs), kebijakan perkotaan di
@@ -183,4 +99,4 @@ const Section13 = () => {
   );
 };
 
-export default Section13;
+export default Section23;
