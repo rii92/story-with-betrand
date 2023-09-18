@@ -106,6 +106,7 @@ const SectionSungaiKotor = () => {
           backgroundColor: { xs: color.white },
           borderRadius: { xs: "8px", sm: "16px" },
           boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
+          overflow: { xs: "hidden" },
         }}
       >
         <img
