@@ -64,11 +64,11 @@ const SectionSungaiKotor = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw", md: "35%" },
+          width: { xs: "30%", md: "35%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "20%", sm: "30%", md: "10%" },
-          left: { xs: "40%", md: "5%" },
+          left: { xs: "0%", md: "5%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
@@ -96,11 +96,10 @@ const SectionSungaiKotor = () => {
 
       <Box
         sx={{
-          width: { xs: "90vw", md: "50%" },
-          padding: { xs: "8px 16px" },
+          width: { xs: "35%", sm: "40%", md: "50%" },
           position: "absolute",
-          top: { xs: "20%", sm: "30%", md: "20%" },
-          left: { xs: "40%", md: "43%" },
+          top: { xs: "20%" },
+          left: { xs: "35%", md: "43%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}

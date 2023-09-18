@@ -64,10 +64,10 @@ const SectionSanitasiDiBandung = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw", md: "40%" },
+          width: { xs: "30%", md: "40%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
-          top: { xs: "20%", sm: "30%", md: "25%" },
+          top: { xs: "30%", sm: "30%", md: "25%" },
           left: { xs: "40%", md: "40%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },

@@ -128,10 +128,80 @@ const SectionHP = () => {
                 width: { xs: "100%" },
                 height: { xs: "150px", sm: "200px" },
                 margin: { xs: "16px 0px 8px" },
+                position: { xs: "relative" },
                 backgroundColor: { xs: color.lightBlue },
                 borderRadius: { xs: "12px" },
               }}
-            ></Box>
+            >
+              <Box
+                sx={{
+                  width: { xs: "80px", sm: "130px" },
+                  position: { xs: "absolute" },
+                }}
+              >
+                <img
+                  src="assets/image/ciggarate.png"
+                  alt="Rokok"
+                  style={{ width: "100%" }}
+                />
+              </Box>
+              <Box
+                sx={{
+                  width: { xs: "100px", sm: "150px" },
+                  position: { xs: "absolute" },
+                  left: { xs: "20%", sm: "25%" },
+                }}
+              >
+                <img
+                  src="assets/image/smoke-to-right.png"
+                  alt="Jelaga"
+                  style={{ width: "100%" }}
+                />
+              </Box>
+              <Box
+                sx={{
+                  width: { xs: "120px", sm: "170px" },
+                  position: { xs: "absolute" },
+                  left: { xs: "50%", sm: "55%" },
+                }}
+              >
+                <img
+                  src="assets/image/smoke-to-left.png"
+                  alt="Jelaga"
+                  style={{ width: "100%" }}
+                />
+              </Box>
+
+              <Box
+                sx={{
+                  width: { xs: "120px", sm: "170px" },
+                  position: { xs: "absolute" },
+                  bottom: { xs: "0%" },
+                  left: { xs: "10%" },
+                }}
+              >
+                <img
+                  src="assets/image/dust.png"
+                  alt="Jelaga"
+                  style={{ width: "100%" }}
+                />
+              </Box>
+
+              <Box
+                sx={{
+                  width: { xs: "120px", sm: "150px" },
+                  position: { xs: "absolute" },
+                  bottom: { xs: "0" },
+                  left: { xs: "50%", sm: "55%" },
+                }}
+              >
+                <img
+                  src="assets/image/gas-emission.png"
+                  alt="Jelaga"
+                  style={{ width: "100%" }}
+                />
+              </Box>
+            </Box>
             <Typography
               variant="body1"
               sx={{ fontSize: { xs: "12px", sm: "16px" } }}
@@ -150,10 +220,24 @@ const SectionHP = () => {
                 width: { xs: "100%" },
                 height: { xs: "150px", sm: "200px" },
                 margin: { xs: "16px 0px 8px" },
-                backgroundColor: { xs: color.lightBlue },
+                backgroundColor: { xs: "white" },
                 borderRadius: { xs: "12px" },
               }}
-            ></Box>
+            >
+              <Box
+                sx={{
+                  height: { xs: "100%" },
+                  width: { xs: "fit-content" },
+                  marginX: { xs: "auto" },
+                }}
+              >
+                <img
+                  src="assets/image/people-with-lung-disease.png"
+                  alt="Orang sakit paru"
+                  style={{ height: "100%" }}
+                />
+              </Box>
+            </Box>
             <Typography
               variant="body1"
               sx={{ fontSize: { xs: "12px", sm: "16px" } }}

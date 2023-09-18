@@ -65,11 +65,11 @@ const SectionTPASarimukti = () => {
     <>
       <Box
         sx={{
-          width: { xs: "90vw", md: "60%" },
+          width: { xs: "30%", md: "60%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "20%", sm: "30%", md: "20%" },
-          left: { xs: "40%", md: "35%" },
+          left: { xs: "38%", md: "35%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
         }}
