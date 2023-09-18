@@ -12,7 +12,7 @@ const Section31 = () => {
     <Box
       sx={{
         width: { xs: "100%" },
-        height: { xs: "300vh" },
+        height: { xs: "450vh" },
         display: { xs: "block" },
         justifyContent: { xs: "center" },
         backgroundColor: { xs: color.white },
