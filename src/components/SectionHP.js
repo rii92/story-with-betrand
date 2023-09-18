@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, } from "react";
 import "../css/SectionHP.css";
 import color from "../themes/Color";
 import gsap from "gsap";

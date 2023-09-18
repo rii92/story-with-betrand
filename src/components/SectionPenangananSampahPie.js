@@ -1,7 +1,6 @@
-import { Box, Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import color from "../themes/Color";
-import { Label, Pie, PieChart } from "recharts";
-import { textAlign } from "@mui/system";
+import { Pie, PieChart } from "recharts";
 import { useCallback } from "react";
 
 const SectionPenangananSampahPie = () => {
