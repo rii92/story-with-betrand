@@ -13,10 +13,37 @@ import Section29 from "./components/Section29";
 import Section30 from "./components/Section30";
 import Section31 from "./components/Section31";
 import Section32 from "./components/Section32";
+import { useEffect, useRef } from "react";
 
 function App() {
+  const audio = useRef();
+
+  useEffect(() => {
+    // document
+    //   .getElementById("backgroundMusic")
+    //   .play()
+    //   .catch(
+    //     (error) => {
+    // document.addEventListener('click', () => {
+    // audio.current.play();
+    // },
+    //   { once: true }
+    // );
+    audio.current.play().catch((error) => {
+      document.addEventListener(
+        "click",
+        () => {
+          audio.current.play();
+        },
+        { once: true }
+      );
+    });
+  }, []);
   return (
     <div>
+      <audio controls autoPlay ref={audio} style={{ display: "none" }}>
+        <source src="assets/audio/backsound.mp3" type="audio/mpeg" />
+      </audio>
       <Hero />
       <SectionPengenalanSatria />
       <SectionHobiSatria />

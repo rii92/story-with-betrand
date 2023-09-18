@@ -1,16 +1,10 @@
 import { Box, Typography } from "@mui/material";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import color from "../themes/Color";
-import { useEffect, useLayoutEffect } from "react";
-import { Parallax } from "react-scroll-parallax";
+import {useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Section32 = () => {
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to("#endsection", {
