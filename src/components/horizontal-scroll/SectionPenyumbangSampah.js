@@ -31,7 +31,7 @@ const SectionPenyumbangSampah = () => {
     <>
       <Box
         sx={{
-          width: { xs: "30%", sm: "40%", md: "60%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "10%", sm: "30%", md: "10%" },
@@ -92,7 +92,11 @@ const SectionPenyumbangSampah = () => {
         </Box>
       ))}
 
-      <img src="assets/image/city.jpg" alt="City" style={{ height: "100%" }} />
+      <img
+        src="assets/image/bg-city.png"
+        alt="City"
+        style={{ height: "100%" }}
+      />
     </>
   );
 };

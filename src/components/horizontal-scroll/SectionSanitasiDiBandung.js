@@ -47,7 +47,7 @@ const SectionSanitasiDiBandung = () => {
     <>
       <Box
         sx={{
-          width: { xs: "30%", md: "40%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "30%", sm: "30%", md: "25%" },
@@ -95,7 +95,7 @@ const SectionSanitasiDiBandung = () => {
       ))}
 
       <img
-        src="assets/image/sanitasi-di-bandung.png"
+        src="assets/image/bg-city.png"
         alt="City"
         style={{ height: "100%" }}
       />

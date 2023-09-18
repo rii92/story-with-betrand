@@ -96,7 +96,7 @@ const SectionKemacetanJakarta = () => {
     <>
       <Box
         sx={{
-          width: { xs: "30%", md: "65%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "30%" },
@@ -143,7 +143,11 @@ const SectionKemacetanJakarta = () => {
         </Box>
       ))}
 
-      <img src="assets/image/city.jpg" alt="City" style={{ height: "100%" }} />
+      <img
+        src="assets/image/bg-city.png"
+        alt="City"
+        style={{ height: "100%" }}
+      />
     </>
   );
 };
