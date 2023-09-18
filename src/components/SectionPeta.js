@@ -81,29 +81,29 @@ const SectionPeta = () => {
       kesembilan = 34214;
       kesepuluh = 35619;
     } else if (md) {
-      pengenalan = 17104;
-      pertama = 18000;
-      kedua = 18894;
-      ketiga = 19788;
-      keempat = 20682;
-      kelima = 21578;
-      keenam = 22472;
-      ketujuh = 23366;
-      kedelapan = 24260;
-      kesembilan = 25156;
-      kesepuluh = 26050;
+      pengenalan = 18314;
+      pertama = 19208;
+      kedua = 20102;
+      ketiga = 20998;
+      keempat = 21892;
+      kelima = 22786;
+      keenam = 23680;
+      ketujuh = 24576;
+      kedelapan = 25470;
+      kesembilan = 26364;
+      kesepuluh = 27258;
     } else if (sm) {
-      pengenalan = 10084;
-      pertama = 10478;
-      kedua = 10870;
-      ketiga = 11262;
-      keempat = 11656;
-      kelima = 12048;
-      keenam = 12440;
-      ketujuh = 12834;
-      kedelapan = 13226;
-      kesembilan = 13620;
-      kesepuluh = 14012;
+      pengenalan = 11064;
+      pertama = 11458;
+      kedua = 11834;
+      ketiga = 12242;
+      keempat = 12636;
+      kelima = 13028;
+      keenam = 13420;
+      ketujuh = 13814;
+      kedelapan = 14206;
+      kesembilan = 14600;
+      kesepuluh = 14992;
     }
     // console.log(pengenalan);
 
