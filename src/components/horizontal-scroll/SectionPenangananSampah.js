@@ -29,10 +29,18 @@ const SectionSungaiKotorLanjutan2 = () => {
     },
     {
       width: { xs: "480px", sm: "740px" },
-      left: { xs: "40%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 3,
-      image: "assets/image/car.png",
+      left: { xs: "20%" },
+      bottom: { xs: "96px", sm: "128px", md: "50px" },
+      zIndex: 1,
+      image: "assets/image/cars-04.png",
+      alt: "Mobil",
+    },
+    {
+      width: { xs: "480px", sm: "740px" },
+      left: { xs: "10%" },
+      bottom: { xs: "72px", sm: "104px", md: "0px" },
+      zIndex: 2,
+      image: "assets/image/cars-05.png",
       alt: "Mobil",
     },
   ];
@@ -166,7 +174,7 @@ const SectionSungaiKotorLanjutan2 = () => {
             bottom: {
               xs: kendaraan.bottom.xs,
               sm: kendaraan.bottom.sm,
-              md: kendaraan.bottom.xs,
+              md: kendaraan.bottom.md,
             },
             zIndex: { xs: kendaraan.zIndex },
           }}

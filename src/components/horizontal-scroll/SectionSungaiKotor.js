@@ -28,10 +28,10 @@ const SectionSungaiKotor = () => {
     },
     {
       width: { xs: "480px", sm: "740px" },
-      left: { xs: "40%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 3,
-      image: "assets/image/car.png",
+      left: { xs: "20%" },
+      bottom: { xs: "96px", sm: "128px", md: "50px" },
+      zIndex: 1,
+      image: "assets/image/cars-02.png",
       alt: "Mobil",
     },
   ];
@@ -73,7 +73,7 @@ const SectionSungaiKotor = () => {
 
       <Box
         sx={{
-          width: { xs: "320px", sm: "600px", md: "700px" },
+          width: { xs: "320px", sm: "600px", md: "600px" },
           position: "absolute",
           top: { xs: "20%", md: "10%" },
           left: { xs: "30%", md: "45%" },
@@ -108,7 +108,7 @@ const SectionSungaiKotor = () => {
             bottom: {
               xs: kendaraan.bottom.xs,
               sm: kendaraan.bottom.sm,
-              md: kendaraan.bottom.xs,
+              md: kendaraan.bottom.md,
             },
             zIndex: { xs: kendaraan.zIndex },
           }}
