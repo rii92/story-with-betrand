@@ -41,7 +41,7 @@ const SectionSungaiKotorLanjutan2 = () => {
     <>
       <Box
         sx={{
-          width: { xs: "30%", md: "40%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "20%", sm: "35%", md: "10%" },
@@ -78,7 +78,7 @@ const SectionSungaiKotorLanjutan2 = () => {
       <Box
         sx={{
           width: { xs: "fit-content" },
-          padding: { xs: "8px" },
+          padding: { xs: "8px 16px" },
           position: "absolute",
           top: { xs: "20%", sm: "35%", md: "10%" },
           left: { xs: "43%", sm: "45%", md: "43%" },
@@ -179,7 +179,11 @@ const SectionSungaiKotorLanjutan2 = () => {
         </Box>
       ))}
 
-      <img src="assets/image/city.jpg" alt="City" style={{ height: "100%" }} />
+      <img
+        src="assets/image/bg-city.png"
+        alt="City"
+        style={{ height: "100%" }}
+      />
     </>
   );
 };

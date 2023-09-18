@@ -39,7 +39,7 @@ const SectionSungaiKotor = () => {
     <>
       <Box
         sx={{
-          width: { xs: "30%", md: "35%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "20%", sm: "30%", md: "10%" },
@@ -73,10 +73,10 @@ const SectionSungaiKotor = () => {
 
       <Box
         sx={{
-          width: { xs: "35%", sm: "40%", md: "50%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           position: "absolute",
-          top: { xs: "20%" },
-          left: { xs: "35%", md: "43%" },
+          top: { xs: "10%" },
+          left: { xs: "35%", md: "45%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: "white" },
           border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
@@ -118,7 +118,7 @@ const SectionSungaiKotor = () => {
       ))}
 
       <img
-        src="assets/image/dirty-river.png"
+        src="assets/image/bg-city.png"
         alt="City"
         style={{ height: "100%" }}
       />

@@ -71,7 +71,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionKemacetanJakarta />
@@ -81,7 +80,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionTPASarimukti />
@@ -91,7 +89,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionPenangananSampah />
@@ -101,7 +98,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionPenyumbangSampah />
@@ -111,7 +107,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionPenyumbangSampahLanjutan />
@@ -121,7 +116,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionSanitasiDiBandung />
@@ -131,7 +125,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionSanitasiDiBandungLanjutan />
@@ -141,7 +134,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionSungaiKotor />
@@ -151,7 +143,6 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionSungaiKotorLanjutan />
@@ -161,24 +152,9 @@ const SectionHorizontalScroll = () => {
           sx={{
             width: { xs: "100%" },
             height: { xs: "100vh" },
-            backgroundColor: color.black,
           }}
         >
           <SectionSungaiKotorLanjutan2 />
-        </Box>
-        <Box
-          className="panel"
-          sx={{
-            width: { xs: "100%" },
-            height: { xs: "100vh" },
-            backgroundColor: color.black,
-          }}
-        >
-          <img
-            src="assets/image/dirty-river.png"
-            alt="City"
-            style={{ height: "100%" }}
-          />
         </Box>
       </Box>
     </Box>

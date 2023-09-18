@@ -29,16 +29,7 @@ const SectionHobiSatria = () => {
   });
 
   return (
-    <Box
-      ref={component}
-      sx={{
-        width: { xs: "100%" },
-        backgroundImage: {
-          xs: `linear-gradient(to top, rgba(209,219,213,1) , rgba(150,140,125,1) , rgba(150,140,125,1) , rgba(193,190,68,1) , rgba(193,190,68,1) , rgba(209,219,213,1) )`,
-        },
-        overflowX: { xs: "hidden" },
-      }}
-    >
+    <Box ref={component}>
       <Box
         ref={slider}
         sx={{
@@ -73,11 +64,11 @@ const SectionHobiSatria = () => {
         >
           <Box
             sx={{
-              width: { xs: "80vw", md: "60%" },
+              width: { xs: "320px", sm: "450px", md: "500px" },
               padding: { xs: "8px 16px", sm: "16px 24px" },
               position: "absolute",
               top: { xs: "30%" },
-              left: { xs: "20%", sm: "10%" },
+              left: { xs: "10%" },
               zIndex: { xs: 10 },
               backgroundColor: { xs: "white" },
               border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
@@ -112,11 +103,11 @@ const SectionHobiSatria = () => {
         >
           <Box
             sx={{
-              width: { xs: "80vw", sm: "50vw", md: "40%" },
+              width: { xs: "320px", sm: "450px", md: "500px" },
               padding: { xs: "8px 16px", sm: "16px 24px" },
               position: "absolute",
               top: { xs: "30%" },
-              zIndex: { xs: 10 },
+              left: { xs: "10%" },
               backgroundColor: { xs: "white" },
               border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
               borderRadius: { xs: "8px", sm: "16px" },

@@ -8,7 +8,6 @@ import {
   Legend,
 } from "recharts";
 
-
 const SectionPenyumbangSampahLanjutan = () => {
   const kendaraans = [
     {
@@ -91,7 +90,7 @@ const SectionPenyumbangSampahLanjutan = () => {
     <>
       <Box
         sx={{
-          width: { xs: "30%", sm: "25%", md: "40%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           height: { xs: "70%", sm: "75%", md: "80%" },
           padding: { xs: "8px 16px", sm: "8px 24px 16px" },
           position: "absolute",
@@ -137,7 +136,7 @@ const SectionPenyumbangSampahLanjutan = () => {
 
       <Box
         sx={{
-          width: { xs: "30%", sm: "25%", md: "40%" },
+          width: { xs: "320px", sm: "450px", md: "500px" },
           height: { xs: "65%", sm: "70%", md: "75%" },
           padding: { xs: "8px 16px", sm: "8px 24px 16px" },
           position: "absolute",
@@ -206,7 +205,11 @@ const SectionPenyumbangSampahLanjutan = () => {
         </Box>
       ))}
 
-      <img src="assets/image/city.jpg" alt="City" style={{ height: "100%" }} />
+      <img
+        src="assets/image/bg-city.png"
+        alt="City"
+        style={{ height: "100%" }}
+      />
     </>
   );
 };
