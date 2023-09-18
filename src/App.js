@@ -29,8 +29,8 @@ function App() {
       <SectionKutipanKepalaBappenas />
       <SectionHorizontalScrollPeta />
       
-      <Section29 /> {/* Section 29 */}
-      <Section30 /> {/* Section 30 */}
+      {/* <Section29 /> Section 29 */}
+      {/* <Section30 /> Section 30 */}
       <Section31 /> {/* Section 31 */}
       <Section32 /> {/* Section 32Section32 */}
     </div>
