@@ -55,7 +55,9 @@ const Section6i = () => {
           position: { xs: "relative" },
           width: { xs: "100%", sm: "470px" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
+          borderRadius: { xs: "8px", sm: "16px" },
         }}
       >
         <Typography

@@ -31,7 +31,13 @@ const SectionHobiSatria = () => {
   return (
     <Box
       ref={component}
-      sx={{ width: { xs: "100%" }, backgroundColor: { xs: "#C8D9EB" } }}
+      sx={{
+        width: { xs: "100%" },
+        backgroundImage: {
+          xs: `linear-gradient(to top, rgba(209,219,213,1) , rgba(150,140,125,1) , rgba(150,140,125,1) , rgba(193,190,68,1) , rgba(193,190,68,1) , rgba(209,219,213,1) )`,
+        },
+        overflowX: { xs: "hidden" },
+      }}
     >
       <Box
         ref={slider}
@@ -73,9 +79,9 @@ const SectionHobiSatria = () => {
               top: { xs: "30%" },
               left: { xs: "20%", sm: "10%" },
               zIndex: { xs: 10 },
-              backgroundColor: { xs: color.white },
+              backgroundColor: { xs: "white" },
+              border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
               borderRadius: { xs: "8px", sm: "16px" },
-              boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
             }}
           >
             <Typography
@@ -111,9 +117,9 @@ const SectionHobiSatria = () => {
               position: "absolute",
               top: { xs: "30%" },
               zIndex: { xs: 10 },
-              backgroundColor: { xs: color.white },
+              backgroundColor: { xs: "white" },
+              border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
               borderRadius: { xs: "8px", sm: "16px" },
-              boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
             }}
           >
             <Typography

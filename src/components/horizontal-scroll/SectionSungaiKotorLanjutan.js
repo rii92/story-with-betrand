@@ -8,7 +8,6 @@ import {
   ScatterChart,
   Scatter,
 } from "recharts";
-import color from "../../themes/Color";
 
 const SectionSungaiKotorLanjutan = () => {
   const kendaraans = [
@@ -37,34 +36,10 @@ const SectionSungaiKotorLanjutan = () => {
       alt: "Motor",
     },
     {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "10%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 4,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "60%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 4,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "3%" },
       bottom: { xs: "80px", sm: "128px" },
       zIndex: 1,
-      image: "assets/image/car.png",
-      alt: "Mobil",
-    },
-    {
-      width: { xs: "480px", sm: "740px" },
-      left: { xs: "40%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 3,
       image: "assets/image/car.png",
       alt: "Mobil",
     },
@@ -116,9 +91,9 @@ const SectionSungaiKotorLanjutan = () => {
           top: { xs: "20%", sm: "35%", md: "0%" },
           left: { xs: "5%", md: "0%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography
@@ -139,30 +114,22 @@ const SectionSungaiKotorLanjutan = () => {
       <Box
         sx={{
           width: { xs: "30%", sm: "40%", md: "50%" },
-          height: { xs: "40%", md: "55%" },
-          paddingY: { xs: "16px" },
-          paddingRight: { xs: "24px" },
+          height: { xs: "50%", sm: "55%", md: "60%" },
+          padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
-          top: { xs: "20%", md: "10%" },
+          top: { xs: "10%", md: "5%" },
           left: { xs: "40%", md: "36%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography sx={{ textAlign: "center" }}>
           Hubungan Keberadaan Sungai dan Keberadaan Pemukiman Kumuh
         </Typography>
-        <ResponsiveContainer width="100%" height="100%">
-          <ScatterChart
-            margin={{
-              top: 20,
-              right: 20,
-              bottom: 45,
-              left: 20,
-            }}
-          >
+        <ResponsiveContainer width="100%" height="70%">
+          <ScatterChart>
             <CartesianGrid />
             <XAxis type="number" dataKey="x" name="Keberadaan sungai (desa)" />
             <YAxis
@@ -178,6 +145,34 @@ const SectionSungaiKotorLanjutan = () => {
             />
           </ScatterChart>
         </ResponsiveContainer>
+
+        <Typography
+          sx={{
+            position: "absolute",
+            bottom: "170px",
+            left: "-30px",
+            transform: "rotate(-90deg)",
+            fontSize: "12px",
+          }}
+        >
+          Keberadaan sungai (desa)
+        </Typography>
+
+        <Typography
+          sx={{
+            position: "absolute",
+            bottom: "50px",
+            left: "130px",
+            fontSize: "12px",
+          }}
+        >
+          Keberadaan pemukiman kumuh (desa)
+        </Typography>
+
+        <Typography sx={{ marginTop: "16px", fontSize: "12px" }}>
+          Sumber: Sistem Informasi Pengelolaan Sampah Nasional (Kementerian
+          Lingkungan Hidup dan Kehutanan, 2021)
+        </Typography>
       </Box>
 
       {kendaraans.map((kendaraan) => (

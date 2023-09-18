@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import color from "../../themes/Color";
 
 const SectionSungaiKotor = () => {
   const kendaraans = [
@@ -8,22 +7,6 @@ const SectionSungaiKotor = () => {
       left: { xs: "53%" },
       bottom: { xs: "96px", sm: "128px" },
       zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "13%" },
-      bottom: { xs: "96px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "35%" },
-      bottom: { xs: "72px", sm: "104px" },
-      zIndex: 2,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
     },
@@ -45,14 +28,6 @@ const SectionSungaiKotor = () => {
     },
     {
       width: { xs: "480px", sm: "740px" },
-      left: { xs: "3%" },
-      bottom: { xs: "80px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/car.png",
-      alt: "Mobil",
-    },
-    {
-      width: { xs: "480px", sm: "740px" },
       left: { xs: "40%" },
       bottom: { xs: "48px", sm: "80px" },
       zIndex: 3,
@@ -70,9 +45,9 @@ const SectionSungaiKotor = () => {
           top: { xs: "20%", sm: "30%", md: "10%" },
           left: { xs: "0%", md: "5%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography
@@ -103,9 +78,9 @@ const SectionSungaiKotor = () => {
           top: { xs: "20%" },
           left: { xs: "35%", md: "43%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
           overflow: { xs: "hidden" },
         }}
       >

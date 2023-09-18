@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useLayoutEffect } from "react";
 import SectionIntroPeta from "../../SectionIntroPeta";
 import {
@@ -94,6 +94,25 @@ const SectionHorizontalScrollPeta = () => {
           }}
         >
           <SectionPeta />
+        </Box>
+        <Box
+          sx={{
+            paddingX: { xs: "16px", sm: "40px" },
+            position: { xs: "absolute" },
+            top: "32px",
+            zIndex: { xs: 2 },
+          }}
+        >
+          <Typography
+            sx={{
+              maxWidth: { xs: "100%", sm: "500px", md: "700px" },
+              fontSize: "24px",
+              fontWeight: "bolder",
+            }}
+          >
+            Pengembangan 10 wilayah metropolitan di Indonesia menurut Badan
+            Perencanaan Pembangunan Nasional (Bappenas), 2019
+          </Typography>
         </Box>
         <Box
           className="panel"

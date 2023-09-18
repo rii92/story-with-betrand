@@ -1,16 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import color from "../../themes/Color";
 
 const SectionSanitasiDiBandung = () => {
   const kendaraans = [
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "53%" },
-      bottom: { xs: "96px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "13%" },
@@ -30,14 +21,6 @@ const SectionSanitasiDiBandung = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "10%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 4,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "60%" },
       bottom: { xs: "48px", sm: "80px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
@@ -70,9 +53,9 @@ const SectionSanitasiDiBandung = () => {
           top: { xs: "30%", sm: "30%", md: "25%" },
           left: { xs: "40%", md: "40%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography

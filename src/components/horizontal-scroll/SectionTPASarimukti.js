@@ -1,19 +1,10 @@
 import { Box, Typography } from "@mui/material";
-import color from "../../themes/Color";
 
 const SectionTPASarimukti = () => {
   const kendaraans = [
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "53%" },
-      bottom: { xs: "96px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "13%" },
       bottom: { xs: "96px", sm: "128px" },
       zIndex: 1,
       image: "assets/image/motorcycle.png",
@@ -29,27 +20,11 @@ const SectionTPASarimukti = () => {
     },
     {
       width: { xs: "180px", sm: "250px" },
-      left: { xs: "10%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 4,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
       left: { xs: "60%" },
       bottom: { xs: "48px", sm: "80px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
-    },
-    {
-      width: { xs: "480px", sm: "740px" },
-      left: { xs: "3%" },
-      bottom: { xs: "80px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/car.png",
-      alt: "Mobil",
     },
     {
       width: { xs: "480px", sm: "740px" },
@@ -71,9 +46,9 @@ const SectionTPASarimukti = () => {
           top: { xs: "20%", sm: "30%", md: "20%" },
           left: { xs: "38%", md: "35%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography

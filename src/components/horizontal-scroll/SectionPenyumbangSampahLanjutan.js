@@ -1,26 +1,16 @@
 import { Box, Typography } from "@mui/material";
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+  Tooltip,
+  Legend,
+} from "recharts";
 
-import color from "../../themes/Color";
 
 const SectionPenyumbangSampahLanjutan = () => {
   const kendaraans = [
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "53%" },
-      bottom: { xs: "96px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "13%" },
-      bottom: { xs: "96px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "35%" },
@@ -32,14 +22,6 @@ const SectionPenyumbangSampahLanjutan = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "10%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 4,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "60%" },
       bottom: { xs: "48px", sm: "80px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
@@ -101,26 +83,33 @@ const SectionPenyumbangSampahLanjutan = () => {
     return `${(percent * 100).toFixed(2)}%`;
   };
 
+  const renderBlackLegendText = (value, entry) => {
+    return <span style={{ color: "black" }}>{value}</span>;
+  };
+
   return (
     <>
       <Box
         sx={{
           width: { xs: "30%", sm: "25%", md: "40%" },
-          height: { xs: "40%", sm: "30%", md: "55%" },
-          padding: { xs: "8px 16px", sm: "16px 24px" },
+          height: { xs: "70%", sm: "75%", md: "80%" },
+          padding: { xs: "8px 16px", sm: "8px 24px 16px" },
           position: "absolute",
-          top: { xs: "15%", sm: "30%", md: "5%" },
+          top: { xs: "5%", sm: "5%", md: "0%" },
           left: { xs: "0%", sm: "10%", md: "0%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
+          display: { xs: "flex" },
+          flexDirection: { xs: "column" },
+          justifyContent: { xs: "space-between" },
         }}
       >
-        <Typography sx={{ textAlign: "center" }}>
+        <Typography sx={{ textAlign: "center", fontSize: "14px" }}>
           Komposisi Sampah Berdasarkan Jenis Sampah
         </Typography>
-        <ResponsiveContainer width="100%" height="90%">
+        <ResponsiveContainer width="100%" height="70%">
           <PieChart>
             <Typography>Komposisi Sampah Berdasarkan Jenis Sampah</Typography>
             <Pie
@@ -137,28 +126,36 @@ const SectionPenyumbangSampahLanjutan = () => {
               ))}
             </Pie>
             <Tooltip />
+            <Legend formatter={renderBlackLegendText} />
           </PieChart>
         </ResponsiveContainer>
+        <Typography sx={{ marginTop: "8px", fontSize: "12px" }}>
+          Sumber: Sistem Informasi Pengelolaan Sampah Nasional (Kementerian
+          Lingkungan Hidup dan Kehutanan, 2021)
+        </Typography>
       </Box>
 
       <Box
         sx={{
           width: { xs: "30%", sm: "25%", md: "40%" },
-          height: { xs: "40%", sm: "30%", md: "55%" },
-          padding: { xs: "8px 16px", sm: "16px 24px" },
+          height: { xs: "65%", sm: "70%", md: "75%" },
+          padding: { xs: "8px 16px", sm: "8px 24px 16px" },
           position: "absolute",
-          top: { xs: "15%", sm: "30%", md: "5%" },
+          top: { xs: "5%", sm: "5%", md: "0%" },
           left: { xs: "34%", sm: "40%", md: "45%" },
           zIndex: { xs: 10 },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
-          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
+          display: { xs: "flex" },
+          flexDirection: { xs: "column" },
+          justifyContent: { xs: "space-between" },
         }}
       >
-        <Typography sx={{ textAlign: "center" }}>
+        <Typography sx={{ textAlign: "center", fontSize: "14px" }}>
           Komposisi Sampah Berdasarkan Sumber Sampah
         </Typography>
-        <ResponsiveContainer width="100%" height="90%">
+        <ResponsiveContainer width="100%" height="70%">
           <PieChart>
             <Pie
               data={dataSumberSampah}
@@ -174,8 +171,13 @@ const SectionPenyumbangSampahLanjutan = () => {
               ))}
             </Pie>
             <Tooltip />
+            <Legend formatter={renderBlackLegendText} />
           </PieChart>
         </ResponsiveContainer>
+        <Typography sx={{ marginTop: "8px", fontSize: "12px" }}>
+          Sumber: Sistem Informasi Pengelolaan Sampah Nasional (Kementerian
+          Lingkungan Hidup dan Kehutanan, 2021)
+        </Typography>
       </Box>
 
       {kendaraans.map((kendaraan) => (
