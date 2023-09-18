@@ -95,7 +95,7 @@ const SectionSungaiKotor = () => {
         </Typography>
       </Box>
 
-      {kendaraans.map((kendaraan) => (
+      {/* {kendaraans.map((kendaraan) => (
         <Box
           sx={{
             width: {
@@ -119,10 +119,10 @@ const SectionSungaiKotor = () => {
             style={{ width: "100%" }}
           />
         </Box>
-      ))}
+      ))} */}
 
       <img
-        src="assets/image/bg-city.png"
+        src="assets/image/jalan-sungai.png"
         alt="City"
         style={{ height: "100%" }}
       />
