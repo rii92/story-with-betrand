@@ -1,16 +1,27 @@
 import { Box, Typography } from "@mui/material";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import color from "../themes/Color";
-import { useEffect } from "react";
-import { Parallax } from "react-scroll-parallax";
+import {useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Section32 = () => {
-  useEffect(() => {
-    AOS.init();
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#endsection", {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#endsection-container",
+        start: "top bottom",
+        end: "+=400",
+        scrub: 1,
+      },
+    });
   }, []);
   return (
     <Box
+    id="endsection-container"
       sx={{
         width: { xs: "100%" },
         height: { xs: "100vh" },
@@ -20,9 +31,8 @@ const Section32 = () => {
         backgroundColor: { xs: color.white },
       }}
     >
-      <Parallax speed={10}>
-
       <Typography
+      id="endsection"
         variant="h3"
         sx={{
           width: { xs: "100%", sm: "400px", md: "1000px" },
@@ -34,7 +44,6 @@ const Section32 = () => {
       >
         “Mari menata lingkungan, <strong>aksi nyata</strong> kita wujudkan <strong>kota berkelanjutan</strong>”
       </Typography>
-      </Parallax>
     </Box>
   );
 };
