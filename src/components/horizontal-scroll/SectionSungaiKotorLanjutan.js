@@ -1,13 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import {
   Tooltip,
-  LineChart,
-  Line,
   XAxis,
   YAxis,
   CartesianGrid,
-  Legend,
   ResponsiveContainer,
+  ScatterChart,
+  Scatter,
 } from "recharts";
 import color from "../../themes/Color";
 
@@ -70,74 +69,42 @@ const SectionSungaiKotorLanjutan = () => {
       alt: "Mobil",
     },
   ];
-  const dataPenangananSampah = [
-    {
-      name: "2020",
-      persentaseBimindo: 65.89,
-      persentaseSarbagita: 53.66,
-      persentaseJabodetabekpunjur: 61.14,
-      persentaseBanjarBakula: 63.87,
-      persentasePatungrayaAgung: 49.28,
-      persentaseCekunganBandung: 54.91,
-      persentaseMamminasata: 45.18,
-      persentaseMebidangro: 52.8,
-      persentaseGerbangkertosusila: 0,
-      persentaseKedungsepur: 0,
-    },
-    {
-      name: "2021",
-      persentaseBimindo: 71.85,
-      persentaseSarbagita: 69.72,
-      persentaseJabodetabekpunjur: 71.27,
-      persentaseBanjarBakula: 58.85,
-      persentasePatungrayaAgung: 74.6,
-      persentaseCekunganBandung: 24.95,
-      persentaseMamminasata: 50.42,
-      persentaseMebidangro: 33.75,
-      persentaseGerbangkertosusila: 0,
-      persentaseKedungsepur: 0,
-    },
-    {
-      name: "2022",
-      persentaseBimindo: 64.64,
-      persentaseSarbagita: 80.25,
-      persentaseJabodetabekpunjur: 66.19,
-      persentaseBanjarBakula: 50.98,
-      persentasePatungrayaAgung: 53.32,
-      persentaseCekunganBandung: 57.55,
-      persentaseMamminasata: 51.08,
-      persentaseMebidangro: 72.81,
-      persentaseGerbangkertosusila: 14.64,
-      persentaseKedungsepur: 0,
-    },
+  const dataHubunganSungaiKePemukimanKumuh = [
+    { x: 3601, y: 86, z: 200 },
+    { x: 4928, y: 215, z: 260 },
+    { x: 1119, y: 47, z: 400 },
+    { x: 1477, y: 88, z: 280 },
+    { x: 1373, y: 27, z: 500 },
+    { x: 2902, y: 164, z: 200 },
+    { x: 1262, y: 14, z: 200 },
+    { x: 2122, y: 76, z: 200 },
+    { x: 319, y: 24, z: 200 },
+    { x: 114, y: 49, z: 200 },
+    { x: 217, y: 148, z: 200 },
+    { x: 5377, y: 641, z: 200 },
+    { x: 7748, y: 401, z: 200 },
+    { x: 365, y: 23, z: 200 },
+    { x: 7177, y: 258, z: 200 },
+    { x: 1240, y: 214, z: 200 },
+    { x: 660, y: 21, z: 200 },
+    { x: 1042, y: 103, z: 200 },
+    { x: 2211, y: 86, z: 200 },
+    { x: 2061, y: 153, z: 200 },
+    { x: 1519, y: 81, z: 200 },
+    { x: 1759, y: 103, z: 200 },
+    { x: 932, y: 103, z: 200 },
+    { x: 461, y: 21, z: 200 },
+    { x: 1317, y: 65, z: 200 },
+    { x: 1556, y: 49, z: 200 },
+    { x: 2446, y: 214, z: 200 },
+    { x: 1459, y: 62, z: 200 },
+    { x: 589, y: 23, z: 200 },
+    { x: 574, y: 30, z: 200 },
+    { x: 601, y: 40, z: 200 },
+    { x: 826, y: 63, z: 200 },
+    { x: 1332, y: 46, z: 200 },
+    { x: 3950, y: 67, z: 200 },
   ];
-
-  const renderLegend = (value, entry) => {
-    return <span style={{ color: "black" }}>{value}</span>;
-  };
-  const renderTooltip = (props) => {
-    const { payload } = props;
-
-    return (
-      <Box
-        sx={{
-          width: { xs: "fit-content" },
-          backgroundColor: { xs: color.white },
-          padding: { xs: "8px 16px" },
-          borderRadius: { xs: "8px" },
-          boxShadow: { xs: "0px 2px 4px rgb(0,0,0,0.4)" },
-        }}
-      >
-        <ul style={{ listStyle: "none" }}>
-          {payload.map((entry, index) => (
-            <li key={`item-${index}`}>
-              {entry.name}: {entry.value}
-            </li>
-          ))}
-        </ul>
-      </Box>
-    );
-  };
 
   return (
     <>
@@ -170,7 +137,7 @@ const SectionSungaiKotorLanjutan = () => {
       <Box
         sx={{
           width: { xs: "30%", sm: "40%", md: "50%" },
-          height: { xs: "40%", md: "50%" },
+          height: { xs: "40%", md: "55%" },
           paddingY: { xs: "16px" },
           paddingRight: { xs: "24px" },
           position: "absolute",
@@ -180,19 +147,32 @@ const SectionSungaiKotorLanjutan = () => {
           backgroundColor: { xs: color.white },
         }}
       >
+        <Typography sx={{ textAlign: "center" }}>
+          Hubungan Keberadaan Sungai dan Keberadaan Pemukiman Kumuh
+        </Typography>
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={dataPenangananSampah}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <YAxis type="number" />
-            <XAxis dataKey="name" type="category" />
-            <Tooltip content={renderTooltip} />
-            <Legend verticalAlign="top" height={60} formatter={renderLegend} />
-            <Line
-              name="Cekungan Bandung"
-              dataKey="persentaseCekunganBandung"
-              stroke="#84AD56"
+          <ScatterChart
+            margin={{
+              top: 20,
+              right: 20,
+              bottom: 45,
+              left: 20,
+            }}
+          >
+            <CartesianGrid />
+            <XAxis type="number" dataKey="x" name="Keberadaan sungai (desa)" />
+            <YAxis
+              type="number"
+              dataKey="y"
+              name="Keberadaan pemukiman kumuh (desa)"
             />
-          </LineChart>
+            <Tooltip cursor={{ strokeDasharray: "3 3" }} />
+            <Scatter
+              name="Hubungan Keberadaan Sungai dan Keberadaan Pemukiman Kumuh"
+              data={dataHubunganSungaiKePemukimanKumuh}
+              fill="#8884d8"
+            />
+          </ScatterChart>
         </ResponsiveContainer>
       </Box>
 
