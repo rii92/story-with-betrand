@@ -5,7 +5,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "0%" },
-      bottom: { xs: "96px", sm: "128px" },
+      bottom: { xs: "96px", sm: "128px", md: "96px" },
       zIndex: 1,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -13,7 +13,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "40%" },
-      bottom: { xs: "96px", sm: "128px" },
+      bottom: { xs: "96px", sm: "128px", md: "96px" },
       zIndex: 1,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -21,7 +21,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "13%" },
-      bottom: { xs: "96px", sm: "128px" },
+      bottom: { xs: "96px", sm: "128px", md: "96px" },
       zIndex: 1,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -29,7 +29,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "5%" },
-      bottom: { xs: "72px", sm: "104px" },
+      bottom: { xs: "72px", sm: "104px", md: "72px" },
       zIndex: 2,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -37,7 +37,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "30%" },
-      bottom: { xs: "72px", sm: "104px" },
+      bottom: { xs: "72px", sm: "104px", md: "72px" },
       zIndex: 2,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -45,7 +45,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "10%" },
-      bottom: { xs: "48px", sm: "80px" },
+      bottom: { xs: "48px", sm: "80px", md: "48px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -53,7 +53,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "35%" },
-      bottom: { xs: "48px", sm: "80px" },
+      bottom: { xs: "48px", sm: "80px", md: "48px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -61,7 +61,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "180px", sm: "250px" },
       left: { xs: "60%" },
-      bottom: { xs: "48px", sm: "80px" },
+      bottom: { xs: "48px", sm: "80px", md: "48px" },
       zIndex: 4,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
@@ -69,25 +69,25 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "20%" },
-      bottom: { xs: "96px", sm: "128px" },
+      bottom: { xs: "96px", sm: "128px", md: "50px" },
       zIndex: 1,
-      image: "assets/image/car.png",
+      image: "assets/image/cars-01.png",
       alt: "Mobil",
     },
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "10%" },
-      bottom: { xs: "72px", sm: "104px" },
+      bottom: { xs: "72px", sm: "104px", md: "20px" },
       zIndex: 2,
-      image: "assets/image/car.png",
+      image: "assets/image/cars-03.png",
       alt: "Mobil",
     },
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "30%" },
-      bottom: { xs: "48px", sm: "80px" },
+      bottom: { xs: "48px", sm: "56px", md: "26px" },
       zIndex: 3,
-      image: "assets/image/car.png",
+      image: "assets/image/cars-02.png",
       alt: "Mobil",
     },
   ];
@@ -130,7 +130,7 @@ const SectionKemacetanJakarta = () => {
             bottom: {
               xs: kendaraan.bottom.xs,
               sm: kendaraan.bottom.sm,
-              md: kendaraan.bottom.xs,
+              md: kendaraan.bottom.md,
             },
             zIndex: { xs: kendaraan.zIndex },
           }}

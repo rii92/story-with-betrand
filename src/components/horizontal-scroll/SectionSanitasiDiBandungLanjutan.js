@@ -28,10 +28,26 @@ const SectionSanitasiDiBandungLanjutan = () => {
     },
     {
       width: { xs: "480px", sm: "740px" },
-      left: { xs: "3%" },
-      bottom: { xs: "80px", sm: "128px" },
+      left: { xs: "20%" },
+      bottom: { xs: "96px", sm: "128px", md: "50px" },
       zIndex: 1,
-      image: "assets/image/car.png",
+      image: "assets/image/cars-01.png",
+      alt: "Mobil",
+    },
+    {
+      width: { xs: "480px", sm: "740px" },
+      left: { xs: "10%" },
+      bottom: { xs: "72px", sm: "104px", md: "34px" },
+      zIndex: 2,
+      image: "assets/image/cars-02.png",
+      alt: "Mobil",
+    },
+    {
+      width: { xs: "480px", sm: "740px" },
+      left: { xs: "30%" },
+      bottom: { xs: "48px", sm: "56px", md: "-20px" },
+      zIndex: 3,
+      image: "assets/image/cars-05.png",
       alt: "Mobil",
     },
   ];
@@ -58,7 +74,7 @@ const SectionSanitasiDiBandungLanjutan = () => {
           }}
         >
           Pada tahun 2020 terdapat 44,82% warga Kota Bandung buang air besar
-          (BAB) di kolam/Sawah/Sungai/Danau/Laut (Badan Pusat Statistik)
+          (BAB) di Kolam/Sawah/Sungai/Danau/Laut (Badan Pusat Statistik)
         </Typography>
         <Typography
           variant="body1"
@@ -85,7 +101,7 @@ const SectionSanitasiDiBandungLanjutan = () => {
             bottom: {
               xs: kendaraan.bottom.xs,
               sm: kendaraan.bottom.sm,
-              md: kendaraan.bottom.xs,
+              md: kendaraan.bottom.md,
             },
             zIndex: { xs: kendaraan.zIndex },
           }}

@@ -28,10 +28,10 @@ const SectionSungaiKotor = () => {
     },
     {
       width: { xs: "480px", sm: "740px" },
-      left: { xs: "40%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 3,
-      image: "assets/image/car.png",
+      left: { xs: "20%" },
+      bottom: { xs: "96px", sm: "128px", md: "50px" },
+      zIndex: 1,
+      image: "assets/image/cars-02.png",
       alt: "Mobil",
     },
   ];
@@ -73,10 +73,10 @@ const SectionSungaiKotor = () => {
 
       <Box
         sx={{
-          width: { xs: "320px", sm: "450px", md: "500px" },
+          width: { xs: "320px", sm: "600px", md: "600px" },
           position: "absolute",
-          top: { xs: "10%" },
-          left: { xs: "35%", md: "45%" },
+          top: { xs: "20%", md: "10%" },
+          left: { xs: "30%", md: "45%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: "white" },
           border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
@@ -90,8 +90,8 @@ const SectionSungaiKotor = () => {
           style={{ width: "100%" }}
         />
         <Typography sx={{ fontSize: "12px" }}>
-          Sumber: Indeks Kualitas Lingkungan Hidup (Kementerian Lingkungan
-          Hidup dan Kehutanan, 2020)
+          Sumber: Indeks Kualitas Lingkungan Hidup (Kementerian Lingkungan Hidup
+          dan Kehutanan, 2020)
         </Typography>
       </Box>
 
@@ -108,7 +108,7 @@ const SectionSungaiKotor = () => {
             bottom: {
               xs: kendaraan.bottom.xs,
               sm: kendaraan.bottom.sm,
-              md: kendaraan.bottom.xs,
+              md: kendaraan.bottom.md,
             },
             zIndex: { xs: kendaraan.zIndex },
           }}

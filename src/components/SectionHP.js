@@ -76,6 +76,7 @@ const SectionHP = () => {
               backgroundColor: { xs: color.black },
               borderRadius: { xs: "10px 10px 0 0" },
               color: { xs: color.white },
+              zIndex: 1,
             }}
           >
             <Typography

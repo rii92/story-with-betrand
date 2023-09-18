@@ -29,18 +29,10 @@ const SectionSungaiKotorLanjutan2 = () => {
     },
     {
       width: { xs: "480px", sm: "740px" },
-      left: { xs: "3%" },
-      bottom: { xs: "80px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/car.png",
-      alt: "Mobil",
-    },
-    {
-      width: { xs: "480px", sm: "740px" },
-      left: { xs: "40%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 3,
-      image: "assets/image/car.png",
+      left: { xs: "30%" },
+      bottom: { xs: "48px", sm: "56px", md: "26px" },
+      zIndex: 4,
+      image: "assets/image/cars-01.png",
       alt: "Mobil",
     },
   ];
@@ -90,7 +82,7 @@ const SectionSungaiKotorLanjutan2 = () => {
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "20%", sm: "35%", md: "0%" },
-          left: { xs: "5%", md: "0%" },
+          left: { xs: "0%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: "white" },
           border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
@@ -116,15 +108,18 @@ const SectionSungaiKotorLanjutan2 = () => {
       <Box
         sx={{
           width: { xs: "320px", sm: "450px", md: "500px" },
-          height: { xs: "50%", sm: "55%", md: "60%" },
+          height: { xs: "50%", sm: "500px", md: "60%" },
           padding: { xs: "8px 16px", sm: "16px 24px" },
           position: "absolute",
           top: { xs: "10%", md: "5%" },
-          left: { xs: "40%", md: "36%" },
+          left: { xs: "20%", md: "36%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: "white" },
           border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
           borderRadius: { xs: "8px", sm: "16px" },
+          display: { xs: "flex" },
+          flexDirection: { xs: "column" },
+          justifyContent: { xs: "space-between" },
         }}
       >
         <Typography sx={{ textAlign: "center" }}>
@@ -151,8 +146,8 @@ const SectionSungaiKotorLanjutan2 = () => {
         <Typography
           sx={{
             position: "absolute",
-            bottom: "170px",
-            left: "0px",
+            bottom: { xs: "170px", sm: "230px", md: "170px" },
+            left: "-30px",
             transform: "rotate(-90deg)",
             fontSize: "12px",
           }}
@@ -163,8 +158,8 @@ const SectionSungaiKotorLanjutan2 = () => {
         <Typography
           sx={{
             position: "absolute",
-            bottom: "50px",
-            left: "130px",
+            bottom: { xs: "50px", sm: "70px", md: "50px" },
+            left: { xs: "70px", sm: "130px", md: "130px" },
             fontSize: "12px",
           }}
         >
@@ -190,7 +185,7 @@ const SectionSungaiKotorLanjutan2 = () => {
             bottom: {
               xs: kendaraan.bottom.xs,
               sm: kendaraan.bottom.sm,
-              md: kendaraan.bottom.xs,
+              md: kendaraan.bottom.md,
             },
             zIndex: { xs: kendaraan.zIndex },
           }}
