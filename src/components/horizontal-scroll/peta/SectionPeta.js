@@ -99,13 +99,13 @@ const SectionHorizontalScrollPeta = () => {
           sx={{
             paddingX: { xs: "16px", sm: "40px" },
             position: { xs: "absolute" },
-            top: "32px",
+            top: { xs: "16px", md: "32px" },
             zIndex: { xs: 2 },
           }}
         >
           <Typography
             sx={{
-              maxWidth: { xs: "100%", sm: "500px", md: "700px" },
+              maxWidth: { xs: "100vw", sm: "500px", md: "700px" },
               fontSize: "24px",
               fontWeight: "bolder",
             }}
