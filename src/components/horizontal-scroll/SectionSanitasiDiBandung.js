@@ -79,7 +79,7 @@ const SectionSanitasiDiBandung = () => {
           variant="body1"
           sx={{ fontSize: { xs: "14px", sm: "16px" } }}
         >
-          Di perjalanan Satria juga melihat informasi dari baliho bahwa daerah
+          Di perjalanan Alin juga melihat informasi dari baliho bahwa daerah
           perkotaan di Bandung masih menghadapi tantangan serius dalam hal
           sanitasi toilet yang layak.
         </Typography>

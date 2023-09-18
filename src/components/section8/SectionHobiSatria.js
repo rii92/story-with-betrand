@@ -82,7 +82,7 @@ const SectionHobiSatria = () => {
               variant="body1"
               sx={{ fontSize: { xs: "14px", sm: "16px" } }}
             >
-              Satria adalah seorang yang hobi bersepeda. Saat ia bersepeda dalam
+              Alin adalah seorang yang hobi bersepeda. Saat ia bersepeda dalam
               kegiatan Car Free Day (CFD), dia mulai melihat dampak polusi udara
               yang buruk di jalanan kota. Meskipun merupakan “Hari Bebas
               Kendaraan”, langit Jakarta tetap tampak gelap gulita dipenuhi
@@ -120,7 +120,7 @@ const SectionHobiSatria = () => {
               variant="body1"
               sx={{ fontSize: { xs: "14px", sm: "16px" } }}
             >
-              Dengan rasa ingin tahu yang tinggi, Satria mencari informasi
+              Dengan rasa ingin tahu yang tinggi, Alin mencari informasi
               terkait fenomena ini.
             </Typography>
           </Box>

@@ -22,7 +22,7 @@ const SectionProyeksiJumlahOrangDiKota = () => {
       sx={{
         paddingX: { xs: "16px", md: "40px", xl: "0px" },
         overflowX: { xs: "hidden" },
-        backgroundColor: color.lightBlue,
+        backgroundColor: color.white,
       }}
     >
       <Box
@@ -31,6 +31,7 @@ const SectionProyeksiJumlahOrangDiKota = () => {
           width: { xs: "100%", xl: "1200px" },
           marginX: { xs: "auto" },
           position: { xs: "relative" },
+          backgroundColor: color.white
         }}
       >
         <Parallax
@@ -116,7 +117,7 @@ const SectionProyeksiJumlahOrangDiKota = () => {
         </Parallax>
 
         <Parallax
-          translateX={["100px", "0px"]}
+          translateX={["100px", "80px"]}
           speed={10}
           style={
             lg
@@ -160,20 +161,20 @@ const SectionProyeksiJumlahOrangDiKota = () => {
         </Parallax>
 
         <Typography
-          variant="body1"
+          variant="h5"
           sx={{
             width: { xs: "100%", sm: "450px" },
             position: { xs: "relative" },
             zIndex: { xs: 4 },
-            fontSize: { xs: "12px", sm: "16px" },
+            // marginX: {xs: "auto"}
+            // fontSize: { xs: "12px", sm: "16px" },
           }}
           data-aos="fade-right"
         >
           <span style={{ backgroundColor: color.white, padding: "2px 3px" }}>
             Pada tahun 2045, jumlah penduduk Indonesia diproyeksikan akan
             mencapai <b>318,9 juta jiwa</b>, dengan <b>73 persen</b> populasi
-            penduduk akan tinggal <b>di wilayah perkotaan</b>. (Bambang
-            Brodjonegoro, 2019)
+            penduduk akan tinggal <b>di wilayah perkotaan</b>. (BAPPENAS, 2019)
           </span>
         </Typography>
 

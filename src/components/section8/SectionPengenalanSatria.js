@@ -59,7 +59,7 @@ const SectionPengenalanSatria = () => {
         >
           <Typography variant="body1" sx={{ fontSize: { xs: "14px" } }}>
             <span style={{ padding: "1px 2px", backgroundColor: color.white }}>
-              Dia <b>Satria</b>, seorang mahasiswa yang berkuliah di Jakarta.
+              Dia <b>Alin</b>, seorang mahasiswa yang berkuliah di Jakarta.
             </span>
           </Typography>
         </Box>

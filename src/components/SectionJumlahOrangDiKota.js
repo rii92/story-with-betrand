@@ -14,8 +14,8 @@ const SectionJumlahOrangDiKota = () => {
     <Box
       sx={{
         paddingX: { xs: "16px", md: "40px", xl: "0px" },
-        paddingY: { xs: "56px" },
-        backgroundColor: color.lightBlue,
+        paddingY: { xs: "80px" },
+        backgroundColor: color.white,
       }}
     >
       <Box
@@ -30,12 +30,12 @@ const SectionJumlahOrangDiKota = () => {
       >
         <Box>
           <Typography
-            variant="body1"
+            variant="h5"
             sx={{
               width: { xs: "100%", md: "470px" },
-              fontSize: { xs: "12px", sm: "16px" },
+              // fontSize: { xs: "12px", sm: "16px" },
               textAlign: { xs: "center", md: "left" },
-              color: { xs: color.darkBlue },
+              // color: { xs: color.darkBlue },
             }}
           >
             Sekitar <span style={{ fontWeight: "bold" }}>3,5 miliar orang</span>{" "}
@@ -65,7 +65,7 @@ const SectionJumlahOrangDiKota = () => {
                 sx={{
                   position: "relative",
                   zIndex: 10 - index,
-                  backgroundColor: color.lightBlue,
+                  backgroundColor: color.white,
                 }}
                 data-aos="fade-right"
                 data-aos-duration="100"
@@ -80,7 +80,7 @@ const SectionJumlahOrangDiKota = () => {
                         }
                       : {
                           fontSize: { xs: "40px", sm: "60px", lg: "80px" },
-                          color: color.white,
+                          color: color.yellow,
                         }
                   }
                 />
@@ -92,7 +92,7 @@ const SectionJumlahOrangDiKota = () => {
             sx={{
               fontSize: { xs: "40px", sm: "48px", md: "56px", lg: "64px" },
               fontWeight: { xs: "bolder" },
-              color: { xs: color.white },
+              color: { xs: color.yellow },
             }}
           >
             50%

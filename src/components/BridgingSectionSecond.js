@@ -26,7 +26,7 @@ const BridgingSectionSecond = () => {
         data-aos-duration="1000"
       >
         <h1>Bridging</h1>
-        Selesai ke puncak, Satria pun pulang kampung ke Palembang setelah itu ke Banyuasin.
+        Selesai ke puncak, Alin pun pulang kampung ke Palembang setelah itu ke Banyuasin.
 
       </Typography>
     </Box>

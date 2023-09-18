@@ -82,7 +82,7 @@ const SectionSungaiKotor = () => {
             fontSize: { xs: "14px", sm: "16px" },
           }}
         >
-          Ketika pulang, Satria melihat sungai kotor yang berada di sekitar
+          Ketika pulang, Alin melihat sungai kotor yang berada di sekitar
           pemukiman kumuh.
         </Typography>
         <Typography

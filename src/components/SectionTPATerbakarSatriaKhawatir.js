@@ -37,7 +37,7 @@ const SectionTPATerbakarSatriaKhawatir = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
         >
-          Mendengar kabar terkait asap dari TPA Sarimukti yang terbakar, satria
+          Mendengar kabar terkait asap dari TPA Sarimukti yang terbakar, Alin
           khawatir karena asap tersebut dapat menutupi pandangan pengendara.
           Namun, Asep meyakinkannya untuk tetap melanjutkan perjalanan.
         </Typography>

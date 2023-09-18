@@ -2,13 +2,16 @@ import { Box, Card, CardMedia, Typography } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import color from "../themes/Color";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Parallax } from "react-scroll-parallax";
 
 const Section31 = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  return (
+   return (
     <Box
       sx={{
         width: { xs: "100%" },
@@ -60,12 +63,15 @@ const Section31 = () => {
         melakukan konservasi energi dan pengembangan energi alternatif.
       </Typography>
       <Box sx={{ marginBottom: "50px", }}>
+        <Parallax translateX={['400px', '0px']} >
+
         <CardMedia
           image="assets/image/umbrellaRain.png"
-          sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
-          data-aos="fade-right"
-          data-aos-duration="20000"
+          sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" }}}
         />
+        </Parallax>
+        <Parallax  translateX={['-400px', '0px']} >
+
         <Typography
           variant="h5"
           sx={{
@@ -73,21 +79,21 @@ const Section31 = () => {
             width: { xs: "100%", sm: "400px", md: "500px" },
             color: { xs: color.black },
           }}
-          data-aos="fade-left"
-          data-aos-duration="20000"
         >
           Dalam lingkungan fisik, pembangunan fisik tidak boleh{" "}
           <strong>menambah limpahan air hujan</strong> yang bisa menyebabkan
           banjir.
         </Typography>
+        </Parallax>
       </Box>
       <Box sx={{ marginBottom: "50px", }}>
+        <Parallax translateX={['400px', '0px']} >
         <CardMedia
           image="assets/image/consumePattern.png"
           sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
-          data-aos="fade-right"
-          data-aos-duration="20000"
         />
+        </Parallax>
+        <Parallax  translateX={['-400px', '0px']} >
         <Typography
           variant="h5"
           sx={{
@@ -95,19 +101,19 @@ const Section31 = () => {
             width: { xs: "100%", sm: "400px", md: "500px" },
             color: { xs: color.black },
           }}
-          data-aos="fade-left"
-          data-aos-duration="20000"
         >
           <strong>Pola produksi dan konsumsi</strong> masyarakatnya tidak membuat <strong>volume sampah dan limbah bertambah tinggi.</strong>  
         </Typography>
+        </Parallax>
       </Box>
       <Box sx={{ marginBottom: "50px", }}>
+        <Parallax translateX={['400px', '0px']} >
         <CardMedia
           image="assets/image/sanitation.png"
           sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
-          data-aos="fade-right"
-          data-aos-duration="20000"
         />
+        </Parallax>
+        <Parallax  translateX={['-400px', '0px']} >
         <Typography
           variant="h5"
           sx={{
@@ -115,19 +121,19 @@ const Section31 = () => {
             width: { xs: "100%", sm: "400px", md: "500px" },
             color: { xs: color.black },
           }}
-          data-aos="fade-left"
-          data-aos-duration="20000"
         >
           <strong>Sanitasi yang layak</strong> adalah prasyarat penting untuk meningkatkan kualitas hidup dan mencapai kota berkelanjutan dengan menciptakan lingkungan yang sehat, mengurangi risiko penyakit, dan meningkatkan akses masyarakat terhadap fasilitas dasar yang mendukung kehidupan yang lebih baik.  
         </Typography>
+        </Parallax>
       </Box>
       <Box sx={{ marginBottom: "50px", }}>
+        <Parallax translateX={['400px', '0px']} >
         <CardMedia
           image="assets/image/greenInfrastructure.png"
           sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
-          data-aos="fade-right"
-          data-aos-duration="20000"
         />
+        </Parallax>
+        <Parallax  translateX={['-400px', '0px']} >
         <Typography
           variant="h5"
           sx={{
@@ -135,11 +141,10 @@ const Section31 = () => {
             width: { xs: "100%", sm: "400px", md: "500px" },
             color: { xs: color.black },
           }}
-          data-aos="fade-left"
-          data-aos-duration="20000"
         >
           Pembangunan berkelanjutan juga harus <strong>menyediakan infrastruktur hijau</strong> , yakni infrastruktur untuk aktivitas yang tidak menimbulkan emisi/polusi seperti jalur pedestrian arau jalur khusus sepeda. Masyarakat pun mendapatkan sarana/moda transportasi hijau untuk aktivitasnya sehari-hari.  
         </Typography>
+        </Parallax>
       </Box>
     </Box>
   );
