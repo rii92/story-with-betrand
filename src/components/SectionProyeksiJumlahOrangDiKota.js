@@ -229,7 +229,7 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             position: "absolute",
             zIndex: 3,
             bottom: 0,
-            left: "50%",
+            // left: "50%",
             // transform: "translateX(-50%)",
           }}
           id="city"
@@ -242,7 +242,7 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             position: "absolute",
             zIndex: 2,
             bottom: 0,
-            left: "50%",
+            // left: "50%",
             // transform: "translateX(-50%)",
           }}
           id="city"
@@ -258,8 +258,8 @@ const SectionProyeksiJumlahOrangDiKota = () => {
             position: "absolute",
             zIndex: 1,
             bottom: 0,
-            left: "50%",
-            transform: "translateX(-50%)",
+            // left: "50%",
+            // transform: "translateX(-50%)",
           }}
           id="city"
           // data-aos="fade-up"
