@@ -47,14 +47,14 @@ const SectionHorizontalScrollPeta = () => {
     var clientTop = docEl.clientTop || body.clientTop || 0;
     var clientLeft = docEl.clientLeft || body.clientLeft || 0;
 
-    var top = box.top;
-    var left = box.left;
+    var top = box.top + scrollTop - clientTop;
+    var left = box.left + scrollLeft - clientLeft;
 
     return { top: Math.round(top), left: Math.round(left) };
   };
 
   useLayoutEffect(() => {
-    console.log("posisi atas", getCoords(component).top);
+    console.log("posisi pengenalan", getCoords(component).top);
     gsap.registerPlugin(ScrollTrigger);
     let ctx = gsap.context(() => {
       let panels = gsap.utils.toArray(".panel");
@@ -71,7 +71,6 @@ const SectionHorizontalScrollPeta = () => {
         },
       });
     }, component);
-    console.log(slider.current.offsetWidth);
     return () => ctx.revert();
   });
 

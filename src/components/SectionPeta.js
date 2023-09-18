@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import PetaContext from "../context/PetaContext";
 
 const SetViewOnClick = ({ coords, zoom }) => {
@@ -13,6 +15,10 @@ const SetViewOnClick = ({ coords, zoom }) => {
 };
 
 const SectionPeta = () => {
+  const theme = useTheme();
+  const sm = useMediaQuery(theme.breakpoints.up("sm"));
+  const md = useMediaQuery(theme.breakpoints.up("md"));
+  const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const {
     posisiAtasElementPengenalan,
     posisiAtasElementMetropolitanPertama,
@@ -50,17 +56,56 @@ const SectionPeta = () => {
   };
 
   const cekKoordinatSekarang = (scrollTop) => {
-    const pengenalan = 10528,
-      pertama = 11945,
-      kedua = 13362,
-      ketiga = 14778,
-      keempat = 16195,
-      kelima = 17612,
-      keenam = 19029,
-      ketujuh = 20446,
-      kedelapan = 21862,
-      kesembilan = 23279,
-      kesepuluh = 24696;
+    let pengenalan = 0,
+      pertama = 0,
+      kedua = 0,
+      ketiga = 0,
+      keempat = 0,
+      kelima = 0,
+      keenam = 0,
+      ketujuh = 0,
+      kedelapan = 0,
+      kesembilan = 0,
+      kesepuluh = 0;
+
+    if (lg) {
+      pengenalan = 16671;
+      pertama = 18076;
+      kedua = 19481;
+      ketiga = 20886;
+      keempat = 22291;
+      kelima = 23696;
+      keenam = 25102;
+      ketujuh = 26507;
+      kedelapan = 27912;
+      kesembilan = 29317;
+      kesepuluh = 30722;
+    } else if (md) {
+      pengenalan = 17104;
+      pertama = 18000;
+      kedua = 18894;
+      ketiga = 19788;
+      keempat = 20682;
+      kelima = 21578;
+      keenam = 22472;
+      ketujuh = 23366;
+      kedelapan = 24260;
+      kesembilan = 25156;
+      kesepuluh = 26050;
+    } else if (sm) {
+      pengenalan = 10084;
+      pertama = 10478;
+      kedua = 10870;
+      ketiga = 11262;
+      keempat = 11656;
+      kelima = 12048;
+      keenam = 12440;
+      ketujuh = 12834;
+      kedelapan = 13226;
+      kesembilan = 13620;
+      kesepuluh = 14012;
+    }
+    // console.log(pengenalan);
 
     if (
       Math.floor(scrollTop) > pengenalan + 200 &&
@@ -137,7 +182,7 @@ const SectionPeta = () => {
 
   const isPindahKoordinat = (e) => {
     const scrollTop = window.scrollY;
-    console.log(scrollTop);
+    // console.log(window.innerWidth);
     cekKoordinatSekarang(scrollTop);
   };
 

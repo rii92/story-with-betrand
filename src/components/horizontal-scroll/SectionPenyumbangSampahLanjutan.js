@@ -1,15 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
-import { useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 import color from "../../themes/Color";
 
 const SectionPenyumbangSampahLanjutan = () => {
-  const theme = useTheme();
-  const sm = useMediaQuery(theme.breakpoints.up("sm"));
-  const md = useMediaQuery(theme.breakpoints.up("md"));
-  const lg = useMediaQuery(theme.breakpoints.up("lg"));
   const kendaraans = [
     {
       width: { xs: "180px", sm: "250px" },
