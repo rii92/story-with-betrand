@@ -2,16 +2,29 @@ import { Box, Card, CardMedia, Typography } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import color from "../themes/Color";
-import { useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Parallax } from "react-scroll-parallax";
 
 const Section31 = () => {
-  useEffect(() => {
-    AOS.init();
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#umbrella", {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#umbrella-container",
+        start: "top bottom",
+        end: "+=400",
+        scrub: 1,
+        markers: true,
+      },
+    });
   }, []);
-   return (
+
+  return (
     <Box
       sx={{
         width: { xs: "100%" },
@@ -19,7 +32,7 @@ const Section31 = () => {
         display: { xs: "block" },
         justifyContent: { xs: "center" },
         backgroundColor: { xs: color.white },
-        paddingTop: {xs: "30px"}
+        paddingTop: { xs: "30px" },
       }}
     >
       <Typography
@@ -45,7 +58,10 @@ const Section31 = () => {
           marginBottom: "50px",
         }}
       >
-        Tren perkotaan global menunjukkan perubahan signifikan dalam beberapa dekade terakhir. Dalam upaya mencapai Tujuan 11 Sustainable Development Goals (SDGs), kebijakan perkotaan di seluruh dunia tak terkecuali Indonesia, berfokus pada pembangunan perkotaan berkelanjutan.
+        Tren perkotaan global menunjukkan perubahan signifikan dalam beberapa
+        dekade terakhir. Dalam upaya mencapai Tujuan 11 Sustainable Development
+        Goals (SDGs), kebijakan perkotaan di seluruh dunia tak terkecuali
+        Indonesia, berfokus pada pembangunan perkotaan berkelanjutan.
       </Typography>
       <Typography
         variant="body1"
@@ -62,88 +78,104 @@ const Section31 = () => {
         penggunaan sumber daya terbarukan. Pembangunan ini juga berusaha
         melakukan konservasi energi dan pengembangan energi alternatif.
       </Typography>
-      <Box sx={{ marginBottom: "50px", }}>
-        <Parallax translateX={['400px', '0px']} >
-
-        <CardMedia
-          image="assets/image/umbrellaRain.png"
-          sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" }}}
-        />
-        </Parallax>
-        <Parallax  translateX={['-400px', '0px']} >
-
-        <Typography
-          variant="h5"
-          sx={{
-            marginX: { xs: "auto" },
-            width: { xs: "100%", sm: "400px", md: "500px" },
-            color: { xs: color.black },
+      <Box sx={{ marginBottom: "50px" }} id="umbrella-container">
+        {/* <Parallax translateX={["400px", "0px"]}> */}
+        <img
+          id="umbrella"
+          src="assets/image/umbrellaRain.png"
+          style={{
+            maxWidth: "300px",
+            height: "200px",
+            marginX: "auto",
+            opacity: 0,
+            transform: "translate(0,100px)",
           }}
-        >
-          Dalam lingkungan fisik, pembangunan fisik tidak boleh{" "}
-          <strong>menambah limpahan air hujan</strong> yang bisa menyebabkan
-          banjir.
-        </Typography>
+          alt="Umbrella"
+        />
+        {/* </Parallax> */}
+        <Parallax translateX={["-400px", "0px"]}>
+          <Typography
+            variant="h5"
+            sx={{
+              marginX: { xs: "auto" },
+              width: { xs: "100%", sm: "400px", md: "500px" },
+              color: { xs: color.black },
+            }}
+          >
+            Dalam lingkungan fisik, pembangunan fisik tidak boleh{" "}
+            <strong>menambah limpahan air hujan</strong> yang bisa menyebabkan
+            banjir.
+          </Typography>
         </Parallax>
       </Box>
-      <Box sx={{ marginBottom: "50px", }}>
-        <Parallax translateX={['400px', '0px']} >
-        <CardMedia
-          image="assets/image/consumePattern.png"
-          sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
-        />
+      <Box sx={{ marginBottom: "50px" }}>
+        <Parallax translateX={["400px", "0px"]}>
+          <CardMedia
+            image="assets/image/consumePattern.png"
+            sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
+          />
         </Parallax>
-        <Parallax  translateX={['-400px', '0px']} >
-        <Typography
-          variant="h5"
-          sx={{
-            marginX: { xs: "auto" },
-            width: { xs: "100%", sm: "400px", md: "500px" },
-            color: { xs: color.black },
-          }}
-        >
-          <strong>Pola produksi dan konsumsi</strong> masyarakatnya tidak membuat <strong>volume sampah dan limbah bertambah tinggi.</strong>  
-        </Typography>
-        </Parallax>
-      </Box>
-      <Box sx={{ marginBottom: "50px", }}>
-        <Parallax translateX={['400px', '0px']} >
-        <CardMedia
-          image="assets/image/sanitation.png"
-          sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
-        />
-        </Parallax>
-        <Parallax  translateX={['-400px', '0px']} >
-        <Typography
-          variant="h5"
-          sx={{
-            marginX: { xs: "auto" },
-            width: { xs: "100%", sm: "400px", md: "500px" },
-            color: { xs: color.black },
-          }}
-        >
-          <strong>Sanitasi yang layak</strong> adalah prasyarat penting untuk meningkatkan kualitas hidup dan mencapai kota berkelanjutan dengan menciptakan lingkungan yang sehat, mengurangi risiko penyakit, dan meningkatkan akses masyarakat terhadap fasilitas dasar yang mendukung kehidupan yang lebih baik.  
-        </Typography>
+        <Parallax translateX={["-400px", "0px"]}>
+          <Typography
+            variant="h5"
+            sx={{
+              marginX: { xs: "auto" },
+              width: { xs: "100%", sm: "400px", md: "500px" },
+              color: { xs: color.black },
+            }}
+          >
+            <strong>Pola produksi dan konsumsi</strong> masyarakatnya tidak
+            membuat <strong>volume sampah dan limbah bertambah tinggi.</strong>
+          </Typography>
         </Parallax>
       </Box>
-      <Box sx={{ marginBottom: "50px", }}>
-        <Parallax translateX={['400px', '0px']} >
-        <CardMedia
-          image="assets/image/greenInfrastructure.png"
-          sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
-        />
+      <Box sx={{ marginBottom: "50px" }}>
+        <Parallax translateX={["400px", "0px"]}>
+          <CardMedia
+            image="assets/image/sanitation.png"
+            sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
+          />
         </Parallax>
-        <Parallax  translateX={['-400px', '0px']} >
-        <Typography
-          variant="h5"
-          sx={{
-            marginX: { xs: "auto" },
-            width: { xs: "100%", sm: "400px", md: "500px" },
-            color: { xs: color.black },
-          }}
-        >
-          Pembangunan berkelanjutan juga harus <strong>menyediakan infrastruktur hijau</strong> , yakni infrastruktur untuk aktivitas yang tidak menimbulkan emisi/polusi seperti jalur pedestrian arau jalur khusus sepeda. Masyarakat pun mendapatkan sarana/moda transportasi hijau untuk aktivitasnya sehari-hari.  
-        </Typography>
+        <Parallax translateX={["-400px", "0px"]}>
+          <Typography
+            variant="h5"
+            sx={{
+              marginX: { xs: "auto" },
+              width: { xs: "100%", sm: "400px", md: "500px" },
+              color: { xs: color.black },
+            }}
+          >
+            <strong>Sanitasi yang layak</strong> adalah prasyarat penting untuk
+            meningkatkan kualitas hidup dan mencapai kota berkelanjutan dengan
+            menciptakan lingkungan yang sehat, mengurangi risiko penyakit, dan
+            meningkatkan akses masyarakat terhadap fasilitas dasar yang
+            mendukung kehidupan yang lebih baik.
+          </Typography>
+        </Parallax>
+      </Box>
+      <Box sx={{ marginBottom: "50px" }}>
+        <Parallax translateX={["400px", "0px"]}>
+          <CardMedia
+            image="assets/image/greenInfrastructure.png"
+            sx={{ maxWidth: "300px", height: "200px", marginX: { xs: "auto" } }}
+          />
+        </Parallax>
+        <Parallax translateX={["-400px", "0px"]}>
+          <Typography
+            variant="h5"
+            sx={{
+              marginX: { xs: "auto" },
+              width: { xs: "100%", sm: "400px", md: "500px" },
+              color: { xs: color.black },
+            }}
+          >
+            Pembangunan berkelanjutan juga harus{" "}
+            <strong>menyediakan infrastruktur hijau</strong> , yakni
+            infrastruktur untuk aktivitas yang tidak menimbulkan emisi/polusi
+            seperti jalur pedestrian arau jalur khusus sepeda. Masyarakat pun
+            mendapatkan sarana/moda transportasi hijau untuk aktivitasnya
+            sehari-hari.
+          </Typography>
         </Parallax>
       </Box>
     </Box>

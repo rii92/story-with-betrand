@@ -89,6 +89,10 @@ const SectionSungaiKotor = () => {
           alt="Peta Kualitas Air"
           style={{ width: "100%" }}
         />
+        <Typography sx={{ fontSize: "12px" }}>
+          Sumber: Indeks Kualitas Lingkungan Hidup (Kementerian Lingkungan
+          Hidup dan Kehutanan, 2020)
+        </Typography>
       </Box>
 
       {kendaraans.map((kendaraan) => (
