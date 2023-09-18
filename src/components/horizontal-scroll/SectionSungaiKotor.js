@@ -71,6 +71,8 @@ const SectionSungaiKotor = () => {
           left: { xs: "0%", md: "5%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
+          borderRadius: { xs: "8px", sm: "16px" },
+          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography
@@ -102,6 +104,8 @@ const SectionSungaiKotor = () => {
           left: { xs: "35%", md: "43%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
+          borderRadius: { xs: "8px", sm: "16px" },
+          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <img

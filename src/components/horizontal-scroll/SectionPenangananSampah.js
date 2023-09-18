@@ -72,6 +72,8 @@ const SectionSungaiKotorLanjutan2 = () => {
           left: { xs: "10%", md: "0%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
+          borderRadius: { xs: "8px", sm: "16px" },
+          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <Typography
@@ -106,6 +108,8 @@ const SectionSungaiKotorLanjutan2 = () => {
           left: { xs: "43%", sm: "45%", md: "43%" },
           zIndex: { xs: 10 },
           backgroundColor: { xs: color.white },
+          borderRadius: { xs: "8px", sm: "16px" },
+          boxShadow: { xs: "4px 4px 5px rgb(0,0,0,0.5)" },
         }}
       >
         <table border={1}>
