@@ -15,9 +15,13 @@ const Section31 = () => {
         height: { xs: "80vh" },
         display: { xs: "block" },
         justifyContent: { xs: "center" },
-        backgroundColor: { xs: color.white },
         alignItems: { xs: "center" },
-        paddingTop: {xs: "30px"}
+        paddingTop: {xs: "30px"},
+        backgroundColor: color.lightBlue,
+        backgroundImage: {
+          xs: `url('assets/image/sea.png')`, 
+        },
+        backgroundSize: "cover", 
       }}
     >
       <CardMedia
@@ -27,8 +31,8 @@ const Section31 = () => {
           height: "280px",
           marginX: { xs: "auto" },
         }}
-        data-aos="fade-right"
-        data-aos-duration="20000"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       />
       <Typography
         variant="h5"
@@ -37,9 +41,10 @@ const Section31 = () => {
           width: { xs: "100%", sm: "400px", md: "800px" },
           color: { xs: color.black },
           textAlign: { xs: "center" },
+          backgroundColor: color.white,
         }}
         data-aos="fade-left"
-        data-aos-duration="20000"
+        data-aos-duration="1000"
       >
         Menilik berbagai permasalahan yang dihadapi, tidak sedikit pihak yang
         pesimistis terhadap masa depan perkotaan di Indonesia.{" "}

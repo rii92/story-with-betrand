@@ -16,8 +16,34 @@ const Section31 = () => {
         display: { xs: "block" },
         justifyContent: { xs: "center" },
         backgroundColor: { xs: color.white },
+        paddingTop: {xs: "30px"}
       }}
     >
+      <Typography
+        variant="body1"
+        sx={{
+          width: { xs: "100%", sm: "400px", md: "500px" },
+          color: { xs: color.black },
+          marginX: { xs: "auto" },
+          marginBottom: "50px",
+        }}
+      >
+        Meskipun berkembang secara pesat, wilayah metropolitan kemudian{" "}
+        <strong>menghadapi berbagai permasalahan</strong> yang beragam, termasuk
+        juga terkait isu lingkungan. Beberapa kota di atas, merupakan hanya
+        sebagian dari wilayah metropolitan di Indonesia.
+      </Typography>
+      <Typography
+        variant="body1"
+        sx={{
+          width: { xs: "100%", sm: "400px", md: "500px" },
+          color: { xs: color.black },
+          marginX: { xs: "auto" },
+          marginBottom: "50px",
+        }}
+      >
+        Tren perkotaan global menunjukkan perubahan signifikan dalam beberapa dekade terakhir. Dalam upaya mencapai Tujuan 11 Sustainable Development Goals (SDGs), kebijakan perkotaan di seluruh dunia tak terkecuali Indonesia, berfokus pada pembangunan perkotaan berkelanjutan.
+      </Typography>
       <Typography
         variant="body1"
         sx={{
