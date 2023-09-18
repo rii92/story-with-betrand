@@ -103,7 +103,7 @@ const SectionSanitasiDiBandung = () => {
       ))}
 
       <img
-        src="assets/image/bg-city.png"
+        src="assets/image/sanitasi-di-bandung.png"
         alt="City"
         style={{ height: "100%" }}
       />
