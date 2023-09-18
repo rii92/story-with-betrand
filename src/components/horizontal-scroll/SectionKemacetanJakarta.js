@@ -69,7 +69,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "20%" },
-      bottom: { xs: "96px", sm: "128px", md: "50px" },
+      bottom: { xs: "72px", sm: "128px", md: "50px" },
       zIndex: 1,
       image: "assets/image/cars-01.png",
       alt: "Mobil",
@@ -77,7 +77,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "10%" },
-      bottom: { xs: "72px", sm: "104px", md: "20px" },
+      bottom: { xs: "16px", sm: "16px", md: "20px" },
       zIndex: 2,
       image: "assets/image/cars-03.png",
       alt: "Mobil",
@@ -85,7 +85,7 @@ const SectionKemacetanJakarta = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "30%" },
-      bottom: { xs: "48px", sm: "56px", md: "26px" },
+      bottom: { xs: "32px", sm: "56px", md: "26px" },
       zIndex: 3,
       image: "assets/image/cars-02.png",
       alt: "Mobil",

@@ -37,7 +37,7 @@ const SectionPenyumbangSampahLanjutan = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "30%" },
-      bottom: { xs: "48px", sm: "56px", md: "26px" },
+      bottom: { xs: "16px", sm: "24px", md: "26px" },
       zIndex: 3,
       image: "assets/image/cars-01.png",
       alt: "Mobil",

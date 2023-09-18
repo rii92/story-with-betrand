@@ -85,7 +85,7 @@ const SectionSungaiKotor = () => {
         }}
       >
         <img
-          src="assets/image/peta-kualitas-air.png"
+          src="assets/image/kualitas-air.jpg"
           alt="Peta Kualitas Air"
           style={{ width: "100%" }}
         />

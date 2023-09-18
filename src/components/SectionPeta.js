@@ -69,17 +69,17 @@ const SectionPeta = () => {
       kesepuluh = 0;
 
     if (lg) {
-      pengenalan = 16671;
-      pertama = 18076;
-      kedua = 19481;
-      ketiga = 20886;
-      keempat = 22291;
-      kelima = 23696;
-      keenam = 25102;
-      ketujuh = 26507;
-      kedelapan = 27912;
-      kesembilan = 29317;
-      kesepuluh = 30722;
+      pengenalan = 21568;
+      pertama = 22973;
+      kedua = 24378;
+      ketiga = 25783;
+      keempat = 27156;
+      kelima = 28593;
+      keenam = 29999;
+      ketujuh = 31404;
+      kedelapan = 32796;
+      kesembilan = 34214;
+      kesepuluh = 35619;
     } else if (md) {
       pengenalan = 17104;
       pertama = 18000;
@@ -182,7 +182,7 @@ const SectionPeta = () => {
 
   const isPindahKoordinat = (e) => {
     const scrollTop = window.scrollY;
-    // console.log(window.innerWidth);
+    console.log(scrollTop);
     cekKoordinatSekarang(scrollTop);
   };
 

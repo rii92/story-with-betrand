@@ -38,7 +38,7 @@ const SectionSungaiKotorLanjutan2 = () => {
     {
       width: { xs: "480px", sm: "740px" },
       left: { xs: "10%" },
-      bottom: { xs: "72px", sm: "104px", md: "0px" },
+      bottom: { xs: "0px", sm: "0px", md: "0px" },
       zIndex: 2,
       image: "assets/image/cars-05.png",
       alt: "Mobil",
