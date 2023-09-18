@@ -51,7 +51,9 @@ const Section5a = () => {
           padding: { xs: "8px 16px", sm: "16px 24px" },
           textAlign: { xs: "left" },
           fontSize: { xs: "12px", sm: "16px" },
-          backgroundColor: { xs: color.white },
+          backgroundColor: { xs: "white" },
+          border: { xs: "4px solid #E1EBF1", sm: "5px solid #E1EBF1" },
+          borderRadius: { xs: "8px", sm: "16px" },
         }}
       >
         Oleh karenanya, strategi pembangunan perkotaan Indonesia ke depan akan{" "}
