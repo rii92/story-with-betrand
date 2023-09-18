@@ -14,33 +14,9 @@ const SectionSungaiKotorLanjutan2 = () => {
   const kendaraans = [
     {
       width: { xs: "180px", sm: "250px" },
-      left: { xs: "53%" },
-      bottom: { xs: "96px", sm: "128px" },
-      zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
       left: { xs: "13%" },
       bottom: { xs: "96px", sm: "128px" },
       zIndex: 1,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "35%" },
-      bottom: { xs: "72px", sm: "104px" },
-      zIndex: 2,
-      image: "assets/image/motorcycle.png",
-      alt: "Motor",
-    },
-    {
-      width: { xs: "180px", sm: "250px" },
-      left: { xs: "10%" },
-      bottom: { xs: "48px", sm: "80px" },
-      zIndex: 4,
       image: "assets/image/motorcycle.png",
       alt: "Motor",
     },
